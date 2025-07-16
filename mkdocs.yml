@@ -1,0 +1,90 @@
+site_name: Despliegue de Software
+repo_url: https://github.com/ralvarezdev/uru-software-deployment/
+repo_name: Despliegue de Software
+edit_uri: edit/main/docs/
+site_description: Documentación para la materia de Despliegue de Software de 
+  la carrera de Ingeniería en Computación de la Universidad Rafael Urdaneta (URU).
+site_author: Victoria Acosta, Ramón Álvarez, Idiar Chacín, Carlos Fernández, Angelina Pineda, Valeria Salcedo
+use_directory_urls: false
+theme:
+  name: material
+  logo: assets/images/logo/uru-var2.png
+  favicon: assets/images/favicon/favicon.ico
+  language: es
+  features:
+    - header.autohide
+    - navigation.footer
+  font:
+    code: Fira Code
+    text: Fira Sans
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon:  material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+nav:
+  - Almacenamiento:
+    - RAID: storage/raid.md
+  - Virtualización:
+    - Contenedores:
+      - Docker: virtualization/containers/docker.md
+    - Máquinas virtuales: virtualization/virtual-machines.md
+    - Servidores virtuales: virtualization/virtual-servers.md
+  - Empaquetadores:
+    - Vite: bundlers/vite.md
+  - Sistemas de Gestión:
+    - PM2: management-systems/pm2.md
+    - CMS: management-systems/cms.md
+  - Redes:
+    - Dominio: network/domain.md
+    - IP pública: network/public-ip.md
+    - Port Forwarding: network/port-forwarding.md
+    - Protocolos:
+      - Seguridad:
+        - SSL/TLS: network/protocols/security/ssl-tls.md
+    - Seguridad:
+      - Firewall:
+        - UFW: network/security/firewall/ufw.md
+    - Hosting:
+      - Apache: network/hosting/apache.md
+      - Nginx: network/hosting/nginx.md
+      - Virtual Host: network/hosting/virtual-host.md
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ralvarezdev/uru-software-deployment
+      name: GitHub
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<ralvarezdev@protonmail.com>
+      name: Enviar un correo
+copyright:
+  Copyright &copy; 2025 Victoria Acosta, Ramón Álvarez, Idiar Chacín, Carlos 
+  Fernández, Angelina Pineda, Valeria Salcedo. All rights reserved.
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - nl2br
+plugins:
+  - search
+  - callouts

@@ -1,0 +1,53 @@
+:root {
+    --color-primary-foreground--light: #212529;
+    --color-primary-foreground--dark: #212529;
+    --color-primary-background--light: #f8f9fa;
+    --color-primary-background--dark: #f8f9fa;
+    --border-radius: 4px;
+    --margin: 1.2rem;
+    --gap: 1rem;
+}
+
+:root > * {
+    --md-primary-fg-color: var(--color-primary-foreground--light);
+    --md-primary-bg-color: var(--color-primary-background--light);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--margin) 0;
+}
+
+.flowchart-image {
+    max-width: 100%;
+    width: 1000px;
+}
+
+.image-comparison-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    flex-direction: row;
+}
+
+.image-horizontal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    flex-direction: row;
+}
+
+.app--image {
+    max-width: 100%;
+    width: 700px;
+}
+
+.logo--3rd-party {
+    max-width: 100%;
+    width: 200px;
+}
