@@ -1,9 +1,8 @@
 @echo Activating virtual environment...
 call ./.venv/Scripts/activate
 
-@echo Deploying MkDocs site to origin and dev remotes...
-mkdocs gh-deploy --remote-name origin
-mkdocs gh-deploy --remote-name dev
+@echo Deploying MkDocs site...
+mkdocs gh-deploy
 
 @echo Deployment complete.
 pause
