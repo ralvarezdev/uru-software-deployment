@@ -47,6 +47,26 @@
     width: 700px;
 }
 
+.server--image {
+    max-width: 100%;
+    width: 500px;
+}
+
+.raid--image--big {
+    max-width: 100%;
+    width: 700px;
+}
+
+.raid--image--small {
+    max-width: 100%;
+    width: 400px;
+}
+
+.raid--image--medium {
+    max-width: 100%;
+    width: 550px;
+}
+
 .logo--3rd-party {
     max-width: 100%;
     width: 200px;

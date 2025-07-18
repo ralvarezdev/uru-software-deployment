@@ -40,6 +40,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 nav:
+  - Inicio: index.md
   - Almacenamiento:
     - RAID: storage/raid.md
   - Virtualización:
