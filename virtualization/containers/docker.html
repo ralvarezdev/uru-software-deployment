@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#docker" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -440,6 +445,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Docker
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="docker.html" class="md-nav__link md-nav__link--active">
         
   
@@ -451,6 +469,74 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dockerfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Container
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1154,6 +1240,65 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dockerfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Container
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1171,9 +1316,31 @@
   
 
 
-  <h1>Docker</h1>
+<h2 id="docker">Docker</h2>
+<div class="center">
+    <img src="../assets/images/logo/docker.png" alt="Logo de Docker" 
+class="logo--3rd-party">
+    <i>Logo de Docker</i>
+</div>
 
-
+<p>Docker es una plataforma open-source (o de código abierto), con el cual se puede empaquetar una aplicación así como todas las dependencias que esta requiere, en una unidad denominada<br />
+<em>contenedor</em> [<a href="#what-is-docker">1</a>]. Estas son ligeras en peso, lo cual permite su portabilidad. Así mismo, los contenedores están aislados de la infraestructura donde está siendo ejecutados, y por ende la imagen del contenedor puede ser ejecutada como un contenedor en cualquier sistema operativo donde esté instalado Docker [<a href="#what-is-docker">1</a>].</p>
+<p>Si su sistema operativo es Windows, Docker Desktop se puede instalar con facilidad desde la Microsoft Store.</p>
+<h3 id="dockerfile">Dockerfile</h3>
+<p>Docker emplea archivos, denominados<br />
+<em>Dockerfile</em>, los cuales usan DSL (Domain Specific Language) para describir todas las instrucciones necesarias para crear una imagen de forma rápida [<a href="#what-is-docker">1</a>].</p>
+<h3 id="docker-image">Docker Image</h3>
+<p>Es un archivo compuesto de múltiples capas, empleado para ejecutar un<br />
+contenedor Docker [<a href="#what-is-docker">1</a>]. Es un paquete de software ejecutable<br />
+que contiene todo lo necesario para correr la aplicación. Esta imagen informa cómo un contenedor debe inicializarse, determinando qué software debe ejecutarse y de qué forma.</p>
+<h3 id="docker-container">Docker Container</h3>
+<p>Un contenedor Docker es una instancia<br />
+<em>runtime</em> de una imagen Docker [<a href="#what-is-docker">1</a>]. Contiene todo el kit requerido para una aplicación, y permite ser ejecutada de forma aislada.</p>
+<h1 id="referencias-bibliograficas">Referencias Bibliográficas</h1>
+<ol>
+<li><em>What is Docker?</em>. (22 de abril de 2025). Geeks for Geeks. <a
+   id="what-is-docker" href="https://www.geeksforgeeks.org/introduction-to-docker/">https://www.geeksforgeeks.org/introduction-to-docker/</a></li>
+</ol>
 
 
 
