@@ -1,3 +1,6 @@
 ### virtual environment
 *.venv
 *.env
+
+### nginx deployment
+ngnix-deploy-idiar.md
