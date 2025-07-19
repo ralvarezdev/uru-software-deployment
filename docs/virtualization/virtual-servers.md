@@ -1,92 +1,106 @@
-# Servidores Virtuales
+# Servidores Virtuales (VPS)
 
 ## ¿Qué es un Servidor Virtual?
 
-Un servidor virtual es una instancia lógica que simula el comportamiento de un servidor físico real mediante una tecnología llamada virtualización. Aunque físicamente comparten el mismo hardware, cada servidor virtual (VM) opera de forma independiente, con su propio sistema operativo, recursos y configuración.
+Un **servidor virtual**, o **VPS (Virtual Private Server)**, es una instancia de servidor aislada que opera dentro de una máquina física compartida mediante tecnologías de virtualización. Aunque varios servidores virtuales pueden ejecutarse sobre el mismo hardware, **cada VPS cuenta con su propio sistema operativo, recursos asignados (CPU, RAM, disco) y configuraciones**, funcionando como si fuera un servidor independiente.
 
-## ¿Cómo Funciona la Virtualización?
+> A diferencia de una máquina virtual genérica que se usa con fines técnicos o de laboratorio, el VPS está pensado para entornos de producción y servicios online.
 
-La virtualización divide los recursos físicos (CPU, RAM, disco, red) en entornos virtuales aislados, usando un software llamado hipervisor.
+## ¿Cómo Funciona un VPS?
+
+Un proveedor (como DigitalOcean, AWS o Linode) utiliza un hipervisor para dividir un servidor físico en múltiples VPS. Cada VPS tiene acceso restringido a los recursos asignados, pero se comporta como un servidor completo.
 
 ### Proceso básico:
 
-1. El hipervisor se instala sobre el hardware físico.
-2. El hipervisor crea múltiples máquinas virtuales (VMs).
-3. Cada VM tiene un sistema operativo (Windows, Linux, etc.).
-4. Se instalan aplicaciones o servicios en cada VM.
-5. Las VMs no interfieren entre sí.
+1. El hipervisor se instala sobre el hardware físico (ESXi, KVM, etc.).
+2. Se crean múltiples VPS, cada uno con su propio sistema operativo.
+3. El cliente accede a su VPS mediante SSH o consola remota.
+4. Puede instalar software, configurar servicios, o desplegar aplicaciones.
+5. Cada VPS es independiente de los demás a nivel de software.
 
 ## Tipos de Servidores Virtuales
 
 ### VPS (Virtual Private Server)
 
-- Compartido físicamente, pero aislado lógicamente.
-- Ideal para sitios web, apps, entornos de pruebas.
+- Aislado lógicamente dentro de un nodo físico.
+- Uso común en alojamiento web, APIs, servicios empresariales.
+- Acceso root y configuración personalizada.
 
 ### Servidor Cloud
 
-- Escalable bajo demanda en la nube (AWS, Azure, GCP).
-- Pago por uso.
+- Similar al VPS, pero escalable dinámicamente desde la nube.
+- Ofrece alta disponibilidad, balanceo y facturación por hora.
 
-### Servidor dedicado virtual
+### Servidor Dedicado Virtual
 
-- Más recursos garantizados.
-- Se comporta como un servidor físico virtualizado.
+- Recursos garantizados más cercanos al servidor dedicado.
+- Mayor rendimiento, ideal para tráfico alto o aplicaciones críticas.
 
 ### Contenedores (Docker, LXC)
 
-- No son VMs completas, sino entornos ligeros que comparten el kernel.
-- Ideales para microservicios y DevOps.
+- Alternativa ligera a un VPS: no es una VM, comparte el kernel del host.
+- Ideal para microservicios, CI/CD, aplicaciones desacopladas.
 
-## Hipervisores
+## Hipervisores Utilizados en VPS
 
 | Tipo      | Características                                 | Ejemplos                    |
 |-----------|--------------------------------------------------|-----------------------------|
 | Tipo 1    | Corre directamente sobre el hardware físico.     | VMware ESXi, Hyper-V, KVM   |
-| Tipo 2    | Corre sobre un sistema operativo anfitrión.      | VirtualBox, VMware Workstation |
+| Tipo 2    | Corre sobre un sistema operativo anfitrión.      | Poco usado en VPS públicos  |
 
-## ¿Para Qué Sirven?
+> En la mayoría de los VPS comerciales se usa KVM o Xen como hipervisor tipo 1.
 
-- Hospedaje web (CMS, tiendas, blogs)
-- Desarrollo y pruebas de software
-- Aislamiento de entornos
-- Automatización de tareas (CI/CD)
-- Laboratorios de aprendizaje
-- Servidores para apps móviles, APIs, bots
+## Usos Comunes del VPS
 
-## Ventajas
+- Alojamiento de sitios web con CMS (WordPress, Joomla, etc.)
+- Servidores de bases de datos (MySQL, PostgreSQL, MongoDB)
+- Servidores de aplicaciones (Node.js, Django, Laravel)
+- Implementación de APIs REST
+- Automatización de tareas (bots, scrapers, jobs en cron)
+- VPN, correo, DNS y otros servicios de red personalizados
+
+## Ventajas del VPS
 
 | Ventaja           | Descripción                                           |
 |-------------------|--------------------------------------------------------|
-| Escalabilidad     | Se agregan recursos en minutos                        |
-| Aislamiento       | VMs no afectan a otras en el mismo host              |
-| Ahorro de costos  | Menor inversión comparado con hardware físico         |
-| Flexibilidad      | Soporte para distintos sistemas operativos            |
-| Automatización    | Ideal para DevOps, pruebas, despliegues               |
-| Portabilidad      | VMs se mueven o clonan fácilmente                     |
+| Escalabilidad     | Se pueden aumentar recursos sin migrar                 |
+| Aislamiento       | Cada VPS es independiente del resto del sistema        |
+| Ahorro de costos  | Más económico que un servidor físico dedicado          |
+| Acceso root       | Control total del sistema operativo y configuraciones  |
+| Rendimiento       | Recursos garantizados frente a hosting compartido      |
+| Versatilidad      | Compatible con casi cualquier software o stack         |
 
-## Diferencias con Otros Modelos
+## Comparación con Otros Modelos de Hosting
 
 | Modelo             | Recursos | Aislamiento | Personalización | Costo  |
 |--------------------|----------|-------------|------------------|--------|
-| VPS / VM           | Parcial  | Medio       | Alta             | Medio  |
+| VPS                | Medio    | Medio-Alto  | Alto             | Medio  |
 | Servidor dedicado  | Total    | Total       | Total            | Alto   |
 | Hosting compartido | Bajo     | Bajo        | Muy limitado     | Bajo   |
 
-## Herramientas Comunes
+## Herramientas de Gestión y Paneles
 
-### Paneles de gestión:
+### Paneles de administración opcionales:
 
-- Proxmox VE (open source)
-- VMware vSphere
-- Virt-Manager (GUI Linux)
-- VirtualBox (entornos locales)
+- Webmin / Virtualmin
+- cPanel / WHM (licencia comercial)
+- Plesk
+- CyberPanel
+- ISPConfig
 
-### Proveedores populares:
+### Proveedores populares de VPS:
 
 - DigitalOcean
 - Linode
 - Vultr
-- AWS EC2
-- Azure
-- Google Cloud
+- Hetzner
+- AWS Lightsail
+- Google Cloud VM instances
+- Azure Virtual Machines
+
+## Notas Técnicas
+
+- En un VPS no tienes acceso al hipervisor, solo al sistema operativo de tu instancia.
+- El rendimiento puede depender de la carga general del nodo físico, aunque esté garantizado hasta cierto límite.
+- Los proveedores ofrecen backups, snapshots, balanceo de carga y monitoreo desde su panel.
+
