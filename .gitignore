@@ -1,6 +1,18 @@
-### virtual environment
-*.venv
-*.env
+# Virtual Environment
+.venv
+.env
+/**/*/.venv
+/**/*/.env
 
-### nginx deployment
-ngnix-deploy-idiar.md
+# MkDocs
+site
+/**/*/site
+
+# JetBrains IDEs
+.idea
+/**/*/.idea
+
+# VS Code
+.vscode
+/**/*/.vscode
+
