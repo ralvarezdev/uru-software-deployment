@@ -103,7 +103,7 @@ pm2 save
 pm2 startup
 ```
 
-> Este comando devuelve una línea que debes ejecutar para registrar PM2 como servicio del sistema.
+> Este comando devuelve una línea que se debe ejecutar para registrar PM2 como servicio del sistema.
 
 ---
 
@@ -120,7 +120,7 @@ pm2 logs app           # Ver logs de una app específica
 
 ## PM2 con otros lenguajes
 
-También puedes ejecutar scripts en otros lenguajes usando el parámetro `--interpreter`.
+También se puede ejecutar scripts en otros lenguajes usando el parámetro `--interpreter`.
 
 ```bash
 pm2 start script.py --interpreter python3
