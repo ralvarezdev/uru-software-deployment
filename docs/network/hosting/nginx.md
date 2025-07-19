@@ -1,8 +1,14 @@
+# Nginx {:#nginx}
 
+## ¿Qué es Nginx? {:#que-es-nginx}
 
-# ¿Qué es Nginx?
+<div class="center">
+	<img src="../../assets/images/logo/nginx.png" alt="Logo de Nginx" class="logo--3rd-party">
+	<i>Logo de Nginx</i>
+</div>
 
 **Nginx** es un servidor web de alto rendimiento, de código abierto, que también actúa como:
+
 - Proxy inverso
 - Balanceador de carga
 - Servidor de archivos estáticos
@@ -12,51 +18,38 @@
 
 Fue desarrollado por Igor Sysoev en 2004 y es ampliamente utilizado por su eficiencia en la gestión de múltiples conexiones concurrentes gracias a su arquitectura basada en eventos y no bloqueante.
 
----
+## ¿Para qué Sirve Nginx? {:#para-que-sirve-nginx}
 
-# ¿Para qué sirve Nginx?
+| Funcionalidad             | Descripción                                                             |
+|---------------------------|-------------------------------------------------------------------------|
+| Servidor Web              | Sirve archivos estáticos (HTML, CSS, JS, imágenes).                     |
+| Proxy Inverso             | Redirige solicitudes al backend (por ejemplo, Node.js, Python, etc.).   |
+| Balanceador de Carga      | Distribuye tráfico entre varios servidores para mejorar rendimiento.    |
+| Terminador TLS/SSL        | Gestiona conexiones HTTPS y maneja certificados.                        |
+| Caché de contenido        | Guarda respuestas en memoria o disco para acelerar tiempos de carga.    |
+| Redirección y Reescritura | Permite reescribir URLs o redirigir tráfico según reglas.               |
+| Protección y Seguridad    | Controla acceso, oculta tecnologías backend y limita el ancho de banda. |
 
-| Funcionalidad         | Descripción                                                                 |
-|-----------------------|-----------------------------------------------------------------------------|
-| Servidor Web          | Sirve archivos estáticos (HTML, CSS, JS, imágenes).                         |
-| Proxy Inverso         | Redirige solicitudes al backend (por ejemplo, Node.js, Python, etc.).       |
-| Balanceador de Carga  | Distribuye tráfico entre varios servidores para mejorar rendimiento.        |
-| Terminador TLS/SSL    | Gestiona conexiones HTTPS y maneja certificados.                            |
-| Caché de contenido    | Guarda respuestas en memoria o disco para acelerar tiempos de carga.        |
-| Redirección y Reescritura | Permite reescribir URLs o redirigir tráfico según reglas.             |
-| Protección y Seguridad| Controla acceso, oculta tecnologías backend y limita el ancho de banda.     |
-
----
-
-# Arquitectura de Nginx
+## Arquitectura de Nginx {:#arquitectura-de-nginx}
 
 Nginx usa un modelo **asíncrono y basado en eventos** con procesos worker. Esto permite manejar miles de conexiones simultáneas con pocos recursos:
 
 - **Proceso maestro**: carga configuración y gestiona procesos worker.
 - **Procesos worker**: manejan las conexiones de red reales.
 
----
+## Casos de Uso Comunes {:#casos-de-uso-comunes}
 
-# Casos de uso comunes
+1. **Frontend + Backend**: Nginx sirve los archivos frontend (React, Angular, Vue) y redirige `/api` al backend.
 
-1. **Frontend + Backend**
-   - Nginx sirve los archivos frontend (React, Angular, Vue) y redirige `/api` al backend.
+2. **Microservicios**: Redirige peticiones a distintos contenedores o servidores según la ruta o subdominio.
 
-2. **Microservicios**
-   - Redirige peticiones a distintos contenedores o servidores según la ruta o subdominio.
+3. **Certificados SSL**: Nginx maneja TLS/SSL y se comunica con los backends en HTTP.
 
-3. **Certificados SSL**
-   - Nginx maneja TLS/SSL y se comunica con los backends en HTTP.
+4. **Balanceo de carga**: Distribuye tráfico entre varios servidores (round-robin, least_conn, ip_hash).
 
-4. **Balanceo de carga**
-   - Distribuye tráfico entre varios servidores (round-robin, least_conn, ip_hash).
+5. **Gateway para contenedores**: Punto de entrada para servicios en Docker o Kubernetes.
 
-5. **Gateway para contenedores**
-   - Punto de entrada para servicios en Docker o Kubernetes.
-
----
-
-# Ejemplo de configuración básica como proxy inverso
+## Ejemplo de configuración básica como proxy inverso
 
 ```nginx
 server {
@@ -72,9 +65,7 @@ server {
 }
 ```
 
----
-
-# Balanceo de Carga
+## Balanceo de Carga {:#balanceo-de-carga}
 
 ```nginx
 upstream mi_cluster {
@@ -90,14 +81,13 @@ server {
 }
 ```
 
-## Algoritmos soportados:
+## Algoritmos Soportados {:#algoritmos-soportados}
+
 - `round-robin` (por defecto)
 - `least_conn`
 - `ip_hash`
 
----
-
-#  Soporte para HTTPS (TLS/SSL)
+##  Soporte para HTTPS (TLS/SSL) {:#soporte-para-https-tls-ssl}
 
 ```nginx
 server {
@@ -116,9 +106,7 @@ server {
 }
 ```
 
----
-
-## Ventajas de Nginx
+## Ventajas de Nginx {:#ventajas-de-nginx}
 
 - Altamente eficiente y ligero
 - Escalable con pocos recursos
@@ -126,20 +114,16 @@ server {
 - Popular en entornos de alta demanda (empresas como Netflix, Dropbox, GitHub lo usan)
 - Gran soporte para contenedores (Docker)
 
----
+##  Diferencias con Apache {:#diferencias-con-apache}
 
-#  Diferencias con Apache
+| Característica       | Nginx                        | Apache                             |
+|----------------------|------------------------------|------------------------------------|
+| Modelo de procesos   | Asíncrono, basado en eventos | Multiproceso o multiproceso-thread |
+| Rendimiento estático | Muy alto                     | Bueno, pero menor que Nginx        |
+| Reescrituras         | Menos flexible               | Muy potente con `.htaccess`        |
+| Uso de recursos      | Bajo                         | Medio/alto                         |
 
-| Característica         | Nginx                           | Apache                        |
-|------------------------|----------------------------------|-------------------------------|
-| Modelo de procesos     | Asíncrono, basado en eventos     | Multiproceso o multiproceso-thread |
-| Rendimiento estático   | Muy alto                         | Bueno, pero menor que Nginx   |
-| Reescrituras           | Menos flexible                   | Muy potente con `.htaccess`   |
-| Uso de recursos        | Bajo                             | Medio/alto                    |
-
----
-
-# Seguridad
+## Seguridad {:#seguridad}
 
 - Compatible con encabezados de seguridad (`X-Frame-Options`, `Content-Security-Policy`)
 - Puede limitar ancho de banda por IP o ruta

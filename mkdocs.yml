@@ -55,7 +55,7 @@ nav:
     - CMS: management-systems/cms.md
   - Redes:
     - Dominio: network/domain.md
-    - IP pública: network/public-ip.md
+    - IP Pública: network/public-ip.md
     - Port Forwarding: network/port-forwarding.md
     - Protocolos:
       - Seguridad:

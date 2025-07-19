@@ -122,7 +122,7 @@ Podemos dejarlo configurado de 2 formas:
 1. Tenemos el disco duro de reserva cargado en el RAID, aunque sin utilizar, de manera que si tenemos un fallo de disco duro automáticamente empieza a reconstruir los datos en el disco que teníamos preparado (RAID 6).
 2. No tenemos el disco insertado en el servidor, pero tenemos la capacidad de sustitución en caliente. Esta es una opción algo más arriesgada, que implica tener lo más cerca posible un disco de reserva y reemplazarlo lo antes posible antes de que falle una segunda unidad.
 
-## Controladora RAID {:#controladora-raid}
+## Controladoras RAID {:#controladoras-raid}
 
 Una controladora RAID es una tarjeta de hardware o una aplicación de software que se utiliza con el objetivo de gestionar varios discos duros en un mismo servidor.
 
@@ -133,7 +133,7 @@ Los discos se conectan a la placa o a una controladora, y es el procesador y el 
 ### Por Hardware {:#por-hardware}
 
 <div class="center">
-	<img src="../assets/images/raid/x4ttx-dell-perc-h730p-raid-controller.jpg" alt="Controladora RAID X4TTX Dell PERC H730P" class="raid--image--big">
+	<img src="../assets/images/raid/x4ttx-dell-perc-h730p-raid-controller.png" alt="Controladora RAID X4TTX Dell PERC H730P" class="raid--image--big">
 	<i>Controladora RAID X4TTX Dell PERC H730P</i>
 </div>
 
