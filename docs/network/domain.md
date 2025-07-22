@@ -1,5 +1,3 @@
-# ¿Qué es un dominio y por qué es importante?
-
 ## ¿Qué es un dominio?
 
 
