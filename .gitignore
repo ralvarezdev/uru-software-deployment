@@ -3,6 +3,7 @@
 .env
 /**/*/.venv
 /**/*/.env
+/venv
 
 # MkDocs
 site
