@@ -1,5 +1,3 @@
-# Port Forwarding: Concepto, Usos y Comparación con NGINX
-
 ## ¿Qué es el Port Forwarding?
 
 Port forwarding (reenvío de puertos) es una técnica de red utilizada para redirigir solicitudes entrantes desde una IP pública y puerto específico hacia una dirección IP interna en una red privada, y opcionalmente a otro puerto.
