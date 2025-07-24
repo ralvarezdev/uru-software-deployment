@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#que-es-ssltls" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -868,6 +873,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SSL/TLS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="ssl-tls.html" class="md-nav__link md-nav__link--active">
         
   
@@ -879,6 +897,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-ssltls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es SSL/TLS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-que-sirve-ssltls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Para qué sirve SSL/TLS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de uso comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionamiento-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento general
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1156,6 +1236,59 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-ssltls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es SSL/TLS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-que-sirve-ssltls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Para qué sirve SSL/TLS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de uso comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionamiento-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento general
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1175,7 +1308,37 @@
 
   <h1>SSL/TLS</h1>
 
-
+<h2 id="que-es-ssltls">¿Qué es SSL/TLS?</h2>
+<p><strong>SSL</strong> (Secure Sockets Layer) y <strong>TLS</strong> (Transport Layer Security) son protocolos criptográficos diseñados para <strong>proteger la comunicación entre dos sistemas a través de una red</strong>, generalmente Internet. TLS es el sucesor de SSL y, aunque muchas veces se utilizan como sinónimos, actualmente el protocolo estándar es TLS (en versiones modernas como TLS 1.2 o TLS 1.3), ya que SSL ha quedado obsoleto por razones de seguridad.</p>
+<p>Estos protocolos aseguran que los datos enviados entre un cliente (como un navegador web) y un servidor no puedan ser leídos, modificados o interceptados por terceros.</p>
+<h2 id="para-que-sirve-ssltls">¿Para qué sirve SSL/TLS?</h2>
+<p>SSL/TLS cumple principalmente con tres objetivos:</p>
+<ol>
+<li><strong>Cifrado</strong>: Los datos transmitidos están protegidos y no pueden ser leídos por intermediarios.</li>
+<li><strong>Autenticación</strong>: Verifica la identidad del servidor (y opcionalmente del cliente) mediante certificados digitales.</li>
+<li><strong>Integridad</strong>: Asegura que los datos no sean alterados durante la transmisión.</li>
+</ol>
+<p>En esencia, SSL/TLS <strong>proporciona una conexión segura sobre protocolos como HTTP, SMTP, FTP, etc.</strong> El ejemplo más común es <strong>HTTPS</strong>, que es HTTP sobre TLS.</p>
+<h2 id="casos-de-uso-comunes">Casos de uso comunes</h2>
+<ul>
+<li><strong>Navegación web segura (HTTPS)</strong>: Protección de credenciales, formularios, cookies y datos personales.</li>
+<li><strong>Correos electrónicos (SMTPS, IMAPS, POP3S)</strong>: Cifrado del contenido del correo y autenticación del servidor de correo.</li>
+<li><strong>VPNs</strong>: Algunas VPN utilizan TLS como parte de su mecanismo de seguridad (como OpenVPN).</li>
+<li><strong>Conexiones seguras en APIs REST y SOAP</strong>: Protección de comunicaciones entre servicios y aplicaciones.</li>
+<li><strong>Autenticación de clientes y servidores mediante certificados digitales</strong>: En sistemas corporativos o financieros.</li>
+<li><strong>Protocolo LDAP seguro (LDAPS)</strong>: Usado en entornos de directorios para autenticación segura.</li>
+</ul>
+<h2 id="funcionamiento-general">Funcionamiento general</h2>
+<ol>
+<li><strong>Inicio de la conexión</strong>: Cliente y servidor inician un "handshake" TLS.</li>
+<li><strong>Intercambio de certificados</strong>: El servidor presenta su certificado digital.</li>
+<li><strong>Verificación del certificado</strong>: El cliente verifica que el certificado es válido y confiable.</li>
+<li><strong>Negociación de claves</strong>: Se establece una clave compartida para cifrar la sesión.</li>
+<li><strong>Transmisión cifrada</strong>: A partir de ahí, toda la comunicación es segura y cifrada.</li>
+</ol>
+<h2 id="conclusion">Conclusión</h2>
+<p>SSL/TLS es la base de la seguridad en Internet. A través del cifrado, la autenticación y la garantía de integridad, permite establecer canales seguros de comunicación entre clientes y servidores, lo que es fundamental para proteger información sensible como contraseñas, datos bancarios, archivos privados y más. Aunque el término SSL sigue usándose por costumbre, es TLS el protocolo que actualmente mantiene la seguridad de la web moderna, siendo indispensable para cualquier sitio o aplicación que maneje información de usuarios o realice transacciones en línea.</p>
+<p>Desde proteger una simple página web hasta asegurar sistemas complejos de autenticación o intercambio de datos entre servicios, <strong>TLS es un componente esencial de cualquier arquitectura segura en red</strong>.</p>
 
 
 
@@ -1270,7 +1433,7 @@
     
     
     
-    <a href="mailto:<ralvarezdev@protonmail.com>" target="_blank" rel="noopener" title="Enviar un correo" class="md-social__link">
+    <a href="mailto:<inquiries@ralvarez.dev>" target="_blank" rel="noopener" title="Enviar un correo" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4"/></svg>
     </a>
   
