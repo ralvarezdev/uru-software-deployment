@@ -1,0 +1,21 @@
+.jokes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.welcome-message{
+  font-family: 'Comic Neue', cursive; /* estilo caricaturesco elegante */
+  font-size: 2rem;
+  color: #7e3f1d; /* marrón claro que armoniza con el fondo */
+  background: rgba(255, 255, 200, 0.85); /* amarillo suave con transparencia */
+  border: 3px dashed #faae2a; /* borde caricaturesco en amarillo oscuro */
+  border-radius: 15px;
+  padding: 10px 25px;
+  box-shadow: 4px 4px 0 #c07200; /* sombra tipo sticker */
+  margin: 30px auto 0px;
+  width: fit-content;
+  text-align: center;
+  transform: rotate(-2deg); /* toque juguetón */
+}

@@ -1,0 +1,140 @@
+/* Reset global */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+  background-image: url('/assets/laughing-cartoon.png'); /* Fondo completo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: bgPulse 12s ease-in-out infinite alternate;
+}
+
+@keyframes bgPulse {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 105%;
+  }
+}
+
+/* Contenedor principal */
+.login-container {
+  display: flex;
+  justify-content: flex-start; /* 👈 Coloca a la izquierda */
+  align-items: center;
+  padding: 2rem 4rem;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+/* Título */
+.login-title {
+  font-size: 2.5rem;
+  color: #a14e00; /* Marrón cálido */
+  text-shadow: 1px 1px 2px #fff3e0; /* Sombra clara que lo suaviza */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Tarjeta de login */
+.login-card {
+  margin-left: 2rem; /* separación desde el borde izquierdo */
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 5px dashed #ffdd59;
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 8px 8px 0 #ff6b6b;
+  text-align: center;
+  z-index: 2;
+  justify-self: center;
+}
+
+
+/* Subtítulo */
+.login-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Formulario */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-input {
+  padding: 0.8rem;
+  border: 2px solid #feca57;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+  background-color: #222;
+  color: #ffeaa7;
+}
+
+.login-input:focus {
+  border-color: #ff6b6b;
+}
+
+/* Botón */
+.login-button {
+  padding: 0.9rem;
+  background-color: #54a0ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 3px 3px 0 #2e86de;
+}
+
+.login-button:hover {
+  background-color: #2e86de;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.login-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.login-link {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Imagen decorativa animada */
+.login-image {
+  width: 180px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 0;
+  opacity: 0.95;
+  animation: laughBounce 2.5s ease-in-out infinite;
+}
+
+@keyframes laughBounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+}

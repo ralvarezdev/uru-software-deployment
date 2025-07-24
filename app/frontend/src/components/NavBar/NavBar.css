@@ -1,0 +1,51 @@
+.navbar-container {
+  width: 100%;
+  background-color: #fffcdf;
+  border-bottom: 4px dashed #f29f05;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', 'Patrick Hand', cursive;
+  animation: floatBox 4s ease-in-out infinite;
+}
+
+@keyframes floatBox {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6b00;
+  margin: 0;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navbar-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar-buttons button {
+  background: #ffb703;
+  border: 3px solid #000;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.navbar-buttons button:hover {
+  background-color: #f77f00;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 0 #000;
+}

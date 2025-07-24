@@ -1,0 +1,43 @@
+.joke-card {
+  background-color: #fffbe6;
+  border: 4px dashed #ffa500;
+  border-radius: 20px;
+  padding: 25px 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  font-size: 1.5rem;
+  font-family: 'Comic Sans MS', 'Patrick Hand', cursive;
+  box-shadow: 8px 8px 0 #000;
+  text-align: center;
+  color: #333;
+  animation: floatCard 3s ease-in-out infinite;
+}
+
+.joke-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.joke-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.joke-icon.like:hover {
+  color: #32cd32;
+  transform: scale(1.2);
+}
+
+.joke-icon.dislike:hover {
+  color: #e63946;
+  transform: scale(1.2);
+}
+
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
