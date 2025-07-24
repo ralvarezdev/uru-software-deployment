@@ -26,12 +26,15 @@
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.joke-icon.like:hover {
+
+.joke-icon.like:hover,
+.joke-icon.like.active {
   color: #32cd32;
   transform: scale(1.2);
 }
 
-.joke-icon.dislike:hover {
+.joke-icon.dislike:hover,
+.joke-icon.dislike.active {
   color: #e63946;
   transform: scale(1.2);
 }

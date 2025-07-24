@@ -4,6 +4,7 @@ import Profile from "./pages/Profile/Profile";
 import Register from "./pages/Register/Register";
 import Home from "./pages/Home/Home";
 import Ranking from "./pages/Ranking/Ranking";
+import NotFound from "./pages/NotFound/NotFound";
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
         path: "/ranking",
         element: <Ranking />,
+    },
+    {
+        path: "*",
+        element: <NotFound />,
     }
 ]);
 

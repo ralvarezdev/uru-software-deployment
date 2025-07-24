@@ -8,9 +8,11 @@ function Home() {
   const [jokes, setJokes] = useState(jokesMock);
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(3);
+  const [canSeeRanking, setCanSeeRanking] = useState(false);
 
   const getMoreJokes = () =>{
     if(max >= jokes.length) {
+      setCanSeeRanking(true);
       alert("No hay más chistes para mostrar");
       return;
     }
@@ -21,7 +23,7 @@ function Home() {
 
   return (
     <div>
-      <NavBar onGenerateJokes={getMoreJokes} />
+      <NavBar onGenerateJokes={getMoreJokes} canSeeRanking={canSeeRanking} fromRanking={false} />
       <div className='jokes-container'>
         <div className='welcome-message'>
           <h1>Los chistes de hoy:</h1>

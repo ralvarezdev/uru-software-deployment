@@ -4,7 +4,7 @@ import './Ranking.css';
 import NavBar from '../../components/NavBar/NavBar';
 import { jokesMock } from '../../data/jokes.js';
 function Ranking() {
-  const [jokes, setJokes] = useState(jokesMock);
+  const [jokes] = useState(jokesMock);
   const sortedJokes = [...jokes].sort((a, b) => (b.likes - b.dislikes) - (a.likes - a.dislikes));
   return (
     <div>

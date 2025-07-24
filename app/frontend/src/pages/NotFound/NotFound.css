@@ -1,0 +1,41 @@
+.notfound-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('/your-background-image.jpg'); /* puedes poner tu fondo tipo cómic */
+  background-size: cover;
+  background-position: center;
+}
+
+.notfound-card {
+  background-color: #fff4d6;
+  border: 4px dashed #ff9800;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 5px 5px 0 #000000;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+}
+
+.notfound-card h1 {
+  font-size: 2.5rem;
+  color: #e53935;
+  margin-bottom: 10px;
+}
+
+.notfound-card p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.notfound-card a {
+  color: #d32f2f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.notfound-card a:hover {
+  text-decoration: underline;
+}
