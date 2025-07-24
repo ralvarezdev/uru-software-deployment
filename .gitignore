@@ -17,3 +17,7 @@ site
 .vscode
 /**/*/.vscode
 
+# SSH setup
+admin_password.txt
+.ssh/linux_server_rsa
+
