@@ -3,23 +3,34 @@ import { useState } from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import Joke from '../../components/Joke/Joke'
 import './Home.css'
+import { jokesMock } from '../../data/jokes.js'
 function Home() {
-  const [jokes, setJokes] = useState([
-    "¿Por qué los pájaros no usan Facebook? Porque ya tienen Twitter.",
-    "¿Qué hace una abeja en el gimnasio? Zum-ba.",
-    "¿Por qué los esqueletos no pelean entre ellos? Porque no tienen agallas."
-  ]);
+  const [jokes, setJokes] = useState(jokesMock);
+  const [min, setMin] = useState(0);
+  const [max, setMax] = useState(3);
+
+  const getMoreJokes = () =>{
+    if(max >= jokes.length) {
+      alert("No hay más chistes para mostrar");
+      return;
+    }
+
+    setMin(min + 3);
+    setMax(max + 3);
+  }
 
   return (
     <div>
-      <NavBar />
+      <NavBar onGenerateJokes={getMoreJokes} />
       <div className='jokes-container'>
         <div className='welcome-message'>
           <h1>Los chistes de hoy:</h1>
         </div>
         {
-          /* Aquí podrías agregar más lógica para mostrar chistes dinámicamente */
-          jokes.map((joke, index) => <Joke key={index} text={joke} />)
+          jokes.slice(min,max).map((joke, index) => {
+            console.log(joke)
+            return <Joke key={joke.id} text={joke.text} />
+          })
         }
       </div>
     </div>

@@ -36,6 +36,21 @@
   transform: scale(1.2);
 }
 
+.likes {
+  color: #32cd32;
+  font-weight: bold;
+  margin-right: 18px;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
+.dislikes {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
 
 @keyframes floatCard {
   0%, 100% { transform: translateY(0); }
