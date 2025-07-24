@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#virtual-host" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -738,7 +743,7 @@
   
   
   <span class="md-ellipsis">
-    IP pública
+    IP Pública
     
   </span>
   
@@ -1101,6 +1106,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Virtual Host
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="virtual-host.html" class="md-nav__link md-nav__link--active">
         
@@ -1113,6 +1133,100 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-virtual-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es un Virtual Host?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es un Virtual Host?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-host-basado-en-nombre-name-based-virtual-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Host Basado en Nombre (Name-based Virtual Host)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-host-basado-en-ip-ip-based-virtual-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Host Basado en IP (IP-based Virtual Host)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-se-necesita-para-configurar-un-virtual-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué se necesita para configurar un Virtual Host?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué se necesita para configurar un Virtual Host?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-apache-http-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      En Apache HTTP Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      En Nginx
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1151,6 +1265,91 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-virtual-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es un Virtual Host?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es un Virtual Host?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-host-basado-en-nombre-name-based-virtual-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Host Basado en Nombre (Name-based Virtual Host)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-host-basado-en-ip-ip-based-virtual-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Host Basado en IP (IP-based Virtual Host)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-se-necesita-para-configurar-un-virtual-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué se necesita para configurar un Virtual Host?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué se necesita para configurar un Virtual Host?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-apache-http-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      En Apache HTTP Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      En Nginx
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1169,9 +1368,65 @@
   
 
 
-  <h1>Virtual Host</h1>
+<h1 id="virtual-host"><strong>Virtual Host</strong></h1>
+<h2 id="que-es-un-virtual-host"><strong>¿Qué es un Virtual Host?</strong></h2>
+<p>Un <strong>Virtual Host</strong> (Host Virtual) es una técnica que permite alojar múltiples sitios web o dominios en un único servidor, utilizando una misma dirección IP. Esto se logra mediante la configuración del servidor web (como Apache o Nginx) para que responda de manera diferente según el dominio o subdominio solicitado.</p>
+<p>Existen dos tipos principales de Virtual Hosts:</p>
+<h3 id="virtual-host-basado-en-nombre-name-based-virtual-host">Virtual Host Basado en Nombre (Name-based Virtual Host)</h3>
+<p>Este tipo de Virtual Host utiliza el campo Host en la cabecera HTTP para determinar qué sitio web debe servir el servidor. Esto significa que múltiples dominios pueden compartir una misma dirección IP, ya que el servidor distingue las solicitudes según el nombre de dominio. Por ejemplo, si un servidor tiene configurados sitio1.com y sitio2.com en la misma IP, cuando un usuario accede a sitio1.com, el servidor revisa la cabecera HTTP y sirve el contenido correspondiente.</p>
+<p>La principal ventaja de este método es que ahorra direcciones IP, ya que no requiere una IP exclusiva para cada sitio. Además, simplifica la administración, especialmente en entornos con muchos dominios. Sin embargo, una limitación es que no funciona con protocolos antiguos que no envían la cabecera Host, como algunas conexiones SSL/TLS muy antiguas (aunque hoy en día esto es raro debido al uso de SNI - Server Name Indication).</p>
+<h3 id="virtual-host-basado-en-ip-ip-based-virtual-host">Virtual Host Basado en IP (IP-based Virtual Host)</h3>
+<p>En este caso, cada sitio web tiene asignada una dirección IP única, y el servidor responde según la IP a la que se dirige la solicitud. Por ejemplo, si sitio1.com usa la IP 192.168.1.10 y sitio2.com usa 192.168.1.11, el servidor entrega el contenido correspondiente según la IP de destino.</p>
+<p>La principal ventaja de este enfoque es que es compatible con cualquier protocolo, incluso aquellos que no soportan la cabecera Host (como ciertas configuraciones antiguas de SSL). Sin embargo, su desventaja es que requiere múltiples direcciones IP, lo que puede ser costoso o complicado en entornos con IPv4 limitadas. Además, su administración es menos escalable cuando se manejan muchos dominios.</p>
+<h2 id="casos-de-uso"><strong>Casos de Uso</strong></h2>
+<p>Los Virtual Hosts son útiles en escenarios como:</p>
+<ul>
+<li><strong>Hospedar múltiples sitios en un solo servidor</strong>: Ideal para empresas de hosting o desarrolladores que gestionan varios proyectos.</li>
+<li><strong>Separar entornos (producción, desarrollo, testing)</strong>: Usando subdominios como <code>dev.misitio.com</code> o <code>test.misitio.com</code>.</li>
+<li><strong>Optimizar recursos</strong>: Evita la necesidad de tener un servidor dedicado para cada sitio web.</li>
+<li><strong>Sitios multi-idioma o regionales</strong>: Ejemplo: <code>es.misitio.com</code>, <code>en.misitio.com</code>.</li>
+</ul>
+<h2 id="que-se-necesita-para-configurar-un-virtual-host"><strong>¿Qué se necesita para configurar un Virtual Host?</strong></h2>
+<p>Dependiendo del servidor web, los requisitos y pasos varían:</p>
+<h3 id="en-apache-http-server"><strong>En Apache HTTP Server</strong></h3>
+<ul>
+<li>Tener Apache instalado.</li>
+<li>Acceso al archivo de configuración (<code>httpd.conf</code> o <code>apache2.conf</code>).</li>
+<li>Permisos para editar archivos en <code>/etc/apache2/sites-available/</code> (en Linux).</li>
+</ul>
+<p><strong>Ejemplo de configuración:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="s">*:80</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nb">ServerName</span><span class="w"> </span>midominio.com
+<span class="w">    </span><span class="nb">ServerAlias</span><span class="w"> </span>www.midominio.com
+<span class="w">    </span><span class="nb">DocumentRoot</span><span class="w"> </span><span class="sx">/var/www/midominio</span>
+<span class="w">    </span><span class="nb">ErrorLog</span><span class="w"> </span>${APACHE_LOG_DIR}/error.log
+<span class="w">    </span><span class="nb">CustomLog</span><span class="w"> </span>${APACHE_LOG_DIR}/access.log<span class="w"> </span>combined
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</code></pre></div>
+<p>Luego, habilitar el sitio con:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>a2ensite<span class="w"> </span>midominio.conf
+sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>apache2
+</code></pre></div>
+<h3 id="en-nginx"><strong>En Nginx</strong></h3>
+<ul>
+<li>Tener Nginx instalado.</li>
+<li>Acceso a <code>/etc/nginx/sites-available/</code>.</li>
+</ul>
+<p><strong>Ejemplo de configuración:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">midominio.com</span><span class="w"> </span><span class="s">www.midominio.com</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/midominio</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">index</span><span class="w"> </span><span class="s">index.html</span><span class="p">;</span>
 
-
+<span class="w">    </span><span class="kn">access_log</span><span class="w"> </span><span class="s">/var/log/nginx/midominio.access.log</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">error_log</span><span class="w"> </span><span class="s">/var/log/nginx/midominio.error.log</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Luego, crear un enlace simbólico y reiniciar Nginx:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/etc/nginx/sites-available/midominio<span class="w"> </span>/etc/nginx/sites-enabled/
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx
+</code></pre></div>
 
 
 

@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ufw-uncomplicated-firewall" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -740,7 +745,7 @@
   
   
   <span class="md-ellipsis">
-    IP pública
+    IP Pública
     
   </span>
   
@@ -982,6 +987,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    UFW
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="ufw.html" class="md-nav__link md-nav__link--active">
         
@@ -994,6 +1014,217 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es UFW?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-que-sirve" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Para qué sirve?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo funciona?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-basicos-de-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos Básicos de UFW
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos Básicos de UFW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-y-activacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación y Activación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-estado-del-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ver estado del firewall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#politicas-por-defecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Políticas por defecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-trafico-por-puerto-o-servicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir tráfico por puerto o servicio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-desde-una-ip-especifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir desde una IP específica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-desde-una-ip-a-un-puerto-especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir desde una IP a un puerto específico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-un-rango-de-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir un rango de IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-por-interfaz-de-red-ej-eth0" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir por interfaz de red (ej: eth0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#denegar-trafico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Denegar tráfico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-reglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Borrar reglas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitar-conexiones-repetidas-proteccion-contra-fuerza-bruta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitar conexiones repetidas (protección contra fuerza bruta)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activar-registro-de-actividad-del-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activar registro de actividad del firewall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-aplicaciones-reconocidas-por-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ver aplicaciones reconocidas por UFW
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-para-servidores-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración para Servidores Web
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración para Servidores Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apache
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nginx
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1155,6 +1386,208 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es UFW?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-que-sirve" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Para qué sirve?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo funciona?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-basicos-de-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos Básicos de UFW
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos Básicos de UFW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-y-activacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación y Activación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-estado-del-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ver estado del firewall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#politicas-por-defecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Políticas por defecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-trafico-por-puerto-o-servicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir tráfico por puerto o servicio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-desde-una-ip-especifica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir desde una IP específica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-desde-una-ip-a-un-puerto-especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir desde una IP a un puerto específico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-un-rango-de-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir un rango de IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permitir-por-interfaz-de-red-ej-eth0" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permitir por interfaz de red (ej: eth0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#denegar-trafico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Denegar tráfico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-reglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Borrar reglas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitar-conexiones-repetidas-proteccion-contra-fuerza-bruta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitar conexiones repetidas (protección contra fuerza bruta)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activar-registro-de-actividad-del-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activar registro de actividad del firewall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-aplicaciones-reconocidas-por-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ver aplicaciones reconocidas por UFW
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-para-servidores-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración para Servidores Web
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración para Servidores Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apache
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nginx
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1173,9 +1606,94 @@
   
 
 
-  <h1>UFW</h1>
-
-
+<h1 id="ufw-uncomplicated-firewall">UFW (Uncomplicated Firewall)</h1>
+<h2 id="que-es-ufw">¿Qué es UFW?</h2>
+<p>UFW (Uncomplicated Firewall) es una herramienta de firewall diseñada para simplificar la configuración de iptables, el sistema de filtrado de paquetes predeterminado en Linux. Está especialmente pensado para usuarios que no son expertos en seguridad pero necesitan proteger sus sistemas de manera eficiente.</p>
+<h2 id="para-que-sirve">¿Para qué sirve?</h2>
+<ul>
+<li>Bloquear o permitir conexiones entrantes y salientes.</li>
+<li>Proteger el sistema contra accesos no autorizados.</li>
+<li>Configurar reglas básicas de red sin necesidad de manejar iptables directamente.</li>
+<li>Ideal para servidores y equipos personales con Linux.</li>
+</ul>
+<h2 id="como-funciona">¿Cómo funciona?</h2>
+<p>UFW actúa como una capa simplificada sobre iptables, permitiendo definir reglas de firewall con comandos sencillos. Trabaja con los siguientes conceptos básicos:</p>
+<ul>
+<li><strong>Reglas de entrada (incoming):</strong> Controlan qué conexiones pueden acceder al sistema.</li>
+<li><strong>Reglas de salida (outgoing):</strong> Definen qué conexiones pueden salir del sistema.</li>
+<li><strong>Perfiles por aplicación:</strong> Algunos servicios (como Apache o SSH) tienen reglas predefinidas.</li>
+</ul>
+<h2 id="comandos-basicos-de-ufw">Comandos Básicos de UFW</h2>
+<h3 id="instalacion-y-activacion">Instalación y Activación</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw<span class="w">  </span><span class="c1"># Instalar UFW (en Debian/Ubuntu)</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span><span class="nb">enable</span><span class="w">                         </span><span class="c1"># Activar el firewall</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>disable<span class="w">                        </span><span class="c1"># Desactivar el firewall</span>
+</code></pre></div>
+<h3 id="ver-estado-del-firewall"><strong>Ver estado del firewall</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>status<span class="w">              </span><span class="c1"># Muestra reglas activas</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>status<span class="w"> </span>verbose<span class="w">      </span><span class="c1"># Muestra detalles extendidos</span>
+</code></pre></div>
+<h3 id="politicas-por-defecto"><strong>Políticas por defecto</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>default<span class="w"> </span>deny<span class="w"> </span>incoming<span class="w">   </span><span class="c1"># Bloquear todo el tráfico entrante</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>default<span class="w"> </span>allow<span class="w"> </span>outgoing<span class="w">  </span><span class="c1"># Permitir todo el tráfico saliente</span>
+</code></pre></div>
+<h3 id="permitir-trafico-por-puerto-o-servicio"><strong>Permitir tráfico por puerto o servicio</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">22</span><span class="w">           </span><span class="c1"># SSH</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">80</span><span class="w">           </span><span class="c1"># HTTP</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">443</span><span class="w">          </span><span class="c1"># HTTPS</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">3306</span><span class="w">         </span><span class="c1"># MySQL</span>
+</code></pre></div>
+<h3 id="permitir-desde-una-ip-especifica"><strong>Permitir desde una IP específica</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>from<span class="w"> </span><span class="m">192</span>.168.1.100
+</code></pre></div>
+<h3 id="permitir-desde-una-ip-a-un-puerto-especifico"><strong>Permitir desde una IP a un puerto específico</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>from<span class="w"> </span><span class="m">192</span>.168.1.100<span class="w"> </span>to<span class="w"> </span>any<span class="w"> </span>port<span class="w"> </span><span class="m">22</span>
+</code></pre></div>
+<h3 id="permitir-un-rango-de-ip"><strong>Permitir un rango de IP</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>from<span class="w"> </span><span class="m">192</span>.168.0.0/24
+</code></pre></div>
+<h3 id="permitir-por-interfaz-de-red-ej-eth0"><strong>Permitir por interfaz de red (ej: eth0)</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="k">in</span><span class="w"> </span>on<span class="w"> </span>eth0<span class="w"> </span>to<span class="w"> </span>any<span class="w"> </span>port<span class="w"> </span><span class="m">80</span>
+</code></pre></div>
+<h3 id="denegar-trafico"><strong>Denegar tráfico</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>deny<span class="w"> </span><span class="m">3306</span><span class="w">                  </span><span class="c1"># Bloquear MySQL</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>deny<span class="w"> </span>from<span class="w"> </span><span class="m">192</span>.168.1.10<span class="w">     </span><span class="c1"># Bloquear una IP</span>
+</code></pre></div>
+<h3 id="borrar-reglas"><strong>Borrar reglas</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>delete<span class="w"> </span>allow<span class="w"> </span><span class="m">80</span><span class="w">            </span><span class="c1"># Eliminar regla del puerto 80</span>
+</code></pre></div>
+<h3 id="limitar-conexiones-repetidas-proteccion-contra-fuerza-bruta"><strong>Limitar conexiones repetidas (protección contra fuerza bruta)</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>limit<span class="w"> </span>ssh<span class="w">                  </span><span class="c1"># Limita intentos de conexión SSH</span>
+</code></pre></div>
+<h3 id="activar-registro-de-actividad-del-firewall"><strong>Activar registro de actividad del firewall</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>logging<span class="w"> </span>on<span class="w">                 </span><span class="c1"># Habilita logs (ubicación: /var/log/ufw.log)</span>
+</code></pre></div>
+<h3 id="ver-aplicaciones-reconocidas-por-ufw"><strong>Ver aplicaciones reconocidas por UFW</strong></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>app<span class="w"> </span>list<span class="w">                   </span><span class="c1"># Muestra perfiles predefinidos</span>
+</code></pre></div>
+<hr />
+<h2 id="configuracion-para-servidores-web"><strong>Configuración para Servidores Web</strong></h2>
+<h3 id="apache"><strong>Apache</strong></h3>
+<p><strong>Perfiles disponibles:</strong><br />
+- <strong>Apache</strong>: Puerto 80 (HTTP)<br />
+- <strong>Apache Secure</strong>: Puerto 443 (HTTPS)<br />
+- <strong>Apache Full</strong>: Puertos 80 y 443 (HTTP + HTTPS)  </p>
+<p><strong>Ejemplos de uso:</strong><br />
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s1">&#39;Apache&#39;</span><span class="w">          </span><span class="c1"># Solo HTTP (puerto 80)</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s1">&#39;Apache Secure&#39;</span><span class="w">   </span><span class="c1"># Solo HTTPS (puerto 443)</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s1">&#39;Apache Full&#39;</span><span class="w">     </span><span class="c1"># HTTP y HTTPS (80 y 443)</span>
+</code></pre></div></p>
+<h3 id="nginx"><strong>Nginx</strong></h3>
+<p><strong>Perfiles disponibles:</strong><br />
+- <strong>Nginx HTTP</strong>: Puerto 80 (HTTP)<br />
+- <strong>Nginx HTTPS</strong>: Puerto 443 (HTTPS)<br />
+- <strong>Nginx Full</strong>: Puertos 80 y 443 (HTTP + HTTPS)  </p>
+<p><strong>Ejemplos de uso:</strong><br />
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s1">&#39;Nginx HTTP&#39;</span><span class="w">      </span><span class="c1"># Solo HTTP (puerto 80)</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s1">&#39;Nginx HTTPS&#39;</span><span class="w">     </span><span class="c1"># Solo HTTPS (puerto 443)</span>
+sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="s1">&#39;Nginx Full&#39;</span><span class="w">      </span><span class="c1"># HTTP y HTTPS (80 y 443)</span>
+</code></pre></div></p>
+<hr />
 
 
 

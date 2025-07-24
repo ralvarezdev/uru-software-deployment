@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nginx" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -740,7 +745,7 @@
   
   
   <span class="md-ellipsis">
-    IP pública
+    IP Pública
     
   </span>
   
@@ -1080,6 +1085,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Nginx
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="nginx.html" class="md-nav__link md-nav__link--active">
         
@@ -1092,6 +1112,124 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es Nginx?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-que-sirve-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Para qué Sirve Nginx?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura de Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso Comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-configuracion-basica-como-proxy-inverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de configuración básica como proxy inverso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balanceo-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Balanceo de Carga
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmos-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algoritmos Soportados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soporte-para-https-tls-ssl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soporte para HTTPS (TLS/SSL)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ventajas-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ventajas de Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencias-con-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diferencias con Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seguridad
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1153,6 +1291,115 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es Nginx?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-que-sirve-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Para qué Sirve Nginx?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura de Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso Comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-configuracion-basica-como-proxy-inverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de configuración básica como proxy inverso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balanceo-de-carga" class="md-nav__link">
+    <span class="md-ellipsis">
+      Balanceo de Carga
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmos-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algoritmos Soportados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soporte-para-https-tls-ssl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soporte para HTTPS (TLS/SSL)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ventajas-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ventajas de Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencias-con-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diferencias con Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seguridad
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1171,9 +1418,181 @@
   
 
 
-  <h1>Nginx</h1>
+<h1 id="nginx">Nginx</h1>
+<h2 id="que-es-nginx">¿Qué es Nginx?</h2>
+<div class="center">
+    <img src="../../assets/images/logo/nginx.png" alt="Logo de Nginx" class="logo--3rd-party">
+    <i>Logo de Nginx</i>
+</div>
 
+<p><strong>Nginx</strong> es un servidor web de alto rendimiento, de código abierto, que también actúa como:</p>
+<ul>
+<li>Proxy inverso</li>
+<li>Balanceador de carga</li>
+<li>Servidor de archivos estáticos</li>
+<li>Terminador TLS/SSL</li>
+<li>Caché de contenido</li>
+<li>Gateway de aplicaciones</li>
+</ul>
+<p>Fue desarrollado por Igor Sysoev en 2004 y es ampliamente utilizado por su eficiencia en la gestión de múltiples conexiones concurrentes gracias a su arquitectura basada en eventos y no bloqueante.</p>
+<h2 id="para-que-sirve-nginx">¿Para qué Sirve Nginx?</h2>
+<table>
+<thead>
+<tr>
+<th>Funcionalidad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Servidor Web</td>
+<td>Sirve archivos estáticos (HTML, CSS, JS, imágenes).</td>
+</tr>
+<tr>
+<td>Proxy Inverso</td>
+<td>Redirige solicitudes al backend (por ejemplo, Node.js, Python, etc.).</td>
+</tr>
+<tr>
+<td>Balanceador de Carga</td>
+<td>Distribuye tráfico entre varios servidores para mejorar rendimiento.</td>
+</tr>
+<tr>
+<td>Terminador TLS/SSL</td>
+<td>Gestiona conexiones HTTPS y maneja certificados.</td>
+</tr>
+<tr>
+<td>Caché de contenido</td>
+<td>Guarda respuestas en memoria o disco para acelerar tiempos de carga.</td>
+</tr>
+<tr>
+<td>Redirección y Reescritura</td>
+<td>Permite reescribir URLs o redirigir tráfico según reglas.</td>
+</tr>
+<tr>
+<td>Protección y Seguridad</td>
+<td>Controla acceso, oculta tecnologías backend y limita el ancho de banda.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="arquitectura-de-nginx">Arquitectura de Nginx</h2>
+<p>Nginx usa un modelo <strong>asíncrono y basado en eventos</strong> con procesos worker. Esto permite manejar miles de conexiones simultáneas con pocos recursos:</p>
+<ul>
+<li><strong>Proceso maestro</strong>: carga configuración y gestiona procesos worker.</li>
+<li><strong>Procesos worker</strong>: manejan las conexiones de red reales.</li>
+</ul>
+<h2 id="casos-de-uso-comunes">Casos de Uso Comunes</h2>
+<ol>
+<li>
+<p><strong>Frontend + Backend</strong>: Nginx sirve los archivos frontend (React, Angular, Vue) y redirige <code>/api</code> al backend.</p>
+</li>
+<li>
+<p><strong>Microservicios</strong>: Redirige peticiones a distintos contenedores o servidores según la ruta o subdominio.</p>
+</li>
+<li>
+<p><strong>Certificados SSL</strong>: Nginx maneja TLS/SSL y se comunica con los backends en HTTP.</p>
+</li>
+<li>
+<p><strong>Balanceo de carga</strong>: Distribuye tráfico entre varios servidores (round-robin, least_conn, ip_hash).</p>
+</li>
+<li>
+<p><strong>Gateway para contenedores</strong>: Punto de entrada para servicios en Docker o Kubernetes.</p>
+</li>
+</ol>
+<h2 id="ejemplo-de-configuracion-basica-como-proxy-inverso">Ejemplo de configuración básica como proxy inverso</h2>
+<div class="highlight"><pre><span></span><code><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">midominio.com</span><span class="p">;</span>
 
+<span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://localhost:3000</span><span class="p">;</span>
+<span class="w">        </span><span class="kn">proxy_http_version</span><span class="w"> </span><span class="mi">1</span><span class="s">.1</span><span class="p">;</span>
+<span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
+<span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="balanceo-de-carga">Balanceo de Carga</h2>
+<div class="highlight"><pre><span></span><code><span class="k">upstream</span><span class="w"> </span><span class="s">mi_cluster</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kn">server</span><span class="w"> </span><span class="n">backend1</span><span class="p">:</span><span class="mi">3000</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">server</span><span class="w"> </span><span class="n">backend2</span><span class="p">:</span><span class="mi">3000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">server</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://mi_cluster</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="algoritmos-soportados">Algoritmos Soportados</h2>
+<ul>
+<li><code>round-robin</code> (por defecto)</li>
+<li><code>least_conn</code></li>
+<li><code>ip_hash</code></li>
+</ul>
+<h2 id="soporte-para-https-tls-ssl">Soporte para HTTPS (TLS/SSL)</h2>
+<div class="highlight"><pre><span></span><code><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">midominio.com</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">/etc/nginx/ssl/fullchain.pem</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/nginx/ssl/privkey.pem</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kn">ssl_protocols</span><span class="w"> </span><span class="s">TLSv1.2</span><span class="w"> </span><span class="s">TLSv1.3</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">ssl_ciphers</span><span class="w"> </span><span class="s">HIGH:!aNULL:!MD5</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://localhost:3000</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="ventajas-de-nginx">Ventajas de Nginx</h2>
+<ul>
+<li>Altamente eficiente y ligero</li>
+<li>Escalable con pocos recursos</li>
+<li>Compatible con HTTP/1.1, HTTP/2 y TLS</li>
+<li>Popular en entornos de alta demanda (empresas como Netflix, Dropbox, GitHub lo usan)</li>
+<li>Gran soporte para contenedores (Docker)</li>
+</ul>
+<h2 id="diferencias-con-apache">Diferencias con Apache</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Nginx</th>
+<th>Apache</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modelo de procesos</td>
+<td>Asíncrono, basado en eventos</td>
+<td>Multiproceso o multiproceso-thread</td>
+</tr>
+<tr>
+<td>Rendimiento estático</td>
+<td>Muy alto</td>
+<td>Bueno, pero menor que Nginx</td>
+</tr>
+<tr>
+<td>Reescrituras</td>
+<td>Menos flexible</td>
+<td>Muy potente con <code>.htaccess</code></td>
+</tr>
+<tr>
+<td>Uso de recursos</td>
+<td>Bajo</td>
+<td>Medio/alto</td>
+</tr>
+</tbody>
+</table>
+<h2 id="seguridad">Seguridad</h2>
+<ul>
+<li>Compatible con encabezados de seguridad (<code>X-Frame-Options</code>, <code>Content-Security-Policy</code>)</li>
+<li>Puede limitar ancho de banda por IP o ruta</li>
+<li>Permite autenticación básica o con JWT</li>
+<li>Se integra con firewalls de aplicaciones web (WAFs)</li>
+</ul>
 
 
 

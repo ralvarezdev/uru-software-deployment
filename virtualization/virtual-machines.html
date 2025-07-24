@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#maquinas-virtuales" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -468,6 +473,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Máquinas virtuales
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="virtual-machines.html" class="md-nav__link md-nav__link--active">
         
@@ -480,6 +500,88 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definición
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposito-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propósito General
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes Técnicos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-hipervisores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Hipervisores
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-y-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestión y Uso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatos-de-disco-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatos de Disco Virtual
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -748,7 +850,7 @@
   
   
   <span class="md-ellipsis">
-    IP pública
+    IP Pública
     
   </span>
   
@@ -1151,6 +1253,79 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definición
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposito-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propósito General
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes Técnicos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-hipervisores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Hipervisores
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-y-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestión y Uso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatos-de-disco-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatos de Disco Virtual
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1169,9 +1344,111 @@
   
 
 
-  <h1>Máquinas virtuales</h1>
+<h1 id="maquinas-virtuales">Máquinas Virtuales (VM)</h1>
+<h2 id="definicion">Definición</h2>
+<div class="center">
+    <img src="../assets/images/logo/microsoft-hyper-v.png" alt="Logo de Microsoft Hyper-V" class="logo--3rd-party">
+    <i>Logo de Microsoft Hyper-V</i>
+</div>
 
+<p>Una <strong>máquina virtual (VM)</strong> es una emulación completa de un sistema operativo que se ejecuta dentro de un entorno virtualizado. Se comporta como un sistema informático independiente, con hardware simulado por software, sobre una computadora física real (host).</p>
+<h2 id="proposito-general">Propósito General</h2>
+<div class="center">
+    <img src="../assets/images/logo/vmware.png" alt="Logo de WMware" class="logo--3rd-party">
+    <i>Logo de VMware</i>
+</div>
 
+<p>Las VM están diseñadas para ejecutar cualquier sistema operativo y software como si fuera un equipo físico, con fines de:</p>
+<ul>
+<li>Laboratorio de pruebas</li>
+<li>Desarrollo de software</li>
+<li>Simulación de redes</li>
+<li>Aislamiento de sistemas</li>
+<li>Seguridad y sandboxing</li>
+<li>Virtualización de escritorios (VDI)</li>
+</ul>
+<h2 id="componentes-tecnicos">Componentes Técnicos</h2>
+<ul>
+<li><strong>Hipervisor (tipo 1 o 2)</strong></li>
+<li><strong>Guest OS</strong> (sistema operativo invitado)</li>
+<li><strong>Disco virtual (VMDK, VHD, QCOW2, etc.)</strong></li>
+<li><strong>CPU, RAM, y adaptadores de red virtuales</strong></li>
+<li><strong>Controladores de dispositivos virtuales</strong></li>
+</ul>
+<h2 id="tipos-de-hipervisores">Tipos de Hipervisores</h2>
+<div class="center">
+    <img src="../assets/images/logo/virtualbox.png" alt="Logo de VirtualBox" class="logo--3rd-party">
+    <i>Logo de VirtualBox</i>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Ejecutado sobre</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo 1</td>
+<td>Directamente en el hardware (bare metal)</td>
+<td>VMware ESXi, Microsoft Hyper-V, KVM</td>
+</tr>
+<tr>
+<td>Tipo 2</td>
+<td>Sobre un sistema operativo anfitrión</td>
+<td>VirtualBox, VMware Workstation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gestion-y-uso">Gestión y Uso</h2>
+<ul>
+<li>Se pueden crear, modificar, duplicar, exportar</li>
+<li>Soportan snapshots, clonado, rollback</li>
+<li>Pueden instalar cualquier sistema operativo compatible</li>
+<li>Se administran desde una consola local o remota</li>
+</ul>
+<h2 id="formatos-de-disco-virtual">Formatos de Disco Virtual</h2>
+<table>
+<thead>
+<tr>
+<th>Formato</th>
+<th>Usado por</th>
+<th>Características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VMDK</td>
+<td>VMware</td>
+<td>Compatible con snapshots</td>
+</tr>
+<tr>
+<td>VHD/VHDX</td>
+<td>Hyper-V, Azure</td>
+<td>Respaldo incremental, cifrado</td>
+</tr>
+<tr>
+<td>QCOW2</td>
+<td>KVM/QEMU</td>
+<td>Compresión, snapshots, cifrado</td>
+</tr>
+<tr>
+<td>RAW</td>
+<td>Genérico (máximo rendimiento)</td>
+<td>Sin metadatos, rápido</td>
+</tr>
+</tbody>
+</table>
+<h2 id="casos-de-uso">Casos de Uso</h2>
+<ul>
+<li>Laboratorios educativos (ej. redes, hacking ético)</li>
+<li>Testing de múltiples sistemas operativos</li>
+<li>Aislamiento de entornos de desarrollo</li>
+<li>Configuración de clústeres virtualizados</li>
+<li>Simulación de infraestructura compleja</li>
+</ul>
 
 
 
