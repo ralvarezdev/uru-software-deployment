@@ -20,9 +20,9 @@ const NavBar = ({ onGenerateJokes, fromRanking, canSeeRanking }) => {
             <button onClick={onGenerateJokes}>Generar otros chistes</button>
           </>
         )}
-        <button onClick={() => navigate('/logout')}>Cerrar sesión</button>
+        <button onClick={() => navigate('/login')}>Cerrar sesión</button>
         <button onClick={() => window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0", "_blank")}>
-          Risa incontrolada!
+          Risa incontrolable!
         </button>
       </div>
     </div>

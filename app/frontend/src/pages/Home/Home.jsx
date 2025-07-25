@@ -5,7 +5,7 @@ import Joke from '../../components/Joke/Joke'
 import './Home.css'
 import { jokesMock } from '../../data/jokes.js'
 function Home() {
-  const [jokes, setJokes] = useState(jokesMock);
+  const [jokes] = useState(jokesMock);
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(3);
   const [canSeeRanking, setCanSeeRanking] = useState(false);
@@ -29,7 +29,7 @@ function Home() {
           <h1>Los chistes de hoy:</h1>
         </div>
         {
-          jokes.slice(min,max).map((joke, index) => {
+          jokes.slice(min,max).map((joke) => {
             console.log(joke)
             return <Joke key={joke.id} text={joke.text} />
           })

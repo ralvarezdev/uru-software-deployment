@@ -1,8 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { NavLink, useNavigate } from 'react-router';
 import './Register.css';
 
 function Register() {
+  const navigate = useNavigate();
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+      navigate('/login'); // Redirect to home after 2 seconds
+    }, 2000);
+  };
+
   return (
     <div className="register-container">
       <div className="register-box">
@@ -11,7 +20,7 @@ function Register() {
         <div className="register-card">
           <h2 className="register-subtitle">Crea tu cuenta y empieza a reír</h2>
 
-          <form className="register-form">
+          <form className="register-form" onSubmit={handleRegister}>
             <input
               type="text"
               placeholder="Nombre de usuario"

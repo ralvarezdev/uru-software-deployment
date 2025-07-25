@@ -1,8 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { NavLink , useNavigate} from 'react-router';
 import './Login.css'; // Assuming you have a CSS file for styling   
 
 function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+      navigate('/home'); // Redirect to home after 2 seconds
+    }, 2000)
+  }
+    // Login simulation, waiting...
+
   return (
     <div className="login-container">
         <div className='login-box'>
@@ -10,7 +20,7 @@ function Login() {
         <div className="login-card">
         <h2 className="login-subtitle">Inicia sesión para reír sin parar</h2>
 
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleLogin}>
           <input
             type="text"
             placeholder="Nombre de usuario"
