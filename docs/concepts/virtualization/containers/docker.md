@@ -1,33 +1,166 @@
-## Docker {:#docker}
-
 <div class="center">
     <img src="../../../assets/images/logo/docker.png" alt="Logo de Docker" 
 class="logo--3rd-party">
-    <i>Logo de Docker</i>
 </div>
+Docker es una plataforma de código abierto que permite **desarrollar, empaquetar, distribuir y ejecutar aplicaciones en contenedores**. Un contenedor es una unidad ligera, autónoma y portátil que incluye todo lo necesario para ejecutar una aplicación: código, dependencias, librerías, configuraciones, etc.
 
-Docker es una plataforma open-source (o de código abierto), con el cual se puede empaquetar una aplicación así como todas las dependencias que esta requiere, en una unidad denominada
-*contenedor* [[1](#what-is-docker)]. Estas son ligeras en peso, lo cual permite su portabilidad. Así mismo, los contenedores están aislados de la infraestructura donde está siendo ejecutados, y por ende la imagen del contenedor puede ser ejecutada como un contenedor en cualquier sistema operativo donde esté instalado Docker [[1](#what-is-docker)].
+Docker se basa en características del núcleo de Linux (como cgroups y namespaces) para permitir que múltiples contenedores se ejecuten en un mismo sistema operativo de manera aislada.
 
-Si su sistema operativo es Windows, Docker Desktop se puede instalar con facilidad desde la Microsoft Store.
+---
 
-### Dockerfile {:#dockerfile}
+## ¿Para qué sirve Docker?
 
-Docker emplea archivos, denominados
-*Dockerfile*, los cuales usan DSL (Domain Specific Language) para describir todas las instrucciones necesarias para crear una imagen de forma rápida [[1](#what-is-docker)].
+Docker facilita la creación y despliegue de aplicaciones porque:
 
-### Docker Image {:#docker-image}
+- Elimina problemas de "en mi máquina funciona".
+- Proporciona entornos consistentes para desarrollo, testing y producción.
+- Simplifica el despliegue y escalado de aplicaciones.
+- Permite aislamiento y seguridad de procesos.
+- Acelera la integración y entrega continua (CI/CD).
 
-Es un archivo compuesto de múltiples capas, empleado para ejecutar un
-contenedor Docker [[1](#what-is-docker)]. Es un paquete de software ejecutable
-que contiene todo lo necesario para correr la aplicación. Esta imagen informa cómo un contenedor debe inicializarse, determinando qué software debe ejecutarse y de qué forma.
+---
 
-### Docker Container {:#docker-container}
+## Casos de uso comunes
 
-Un contenedor Docker es una instancia
-*runtime* de una imagen Docker [[1](#what-is-docker)]. Contiene todo el kit requerido para una aplicación, y permite ser ejecutada de forma aislada.
+- **Microservicios**: cada servicio corre en su contenedor.
+- **Entornos de desarrollo reproducibles**.
+- **Automatización de pruebas**.
+- **Despliegue en la nube**.
+- **Simulación de arquitecturas complejas** (con `Docker Compose`).
+- **Contenedorización de bases de datos, APIs, servicios web**.
 
-# Referencias Bibliográficas
+---
 
-1. *What is Docker?*. (22 de abril de 2025). Geeks for Geeks. <a
-   id="what-is-docker" href="https://www.geeksforgeeks.org/introduction-to-docker/">https://www.geeksforgeeks.org/introduction-to-docker/</a>
+##  Componentes Clave
+
+### 1. Docker Engine
+
+El motor de Docker es el núcleo de Docker. Incluye:
+
+- **Servidor (dockerd)**: daemon que gestiona contenedores.
+- **CLI (docker)**: cliente de línea de comandos.
+- **API REST**: permite controlar Docker desde otras herramientas.
+
+### 2. Imágenes
+
+Las imágenes Docker son plantillas inmutables que contienen el sistema de archivos y la configuración de una aplicación. Se crean a partir de un `Dockerfile`.
+
+### 3. Contenedores
+
+Un contenedor es una instancia en ejecución de una imagen. Se puede detener, iniciar, reiniciar, destruir, etc.
+
+```bash
+docker run nginx
+docker ps
+docker stop <id>
+```
+
+---
+
+## Dockerfile
+
+Un `Dockerfile` es un archivo de texto que contiene instrucciones para construir una imagen Docker personalizada.
+
+### Ejemplo de Dockerfile
+
+```dockerfile
+# Imagen base
+FROM node:18
+
+# Directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copiar dependencias
+COPY package*.json ./
+
+# Instalar dependencias
+RUN npm install
+
+# Copiar el resto del código
+COPY . .
+
+# Puerto expuesto
+EXPOSE 3000
+
+# Comando de inicio
+CMD ["npm", "start"]
+```
+
+### Instrucciones comunes
+
+| Instrucción | Descripción |
+|------------|-------------|
+| `FROM`     | Imagen base (ej: node, python, ubuntu) |
+| `COPY`     | Copia archivos al contenedor |
+| `RUN`      | Ejecuta comandos en la creación |
+| `CMD`      | Comando por defecto al iniciar el contenedor |
+| `EXPOSE`   | Indica qué puerto usará la app |
+| `WORKDIR`  | Cambia el directorio de trabajo |
+
+---
+
+##  Docker Compose
+
+Docker Compose permite definir y ejecutar aplicaciones **multicontenedor** con un solo archivo YAML (`docker-compose.yml`). Es ideal para orquestar varios servicios como API, frontend, base de datos, etc.
+
+### Ejemplo de archivo `docker-compose.yml`
+
+```yaml
+version: '3.9'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: mydb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+```
+
+### Comandos comunes
+
+```bash
+docker-compose up         # Levanta todos los servicios
+docker-compose down       # Detiene y elimina los contenedores
+docker-compose build      # Construye imágenes
+docker-compose logs       # Muestra logs
+docker-compose ps         # Lista servicios activos
+```
+
+---
+
+## Buenas prácticas
+
+- Usa `.dockerignore` como `.gitignore` para evitar copiar archivos innecesarios.
+- Minimiza el número de capas (`RUN` y `COPY`).
+- Usa imágenes oficiales y ligeras (por ejemplo: `node:alpine`).
+- Evita correr como root dentro del contenedor.
+- Utiliza variables de entorno seguras (con archivos `.env` y `secrets`).
+
+---
+
+##  Recursos adicionales
+
+- Sitio oficial: https://www.docker.com
+- Docker Hub (imágenes): https://hub.docker.com
+- Documentación oficial: https://docs.docker.com
+
+---
+
+##  Conclusión
+
+Docker es una herramienta esencial en el desarrollo moderno. Su capacidad para contener y aislar aplicaciones facilita el desarrollo, testing, y despliegue en cualquier entorno, desde laptops hasta clústeres en la nube.
