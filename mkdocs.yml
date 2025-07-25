@@ -43,31 +43,31 @@ nav:
   - Inicio: index.md
   - Conceptos Básicos:
       - Almacenamiento:
-          - RAID: storage/raid.md
+          - RAID: concepts/storage/raid.md
       - Virtualización:
           - Contenedores:
-              - Docker: virtualization/containers/docker.md
-          - Máquinas virtuales: virtualization/virtual-machines.md
-          - Servidores virtuales: virtualization/virtual-servers.md
+              - Docker: concepts/virtualization/containers/docker.md
+          - Máquinas virtuales: concepts/virtualization/virtual-machines.md
+          - Servidores virtuales: concepts/virtualization/virtual-servers.md
       - Empaquetadores:
-          - Vite: bundlers/vite.md
+          - Vite: concepts/bundlers/vite.md
       - Sistemas de Gestión:
-          - PM2: management-systems/pm2.md
-          - CMS: management-systems/cms.md
+          - PM2: concepts/management-systems/pm2.md
+          - CMS: concepts/management-systems/cms.md
       - Redes:
-          - Dominio: network/domain.md
-          - IP Pública: network/public-ip.md
-          - Port Forwarding: network/port-forwarding.md
+          - Dominio: concepts/network/domain.md
+          - IP Pública: concepts/network/public-ip.md
+          - Port Forwarding: concepts/network/port-forwarding.md
           - Protocolos:
               - Seguridad:
-                  - SSL/TLS: network/protocols/security/ssl-tls.md
+                  - SSL/TLS: concepts/network/protocols/security/ssl-tls.md
           - Seguridad:
               - Firewall:
-                  - UFW: network/security/firewall/ufw.md
+                  - UFW: concepts/network/security/firewall/ufw.md
           - Hosting:
-              - Apache: network/hosting/apache.md
-              - Nginx: network/hosting/nginx.md
-              - Virtual Host: network/hosting/virtual-host.md
+              - Apache: concepts/network/hosting/apache.md
+              - Nginx: concepts/network/hosting/nginx.md
+              - Virtual Host: concepts/network/hosting/virtual-host.md
 
   - Manual de Sistema:
       - Introducción: manual/index.md

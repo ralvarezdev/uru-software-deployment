@@ -19,7 +19,7 @@ Ejemplo: `api.misitio.com`
 - `api`: Subdominio (opcional)
 
 <div class="center">
-    <img src="../assets/images/logo/domain.png" alt="Logo de Dominio" class="logo--3rd-party">
+    <img src="../../assets/images/logo/domain.png" alt="Logo de Dominio" class="logo--3rd-party">
 </div>
 
 ## ¿Por qué es importante un dominio?

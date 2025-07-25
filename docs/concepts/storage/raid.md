@@ -5,7 +5,7 @@ RAID es un término utilizado en informática, cuyas siglas vienen del inglés *
 A nivel empresarial, es muy utilizado a la hora de configurar el almacenamiento de servidores NAS y aplicaciones. Ofrece mayor tolerancia a fallos y más altos niveles de rendimiento que un solo disco duro o un grupo de discos duros independientes.
 
 <div class="center">
-    <img src="../assets/images/servers/server-var1.png" alt="Servidor configurado con RAID" class="server--image">
+    <img src="../../assets/images/servers/server-var1.png" alt="Servidor configurado con RAID" class="server--image">
     <i>Servidor configurado con RAID</i>
 </div>
 
@@ -27,7 +27,7 @@ Básicamente, tenemos dos tipos de configuraciones, como son las siguientes [[2]
 ### RAID 0 {:#raid0}
 
 <div class="center">
-    <img src="../assets/images/raid/raid0.png" alt="RAID 0" class="raid--image--small">
+    <img src="../../assets/images/raid/raid0.png" alt="RAID 0" class="raid--image--small">
     <i>RAID 0</i>
 </div>
 
@@ -43,7 +43,7 @@ Sin embargo, ofrece un alto rendimiento en lectura y escritura, ya que los datos
 ### RAID 1 {:#raid1}
 
 <div class="center">
-    <img src="../assets/images/raid/raid1.png" alt="RAID 1" class="raid--image--small">
+    <img src="../../assets/images/raid/raid1.png" alt="RAID 1" class="raid--image--small">
     <i>RAID 1</i>
 </div>
 
@@ -57,7 +57,7 @@ Ofrece una **rápida recuperación tras un fallo de la unidad**, por tanto, es u
 ### RAID 5 {:#raid5}
 
 <div class="center">
-    <img src="../assets/images/raid/raid5.png" alt="RAID 5" class="raid--image--medium">
+    <img src="../../assets/images/raid/raid5.png" alt="RAID 5" class="raid--image--medium">
     <i>RAID 5</i>
 </div>
 
@@ -71,7 +71,7 @@ Utiliza la paridad para recuperar los datos. Se dividen los datos en bloques en 
 ### RAID 6 {:#raid6}
 
 <div class="center">
-    <img src="../assets/images/raid/raid6.png" alt="RAID 6" class="raid--image--big">
+    <img src="../../assets/images/raid/raid6.png" alt="RAID 6" class="raid--image--big">
     <i>RAID 6</i>
 </div>
 
@@ -82,7 +82,7 @@ Es similar al RAID 5 e incluye un disco de reserva que entra en funcionamiento u
 ### RAID 10 (RAID 1 + RAID 0) {:#raid10}
 
 <div class="center">
-    <img src="../assets/images/raid/raid10.png" alt="RAID 10" class="raid--image--medium">
+    <img src="../../assets/images/raid/raid10.png" alt="RAID 10" class="raid--image--medium">
     <i>RAID 10</i>
 </div>
 
@@ -91,7 +91,7 @@ RAID 10, también conocido como **RAID 1 + 0**, es una configuración avanzada q
 ### RAID 50 (RAID 5 + RAID 0) {:#raid50}
 
 <div class="center">
-    <img src="../assets/images/raid/raid50.png" alt="RAID 50" class="raid--image--big">
+    <img src="../../assets/images/raid/raid50.png" alt="RAID 50" class="raid--image--big">
     <i>RAID 50</i>
 </div>
 
@@ -102,7 +102,7 @@ Tiene como tolerancia a fallos de 1 disco por cada grupo de discos RAID 5, lo qu
 ### RAID 60 (RAID 6 + RAID 0) {:#raid60}
 
 <div class="center">
-    <img src="../assets/images/raid/raid60.png" alt="RAID 60" class="raid--image--big">
+    <img src="../../assets/images/raid/raid60.png" alt="RAID 60" class="raid--image--big">
     <i>RAID 60</i>
 </div>
 
@@ -113,7 +113,7 @@ Se necesitan como mínimo 8 discos, con la posibilidad de que se puedan estropea
 El Hot Swap es una técnica permite sustituir el disco averiado por uno nuevo, sin necesidad de desconectar o apagar el servidor, para luego poder reconstruir la información.
 
 <div class="center">
-	<img src="../assets/images/raid/hot-swap.jpg" alt="Hot Swap" class="raid--image--small">
+	<img src="../../assets/images/raid/hot-swap.jpg" alt="Hot Swap" class="raid--image--small">
 	<i>Hot Swap</i>
 </div>
 
@@ -133,7 +133,7 @@ Los discos se conectan a la placa o a una controladora, y es el procesador y el 
 ### Por Hardware {:#por-hardware}
 
 <div class="center">
-	<img src="../assets/images/raid/x4ttx-dell-perc-h730p-raid-controller.png" alt="Controladora RAID X4TTX Dell PERC H730P" class="raid--image--big">
+	<img src="../../assets/images/raid/x4ttx-dell-perc-h730p-raid-controller.png" alt="Controladora RAID X4TTX Dell PERC H730P" class="raid--image--big">
 	<i>Controladora RAID X4TTX Dell PERC H730P</i>
 </div>
 

@@ -3,7 +3,7 @@
 ## ¿Qué es Nginx? {:#que-es-nginx}
 
 <div class="center">
-	<img src="../../assets/images/logo/nginx.png" alt="Logo de Nginx" class="logo--3rd-party">
+	<img src="../../../assets/images/logo/nginx.png" alt="Logo de Nginx" class="logo--3rd-party">
 	<i>Logo de Nginx</i>
 </div>
 

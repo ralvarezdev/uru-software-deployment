@@ -3,7 +3,7 @@
 ## Definición {:#definicion}
 
 <div class="center">
-	<img src="../assets/images/logo/microsoft-hyper-v.png" alt="Logo de Microsoft Hyper-V" class="logo--3rd-party">
+	<img src="../../assets/images/logo/microsoft-hyper-v.png" alt="Logo de Microsoft Hyper-V" class="logo--3rd-party">
 	<i>Logo de Microsoft Hyper-V</i>
 </div>
 
@@ -12,7 +12,7 @@ Una **máquina virtual (VM)** es una emulación completa de un sistema operativo
 ## Propósito General {:#proposito-general}
 
 <div class="center">
-	<img src="../assets/images/logo/vmware.png" alt="Logo de WMware" class="logo--3rd-party">
+	<img src="../../assets/images/logo/vmware.png" alt="Logo de WMware" class="logo--3rd-party">
 	<i>Logo de VMware</i>
 </div>
 
@@ -36,7 +36,7 @@ Las VM están diseñadas para ejecutar cualquier sistema operativo y software co
 ## Tipos de Hipervisores {:#tipos-de-hipervisores}
 
 <div class="center">
-	<img src="../assets/images/logo/virtualbox.png" alt="Logo de VirtualBox" class="logo--3rd-party">
+	<img src="../../assets/images/logo/virtualbox.png" alt="Logo de VirtualBox" class="logo--3rd-party">
 	<i>Logo de VirtualBox</i>
 </div>
 

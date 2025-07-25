@@ -3,7 +3,7 @@
 ## ¿Qué es un Servidor Virtual? {:#que-es-un-servidor-virtual}
 
 <div class="center">
-	<img src="../assets/images/logo/aws.png" alt="Logo de AWS" class="logo--3rd-party">
+	<img src="../../assets/images/logo/aws.png" alt="Logo de AWS" class="logo--3rd-party">
 	<i>Logo de AWS</i>
 </div>
 
@@ -15,7 +15,7 @@ Un **servidor virtual**, o **VPS (Virtual Private Server)**, es una instancia de
 ## ¿Cómo Funciona un VPS? {:#como-funciona-un-vps}
 
 <div class="center">
-	<img src="../assets/images/logo/linode.png" alt="Logo de Linode" class="logo--3rd-party">
+	<img src="../../assets/images/logo/linode.png" alt="Logo de Linode" class="logo--3rd-party">
 	<i>Logo de Linode</i>
 </div>
 
@@ -32,7 +32,7 @@ Un proveedor (como DigitalOcean, AWS o Linode) utiliza un hipervisor para dividi
 ## Tipos de Servidores Virtuales {:#tipos-de-servidores-virtuales}
 
 <div class="center">
-	<img src="../assets/images/logo/google-cloud.png" alt="Logo de Google Cloud" class="logo--3rd-party">
+	<img src="../../assets/images/logo/google-cloud.png" alt="Logo de Google Cloud" class="logo--3rd-party">
 	<i>Logo de Google Cloud</i>
 </div>
 
@@ -70,7 +70,7 @@ Un proveedor (como DigitalOcean, AWS o Linode) utiliza un hipervisor para dividi
 ## Usos Comunes del VPS {:#usos-comunes-del-vps}
 
 <div class="center">
-	<img src="../assets/images/logo/digitalocean.png" alt="Logo de DigitalOcean" class="logo--3rd-party">
+	<img src="../../assets/images/logo/digitalocean.png" alt="Logo de DigitalOcean" class="logo--3rd-party">
 	<i>Logo de DigitalOcean</i>
 </div>
 
