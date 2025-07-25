@@ -1,3 +1,18 @@
+
+<div class="center">
+    <img src="../../../assets/images/logo/cloudflare.png" alt="Logo de cloudflare" class="server--image">
+    <i>Logo de Cloudflare</i>
+</div>
+
+## Obtención de dominio
+
+Para efectos de este proyecto, se empleó el dominio `ralvarez.dev` obtenido en Cloudflare como base para el acceso externo y la publicación segura de la aplicación, asegurando un control centralizado y profesional sobre el entorno de despliegue.
+
+<div class="center">
+    <img src="../../../assets/images/manual/domain.png" alt="Dominio" class="server--image">
+    <i>Dominio ralvarez.dev</i>
+</div>
+
 ## Configuración de Red y Acceso Externo
 
 Para permitir el acceso remoto a la aplicación JokeAppWeb desde fuera de la red local, se realizó la configuración de un dominio dinámico mediante la plataforma No-IP, utilizando como dominio principal: `ralvarez.dev`.
@@ -92,11 +107,10 @@ El servicio No-IP no abre puertos automáticamente, por lo que fue necesario rea
 
 Se configuró una entrada para redirigir conexiones externas al servicio SSH del servidor:
 
-- **Service Name:** SSH
-- **Device IP Address:** 192.168.1.106s
-- **External Port:** 53479
-- **Internal Port:** 22
-- **Protocol:** TCP
+<div class="center">
+    <img src="../../../assets/images/manual/ssh-service.png" alt="Port forwarding" class="server--image">
+    <i>Servicio SSH</i>
+</div>
 
 Esta configuración permite acceder de forma remota al servidor vía SSH usando el puerto externo 53479, lo cual es una estrategia útil y segura al evitar el puerto 22 por defecto.
 
@@ -104,12 +118,10 @@ Esta configuración permite acceder de forma remota al servidor vía SSH usando 
 
 También se configuró un reenvío de puerto para publicar un servicio HTTP personalizado:
 
-- **Service Name:** HTTP
-- **Device IP Address:** 192.168.1.100
-- **External Port:** 40842
-- **Internal Port:** 52318
-- **Protocol:** TCP
-
+<div class="center">
+    <img src="../../../assets/images/manual/http-service.png" alt="Port forwarding" class="server--image">
+    <i>Servicio HTTP</i>
+</div>
 Esta configuración indica que se está publicando un servicio web desde un puerto interno (52318) accesible desde Internet a través del puerto externo 40842.
 
 ### Verificación del acceso remoto
@@ -120,6 +132,11 @@ Tras realizar la configuración de dominio dinámico, port forwarding y ejecuci�
 - Se comprobó el acceso a la aplicación web mediante el nombre de dominio.
 - Se validó la conectividad remota al servidor vía SSH usando el puerto externo configurado.
 - La plataforma de No-IP indicó que la configuración DDNS y de red está funcionando correctamente.
+
+<div class="center">
+    <img src="../../../assets/images/manual/no-ip.png" alt="No-ip" class="server--image">
+    <i>Verificación del acceso remoto</i>
+</div>
 
 
 ## Integración con Cloudflare Tunnel y configuración HTTPS
@@ -132,10 +149,10 @@ Esto permite encapsular el tráfico hacia un servidor en red local (detrás de N
 
 La configuración se realizó en la sección Tunnels del panel de control de Cloudflare, dentro del dominio principal `ralvarez.dev`, bajo un proyecto llamado `deploying-jokes`.
 
-**Detalles técnicos del túnel:**
-- **Subdominio configurado:** `deploying-jokes.ralvarez.dev`
-- **Tipo de servicio:** HTTP
-- **Destino local del túnel:** `ralvarezdev.ddns.net:40842`
+<div class="center">
+    <img src="../../../assets/images/manual/cloudflare-tunnels.png" alt="cloudflare tunnels" class="server--image">
+    <i>Configuración del cloudflare tunnels</i>
+</div>
 
 Este puerto (40842) corresponde al configurado previamente en el router para hacer port forwarding hacia el servidor web interno donde corre la aplicación. La dirección `ralvarezdev.ddns.net` es provista por No-IP, lo que garantiza la continuidad del enlace incluso si la IP pública cambia.
 
