@@ -81,12 +81,12 @@ if __name__ == "__main__":
         sql_inserts = generate_sql_inserts(extracted_text_list, table_name=target_table)
 
         # 3. Save SQL statements to a file
-        print("\nGenerated SQL INSERT Statements.")
+        print("Generated SQL INSERT Statements.")
         output_sql_file = 'jokes_inserts.sql'
         try:
             with open(output_sql_file, 'w', encoding='utf-8') as f:
                 for sql in sql_inserts:
                     f.write(sql + '\n')
-            print(f"\nSQL INSERT statements saved to '{output_sql_file}'.")
+            print(f"SQL INSERT statements saved to '{output_sql_file}'.")
         except IOError as e:
             print(f"Error saving SQL to file: {e}")
