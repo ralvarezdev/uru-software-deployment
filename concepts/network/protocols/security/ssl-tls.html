@@ -13,25 +13,25 @@
       
       
       
-        <link rel="prev" href="apache.html">
+        <link rel="prev" href="../../port-forwarding.html">
       
       
-        <link rel="next" href="virtual-host.html">
+        <link rel="next" href="../../security/firewall/ufw.html">
       
       
-      <link rel="icon" href="../../assets/images/favicon/favicon.ico">
+      <link rel="icon" href="../../../../assets/images/favicon/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Nginx - Despliegue de Software</title>
+        <title>SSL/TLS - Despliegue de Software</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nginx" class="md-skip">
+        <a href="#que-es-ssltls" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../../index.html" title="Despliegue de Software" class="md-header__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
+    <a href="../../../../index.html" title="Despliegue de Software" class="md-header__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
       
-  <img src="../../assets/images/logo/uru-var2.png" alt="logo">
+  <img src="../../../../assets/images/logo/uru-var2.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nginx
+              SSL/TLS
             
           </span>
         </div>
@@ -239,9 +239,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Despliegue de Software" class="md-nav__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
+    <a href="../../../../index.html" title="Despliegue de Software" class="md-nav__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
       
-  <img src="../../assets/images/logo/uru-var2.png" alt="logo">
+  <img src="../../../../assets/images/logo/uru-var2.png" alt="logo">
 
     </a>
     Despliegue de Software
@@ -268,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../../../index.html" class="md-nav__link">
         
   
   
@@ -368,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../storage/raid.html" class="md-nav__link">
+      <a href="../../../storage/raid.html" class="md-nav__link">
         
   
   
@@ -475,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../virtualization/containers/docker.html" class="md-nav__link">
+      <a href="../../../virtualization/containers/docker.html" class="md-nav__link">
         
   
   
@@ -506,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../virtualization/virtual-machines.html" class="md-nav__link">
+      <a href="../../../virtualization/virtual-machines.html" class="md-nav__link">
         
   
   
@@ -529,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../virtualization/virtual-servers.html" class="md-nav__link">
+      <a href="../../../virtualization/virtual-servers.html" class="md-nav__link">
         
   
   
@@ -598,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bundlers/vite.html" class="md-nav__link">
+      <a href="../../../bundlers/vite.html" class="md-nav__link">
         
   
   
@@ -667,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../management-systems/pm2.html" class="md-nav__link">
+      <a href="../../../management-systems/pm2.html" class="md-nav__link">
         
   
   
@@ -690,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../management-systems/cms.html" class="md-nav__link">
+      <a href="../../../management-systems/cms.html" class="md-nav__link">
         
   
   
@@ -761,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../domain.html" class="md-nav__link">
+      <a href="../../domain.html" class="md-nav__link">
         
   
   
@@ -784,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../public-ip.html" class="md-nav__link">
+      <a href="../../public-ip.html" class="md-nav__link">
         
   
   
@@ -807,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../port-forwarding.html" class="md-nav__link">
+      <a href="../../port-forwarding.html" class="md-nav__link">
         
   
   
@@ -827,18 +827,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5_4" id="__nav_2_5_4_label" tabindex="0">
@@ -854,7 +856,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5_4">
             <span class="md-nav__icon md-icon"></span>
             Protocolos
@@ -865,18 +867,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_4_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_4_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5_4_1" id="__nav_2_5_4_1_label" tabindex="0">
@@ -892,7 +896,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_4_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_4_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5_4_1">
             <span class="md-nav__icon md-icon"></span>
             Seguridad
@@ -903,10 +907,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../protocols/security/ssl-tls.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SSL/TLS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ssl-tls.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -917,6 +941,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-ssltls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es SSL/TLS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-que-sirve-ssltls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Para qué sirve SSL/TLS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de uso comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionamiento-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionamiento general
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1021,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../security/firewall/ufw.html" class="md-nav__link">
+      <a href="../../security/firewall/ufw.html" class="md-nav__link">
         
   
   
@@ -1057,20 +1144,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6" >
         
           
           <label class="md-nav__link" for="__nav_2_5_6" id="__nav_2_5_6_label" tabindex="0">
@@ -1086,7 +1171,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5_6">
             <span class="md-nav__icon md-icon"></span>
             Hosting
@@ -1100,7 +1185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="apache.html" class="md-nav__link">
+      <a href="../../hosting/apache.html" class="md-nav__link">
         
   
   
@@ -1120,32 +1205,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Nginx
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="nginx.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../hosting/nginx.html" class="md-nav__link">
         
   
   
@@ -1156,125 +1219,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#que-es-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Qué es Nginx?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#para-que-sirve-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Para qué Sirve Nginx?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arquitectura-de-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arquitectura de Nginx
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#casos-de-uso-comunes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Casos de Uso Comunes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ejemplo-de-configuracion-basica-como-proxy-inverso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplo de configuración básica como proxy inverso
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#balanceo-de-carga" class="md-nav__link">
-    <span class="md-ellipsis">
-      Balanceo de Carga
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmos-soportados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Algoritmos Soportados
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#soporte-para-https-tls-ssl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Soporte para HTTPS (TLS/SSL)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ventajas-de-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas de Nginx
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diferencias-con-apache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diferencias con Apache
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seguridad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Seguridad
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1287,7 +1231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="virtual-host.html" class="md-nav__link">
+      <a href="../../hosting/virtual-host.html" class="md-nav__link">
         
   
   
@@ -1371,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/index.html" class="md-nav__link">
+      <a href="../../../../manual/index.html" class="md-nav__link">
         
   
   
@@ -1394,7 +1338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/system-description.html" class="md-nav__link">
+      <a href="../../../../manual/system-description.html" class="md-nav__link">
         
   
   
@@ -1417,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/system-requirements.html" class="md-nav__link">
+      <a href="../../../../manual/system-requirements.html" class="md-nav__link">
         
   
   
@@ -1440,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/installation.html" class="md-nav__link">
+      <a href="../../../../manual/installation.html" class="md-nav__link">
         
   
   
@@ -1501,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/configuration/network/domain.html" class="md-nav__link">
+      <a href="../../../../manual/configuration/network/domain.html" class="md-nav__link">
         
   
   
@@ -1524,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/configuration/nginx.html" class="md-nav__link">
+      <a href="../../../../manual/configuration/nginx.html" class="md-nav__link">
         
   
   
@@ -1547,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/configuration/security/ufw.html" class="md-nav__link">
+      <a href="../../../../manual/configuration/security/ufw.html" class="md-nav__link">
         
   
   
@@ -1570,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/configuration/security/https.html" class="md-nav__link">
+      <a href="../../../../manual/configuration/security/https.html" class="md-nav__link">
         
   
   
@@ -1639,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../manual/common-errors.html" class="md-nav__link">
+      <a href="../../../../manual/common-errors.html" class="md-nav__link">
         
   
   
@@ -1687,8 +1631,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1697,27 +1639,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-nginx" class="md-nav__link">
+  <a href="#que-es-ssltls" class="md-nav__link">
     <span class="md-ellipsis">
-      ¿Qué es Nginx?
+      ¿Qué es SSL/TLS?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#para-que-sirve-nginx" class="md-nav__link">
+  <a href="#para-que-sirve-ssltls" class="md-nav__link">
     <span class="md-ellipsis">
-      ¿Para qué Sirve Nginx?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arquitectura-de-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arquitectura de Nginx
+      ¿Para qué sirve SSL/TLS?
     </span>
   </a>
   
@@ -1726,70 +1659,25 @@
         <li class="md-nav__item">
   <a href="#casos-de-uso-comunes" class="md-nav__link">
     <span class="md-ellipsis">
-      Casos de Uso Comunes
+      Casos de uso comunes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejemplo-de-configuracion-basica-como-proxy-inverso" class="md-nav__link">
+  <a href="#funcionamiento-general" class="md-nav__link">
     <span class="md-ellipsis">
-      Ejemplo de configuración básica como proxy inverso
+      Funcionamiento general
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#balanceo-de-carga" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Balanceo de Carga
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#algoritmos-soportados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Algoritmos Soportados
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#soporte-para-https-tls-ssl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Soporte para HTTPS (TLS/SSL)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ventajas-de-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas de Nginx
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diferencias-con-apache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diferencias con Apache
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seguridad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Seguridad
+      Conclusión
     </span>
   </a>
   
@@ -1814,181 +1702,39 @@
   
 
 
-<h1 id="nginx">Nginx</h1>
-<h2 id="que-es-nginx">¿Qué es Nginx?</h2>
-<div class="center">
-    <img src="../../assets/images/logo/nginx.png" alt="Logo de Nginx" class="logo--3rd-party">
-    <i>Logo de Nginx</i>
-</div>
+  <h1>SSL/TLS</h1>
 
-<p><strong>Nginx</strong> es un servidor web de alto rendimiento, de código abierto, que también actúa como:</p>
-<ul>
-<li>Proxy inverso</li>
-<li>Balanceador de carga</li>
-<li>Servidor de archivos estáticos</li>
-<li>Terminador TLS/SSL</li>
-<li>Caché de contenido</li>
-<li>Gateway de aplicaciones</li>
-</ul>
-<p>Fue desarrollado por Igor Sysoev en 2004 y es ampliamente utilizado por su eficiencia en la gestión de múltiples conexiones concurrentes gracias a su arquitectura basada en eventos y no bloqueante.</p>
-<h2 id="para-que-sirve-nginx">¿Para qué Sirve Nginx?</h2>
-<table>
-<thead>
-<tr>
-<th>Funcionalidad</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Servidor Web</td>
-<td>Sirve archivos estáticos (HTML, CSS, JS, imágenes).</td>
-</tr>
-<tr>
-<td>Proxy Inverso</td>
-<td>Redirige solicitudes al backend (por ejemplo, Node.js, Python, etc.).</td>
-</tr>
-<tr>
-<td>Balanceador de Carga</td>
-<td>Distribuye tráfico entre varios servidores para mejorar rendimiento.</td>
-</tr>
-<tr>
-<td>Terminador TLS/SSL</td>
-<td>Gestiona conexiones HTTPS y maneja certificados.</td>
-</tr>
-<tr>
-<td>Caché de contenido</td>
-<td>Guarda respuestas en memoria o disco para acelerar tiempos de carga.</td>
-</tr>
-<tr>
-<td>Redirección y Reescritura</td>
-<td>Permite reescribir URLs o redirigir tráfico según reglas.</td>
-</tr>
-<tr>
-<td>Protección y Seguridad</td>
-<td>Controla acceso, oculta tecnologías backend y limita el ancho de banda.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="arquitectura-de-nginx">Arquitectura de Nginx</h2>
-<p>Nginx usa un modelo <strong>asíncrono y basado en eventos</strong> con procesos worker. Esto permite manejar miles de conexiones simultáneas con pocos recursos:</p>
-<ul>
-<li><strong>Proceso maestro</strong>: carga configuración y gestiona procesos worker.</li>
-<li><strong>Procesos worker</strong>: manejan las conexiones de red reales.</li>
-</ul>
-<h2 id="casos-de-uso-comunes">Casos de Uso Comunes</h2>
+<h2 id="que-es-ssltls">¿Qué es SSL/TLS?</h2>
+<p><strong>SSL</strong> (Secure Sockets Layer) y <strong>TLS</strong> (Transport Layer Security) son protocolos criptográficos diseñados para <strong>proteger la comunicación entre dos sistemas a través de una red</strong>, generalmente Internet. TLS es el sucesor de SSL y, aunque muchas veces se utilizan como sinónimos, actualmente el protocolo estándar es TLS (en versiones modernas como TLS 1.2 o TLS 1.3), ya que SSL ha quedado obsoleto por razones de seguridad.</p>
+<p>Estos protocolos aseguran que los datos enviados entre un cliente (como un navegador web) y un servidor no puedan ser leídos, modificados o interceptados por terceros.</p>
+<h2 id="para-que-sirve-ssltls">¿Para qué sirve SSL/TLS?</h2>
+<p>SSL/TLS cumple principalmente con tres objetivos:</p>
 <ol>
-<li>
-<p><strong>Frontend + Backend</strong>: Nginx sirve los archivos frontend (React, Angular, Vue) y redirige <code>/api</code> al backend.</p>
-</li>
-<li>
-<p><strong>Microservicios</strong>: Redirige peticiones a distintos contenedores o servidores según la ruta o subdominio.</p>
-</li>
-<li>
-<p><strong>Certificados SSL</strong>: Nginx maneja TLS/SSL y se comunica con los backends en HTTP.</p>
-</li>
-<li>
-<p><strong>Balanceo de carga</strong>: Distribuye tráfico entre varios servidores (round-robin, least_conn, ip_hash).</p>
-</li>
-<li>
-<p><strong>Gateway para contenedores</strong>: Punto de entrada para servicios en Docker o Kubernetes.</p>
-</li>
+<li><strong>Cifrado</strong>: Los datos transmitidos están protegidos y no pueden ser leídos por intermediarios.</li>
+<li><strong>Autenticación</strong>: Verifica la identidad del servidor (y opcionalmente del cliente) mediante certificados digitales.</li>
+<li><strong>Integridad</strong>: Asegura que los datos no sean alterados durante la transmisión.</li>
 </ol>
-<h2 id="ejemplo-de-configuracion-basica-como-proxy-inverso">Ejemplo de configuración básica como proxy inverso</h2>
-<div class="highlight"><pre><span></span><code><span class="k">server</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">midominio.com</span><span class="p">;</span>
-
-<span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://localhost:3000</span><span class="p">;</span>
-<span class="w">        </span><span class="kn">proxy_http_version</span><span class="w"> </span><span class="mi">1</span><span class="s">.1</span><span class="p">;</span>
-<span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
-<span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="balanceo-de-carga">Balanceo de Carga</h2>
-<div class="highlight"><pre><span></span><code><span class="k">upstream</span><span class="w"> </span><span class="s">mi_cluster</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kn">server</span><span class="w"> </span><span class="n">backend1</span><span class="p">:</span><span class="mi">3000</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">server</span><span class="w"> </span><span class="n">backend2</span><span class="p">:</span><span class="mi">3000</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="k">server</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://mi_cluster</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="algoritmos-soportados">Algoritmos Soportados</h2>
+<p>En esencia, SSL/TLS <strong>proporciona una conexión segura sobre protocolos como HTTP, SMTP, FTP, etc.</strong> El ejemplo más común es <strong>HTTPS</strong>, que es HTTP sobre TLS.</p>
+<h2 id="casos-de-uso-comunes">Casos de uso comunes</h2>
 <ul>
-<li><code>round-robin</code> (por defecto)</li>
-<li><code>least_conn</code></li>
-<li><code>ip_hash</code></li>
+<li><strong>Navegación web segura (HTTPS)</strong>: Protección de credenciales, formularios, cookies y datos personales.</li>
+<li><strong>Correos electrónicos (SMTPS, IMAPS, POP3S)</strong>: Cifrado del contenido del correo y autenticación del servidor de correo.</li>
+<li><strong>VPNs</strong>: Algunas VPN utilizan TLS como parte de su mecanismo de seguridad (como OpenVPN).</li>
+<li><strong>Conexiones seguras en APIs REST y SOAP</strong>: Protección de comunicaciones entre servicios y aplicaciones.</li>
+<li><strong>Autenticación de clientes y servidores mediante certificados digitales</strong>: En sistemas corporativos o financieros.</li>
+<li><strong>Protocolo LDAP seguro (LDAPS)</strong>: Usado en entornos de directorios para autenticación segura.</li>
 </ul>
-<h2 id="soporte-para-https-tls-ssl">Soporte para HTTPS (TLS/SSL)</h2>
-<div class="highlight"><pre><span></span><code><span class="k">server</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">midominio.com</span><span class="p">;</span>
-
-<span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">/etc/nginx/ssl/fullchain.pem</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/nginx/ssl/privkey.pem</span><span class="p">;</span>
-
-<span class="w">    </span><span class="kn">ssl_protocols</span><span class="w"> </span><span class="s">TLSv1.2</span><span class="w"> </span><span class="s">TLSv1.3</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">ssl_ciphers</span><span class="w"> </span><span class="s">HIGH:!aNULL:!MD5</span><span class="p">;</span>
-
-<span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://localhost:3000</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="ventajas-de-nginx">Ventajas de Nginx</h2>
-<ul>
-<li>Altamente eficiente y ligero</li>
-<li>Escalable con pocos recursos</li>
-<li>Compatible con HTTP/1.1, HTTP/2 y TLS</li>
-<li>Popular en entornos de alta demanda (empresas como Netflix, Dropbox, GitHub lo usan)</li>
-<li>Gran soporte para contenedores (Docker)</li>
-</ul>
-<h2 id="diferencias-con-apache">Diferencias con Apache</h2>
-<table>
-<thead>
-<tr>
-<th>Característica</th>
-<th>Nginx</th>
-<th>Apache</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Modelo de procesos</td>
-<td>Asíncrono, basado en eventos</td>
-<td>Multiproceso o multiproceso-thread</td>
-</tr>
-<tr>
-<td>Rendimiento estático</td>
-<td>Muy alto</td>
-<td>Bueno, pero menor que Nginx</td>
-</tr>
-<tr>
-<td>Reescrituras</td>
-<td>Menos flexible</td>
-<td>Muy potente con <code>.htaccess</code></td>
-</tr>
-<tr>
-<td>Uso de recursos</td>
-<td>Bajo</td>
-<td>Medio/alto</td>
-</tr>
-</tbody>
-</table>
-<h2 id="seguridad">Seguridad</h2>
-<ul>
-<li>Compatible con encabezados de seguridad (<code>X-Frame-Options</code>, <code>Content-Security-Policy</code>)</li>
-<li>Puede limitar ancho de banda por IP o ruta</li>
-<li>Permite autenticación básica o con JWT</li>
-<li>Se integra con firewalls de aplicaciones web (WAFs)</li>
-</ul>
+<h2 id="funcionamiento-general">Funcionamiento general</h2>
+<ol>
+<li><strong>Inicio de la conexión</strong>: Cliente y servidor inician un "handshake" TLS.</li>
+<li><strong>Intercambio de certificados</strong>: El servidor presenta su certificado digital.</li>
+<li><strong>Verificación del certificado</strong>: El cliente verifica que el certificado es válido y confiable.</li>
+<li><strong>Negociación de claves</strong>: Se establece una clave compartida para cifrar la sesión.</li>
+<li><strong>Transmisión cifrada</strong>: A partir de ahí, toda la comunicación es segura y cifrada.</li>
+</ol>
+<h2 id="conclusion">Conclusión</h2>
+<p>SSL/TLS es la base de la seguridad en Internet. A través del cifrado, la autenticación y la garantía de integridad, permite establecer canales seguros de comunicación entre clientes y servidores, lo que es fundamental para proteger información sensible como contraseñas, datos bancarios, archivos privados y más. Aunque el término SSL sigue usándose por costumbre, es TLS el protocolo que actualmente mantiene la seguridad de la web moderna, siendo indispensable para cualquier sitio o aplicación que maneje información de usuarios o realice transacciones en línea.</p>
+<p>Desde proteger una simple página web hasta asegurar sistemas complejos de autenticación o intercambio de datos entre servicios, <strong>TLS es un componente esencial de cualquier arquitectura segura en red</strong>.</p>
 
 
 
@@ -2018,7 +1764,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="apache.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Apache">
+          <a href="../../port-forwarding.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Port Forwarding">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2028,20 +1774,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Apache
+                Port Forwarding
               </div>
             </div>
           </a>
         
         
           
-          <a href="virtual-host.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Virtual Host">
+          <a href="../../security/firewall/ufw.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: UFW">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                Virtual Host
+                UFW
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2101,10 +1847,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["header.autohide", "navigation.footer"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>

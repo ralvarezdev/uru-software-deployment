@@ -13,25 +13,25 @@
       
       
       
-        <link rel="prev" href="public-ip.html">
+        <link rel="prev" href="domain.html">
       
       
-        <link rel="next" href="protocols/security/ssl-tls.html">
+        <link rel="next" href="port-forwarding.html">
       
       
-      <link rel="icon" href="../assets/images/favicon/favicon.ico">
+      <link rel="icon" href="../../assets/images/favicon/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Port Forwarding - Despliegue de Software</title>
+        <title>IP Pública - Despliegue de Software</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#que-es-el-port-forwarding" class="md-skip">
+        <a href="#que-es-una-ip-publica" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../index.html" title="Despliegue de Software" class="md-header__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
+    <a href="../../index.html" title="Despliegue de Software" class="md-header__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
       
-  <img src="../assets/images/logo/uru-var2.png" alt="logo">
+  <img src="../../assets/images/logo/uru-var2.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Port Forwarding
+              IP Pública
             
           </span>
         </div>
@@ -239,9 +239,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Despliegue de Software" class="md-nav__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
+    <a href="../../index.html" title="Despliegue de Software" class="md-nav__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
       
-  <img src="../assets/images/logo/uru-var2.png" alt="logo">
+  <img src="../../assets/images/logo/uru-var2.png" alt="logo">
 
     </a>
     Despliegue de Software
@@ -268,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -781,29 +781,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="public-ip.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    IP Pública
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -813,13 +790,15 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    Port Forwarding
+    IP Pública
     
   </span>
   
@@ -827,12 +806,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="port-forwarding.html" class="md-nav__link md-nav__link--active">
+      <a href="public-ip.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Port Forwarding
+    IP Pública
     
   </span>
   
@@ -845,6 +824,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -853,11 +834,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-el-port-forwarding" class="md-nav__link">
+  <a href="#caracteristicas" class="md-nav__link">
     <span class="md-ellipsis">
-      ¿Qué es el Port Forwarding?
+      Características
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Características">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -868,78 +864,35 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="¿Para qué sirve?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ejemplos-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplos de uso
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#donde-se-configura" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Dónde se configura?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-funciona" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Cómo funciona?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="¿Cómo funciona?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplo
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-port-forwarding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tipos de Port Forwarding
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seguridad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Seguridad
-    </span>
-  </a>
-  
 </li>
       
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="port-forwarding.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Port Forwarding
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1350,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/index.html" class="md-nav__link">
+      <a href="../../manual/index.html" class="md-nav__link">
         
   
   
@@ -1373,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/system-description.html" class="md-nav__link">
+      <a href="../../manual/system-description.html" class="md-nav__link">
         
   
   
@@ -1396,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/system-requirements.html" class="md-nav__link">
+      <a href="../../manual/system-requirements.html" class="md-nav__link">
         
   
   
@@ -1419,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/installation.html" class="md-nav__link">
+      <a href="../../manual/installation.html" class="md-nav__link">
         
   
   
@@ -1480,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/network/domain.html" class="md-nav__link">
+      <a href="../../manual/configuration/network/domain.html" class="md-nav__link">
         
   
   
@@ -1503,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/nginx.html" class="md-nav__link">
+      <a href="../../manual/configuration/nginx.html" class="md-nav__link">
         
   
   
@@ -1526,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/security/ufw.html" class="md-nav__link">
+      <a href="../../manual/configuration/security/ufw.html" class="md-nav__link">
         
   
   
@@ -1549,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/security/https.html" class="md-nav__link">
+      <a href="../../manual/configuration/security/https.html" class="md-nav__link">
         
   
   
@@ -1618,7 +1571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/common-errors.html" class="md-nav__link">
+      <a href="../../manual/common-errors.html" class="md-nav__link">
         
   
   
@@ -1666,6 +1619,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1674,11 +1629,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-el-port-forwarding" class="md-nav__link">
+  <a href="#caracteristicas" class="md-nav__link">
     <span class="md-ellipsis">
-      ¿Qué es el Port Forwarding?
+      Características
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Características">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1686,72 +1656,6 @@
   <a href="#para-que-sirve" class="md-nav__link">
     <span class="md-ellipsis">
       ¿Para qué sirve?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="¿Para qué sirve?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ejemplos-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplos de uso
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#donde-se-configura" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Dónde se configura?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-funciona" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Cómo funciona?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="¿Cómo funciona?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplo
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-port-forwarding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tipos de Port Forwarding
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#seguridad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Seguridad
     </span>
   </a>
   
@@ -1776,82 +1680,55 @@
   
 
 
-  <h1>Port Forwarding</h1>
-
-<h2 id="que-es-el-port-forwarding">¿Qué es el Port Forwarding?</h2>
-<p>Port forwarding (reenvío de puertos) es una técnica de red utilizada para redirigir solicitudes entrantes desde una IP pública y puerto específico hacia una dirección IP interna en una red privada, y opcionalmente a otro puerto.</p>
-<p>En términos simples, permite acceder desde el exterior a servicios alojados dentro de una red privada.</p>
+<h1 id="que-es-una-ip-publica">¿Qué es una IP Pública?</h1>
+<p>Una IP pública es una dirección única asignada a un dispositivo o red para permitir el acceso desde cualquier punto de Internet.</p>
+<h2 id="caracteristicas">Características</h2>
+<ul>
+<li>Asignada por un proveedor de servicios (ISP o nube).</li>
+<li>Visible desde Internet.</li>
+<li>Necesaria para recibir tráfico externo.</li>
+</ul>
+<h3 id="ejemplos">Ejemplos:</h3>
+<ul>
+<li>IPv4: <code>190.123.45.67</code></li>
+<li>IPv6: <code>2800:200:e010::1</code></li>
+</ul>
 <h2 id="para-que-sirve">¿Para qué sirve?</h2>
-<p>El port forwarding permite:</p>
 <ul>
-<li>Acceder remotamente a servidores web, SSH, cámaras IP, videojuegos, etc.</li>
-<li>Exponer servicios internos a internet.</li>
-<li>Habilitar administración remota.</li>
+<li>Identificar y acceder a servidores o redes desde Internet.</li>
+<li>Recibir solicitudes externas en servicios como HTTP, SSH, VPN, etc.</li>
+<li>Asociar nombres de dominio a direcciones IP para facilitar el acceso. </li>
 </ul>
-<h3 id="ejemplos-de-uso">Ejemplos de uso</h3>
-<table>
-<thead>
-<tr>
-<th>Servicio</th>
-<th>IP Interna</th>
-<th>Puerto interno</th>
-<th>Puerto externo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Servidor Web</td>
-<td>192.168.1.100</td>
-<td>80</td>
-<td>80</td>
-</tr>
-<tr>
-<td>SSH a Raspberry</td>
-<td>192.168.1.101</td>
-<td>22</td>
-<td>2222</td>
-</tr>
-<tr>
-<td>Cámara IP</td>
-<td>192.168.1.50</td>
-<td>80</td>
-<td>8080</td>
-</tr>
-</tbody>
-</table>
-<h2 id="donde-se-configura">¿Dónde se configura?</h2>
+<h1 id="relacion-entre-ip-publica-port-forwarding-y-dominios">Relación entre IP Pública, Port Forwarding y Dominios</h1>
+<p>Supongamos que tienes un servidor web en tu red local.</p>
+<h2 id="escenario">Escenario</h2>
 <ul>
-<li>En el router que conecta la red local a Internet.</li>
-<li>En firewalls locales (iptables, UFW).</li>
-<li>En servidores o balanceadores cloud (AWS, GCP, Azure).</li>
+<li>Tu proveedor te asigna una IP pública: <code>190.123.45.67</code>.</li>
+<li>Tu aplicación web corre en <code>192.168.1.10:3000</code> (IP privada).</li>
+<li>Configuras port forwarding: rediriges el puerto 80 del router hacia <code>192.168.1.10:3000</code>.</li>
 </ul>
-<h2 id="como-funciona">¿Cómo funciona?</h2>
-<ol>
-<li>Un cliente externo realiza una solicitud a la IP pública del router en un puerto específico.</li>
-<li>El router tiene una regla de port forwarding que redirige esa solicitud a una IP interna y puerto correspondiente.</li>
-<li>El servicio local responde y el router reenvía la respuesta al cliente.</li>
-</ol>
-<h3 id="ejemplo">Ejemplo</h3>
+<h2 id="acceso-mediante-dominio">Acceso mediante dominio</h2>
 <ul>
-<li>IP pública del router: <code>200.45.12.100</code></li>
-<li>Port forwarding: <code>200.45.12.100:80</code> → <code>192.168.1.10:3000</code></li>
-<li>Resultado: cualquier persona accediendo a <code>http://200.45.12.100</code> será redirigida al servicio Node.js corriendo en la red local.</li>
+<li>Registras <code>miapp.com</code>.</li>
+<li>Configuras en el DNS que <code>miapp.com</code> apunte a <code>190.123.45.67</code>.</li>
+<li>Cuando un usuario entra a <code>http://miapp.com</code>, el flujo es:</li>
+<li>Resolución DNS → IP pública</li>
+<li>El router recibe la solicitud</li>
+<li>Aplica port forwarding</li>
+<li>Redirige al servidor interno</li>
+<li>El servidor responde al usuario</li>
 </ul>
-<h2 id="tipos-de-port-forwarding">Tipos de Port Forwarding</h2>
-<ol>
-<li><strong>Estático</strong>: El puerto externo redirige siempre a la misma IP y puerto interno.</li>
-<li><strong>Dinámico</strong>: Se utiliza generalmente con túneles SSH, no con routers domésticos.</li>
-<li><strong>Inverso (Reverse Port Forwarding)</strong>: Se abre un túnel desde la red privada hacia una máquina externa, útil si no se puede hacer port forwarding desde el router.</li>
-</ol>
-<h2 id="seguridad">Seguridad</h2>
-<p>El port forwarding puede ser riesgoso si se mal configura. Recomendaciones:</p>
-<ul>
-<li>Solo exponer los puertos necesarios.</li>
-<li>Usar puertos no estándar cuando sea posible.</li>
-<li>Configurar firewall (ufw, iptables) para limitar acceso.</li>
-<li>Utilizar autenticación fuerte y cifrado (TLS, SSH).</li>
-<li>Utilizar VPN cuando sea posible.</li>
-</ul>
+<h2 id="diagrama">Diagrama</h2>
+<div class="center">
+    <img src="../../assets/images/diagrams/public-ip.png" alt="Diagrama de flujo de acceso a un servicio interno mediante IP pública y port forwarding" 
+         class="logo--3rd-party">
+    <i>Diagrama de flujo de acceso a un servicio interno mediante IP pública y port forwarding</i>
+</div>
+
+<h1 id="conclusion">Conclusión</h1>
+<p>Las direcciones IP públicas son fundamentales para que cualquier dispositivo o red pueda ser accesible desde Internet, funcionando como un punto de entrada visible para el mundo exterior. Sin embargo, en la mayoría de los entornos, especialmente en redes domésticas o empresariales, los servicios internos no están directamente expuestos. Aquí es donde entra en juego el port forwarding, que permite redirigir el tráfico entrante desde esa IP pública hacia servicios específicos dentro de la red local, manteniendo un nivel de aislamiento y control.</p>
+<p>También, los nombres de dominio desempeñan un papel esencial al ofrecer una forma mucho más amigable de acceder a estos servicios, ya que en lugar de recordar direcciones IP numéricas, los usuarios simplemente pueden escribir un nombre como miapp.com, que será traducido automáticamente a la IP pública correspondiente mediante el sistema DNS.</p>
+<p>Unidos, estos elementos como la IP pública, el port forwarding y los dominios forman una arquitectura básica pero poderosa para publicar aplicaciones y servicios locales en Internet. Esta combinación es ampliamente utilizada en soluciones de hosting doméstico, entornos de desarrollo remoto, aplicaciones autoalojadas, dispositivos IoT y más, proporcionando una forma estructurada, accesible y controlada de hacer visibles los recursos internos al mundo exterior.</p>
 
 
 
@@ -1881,7 +1758,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="public-ip.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: IP Pública">
+          <a href="domain.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Dominio">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1891,20 +1768,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                IP Pública
+                Dominio
               </div>
             </div>
           </a>
         
         
           
-          <a href="protocols/security/ssl-tls.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: SSL/TLS">
+          <a href="port-forwarding.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Port Forwarding">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                SSL/TLS
+                Port Forwarding
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1964,10 +1841,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.footer"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>

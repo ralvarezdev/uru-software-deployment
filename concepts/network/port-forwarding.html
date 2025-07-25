@@ -13,25 +13,25 @@
       
       
       
-        <link rel="prev" href="virtual-machines.html">
+        <link rel="prev" href="public-ip.html">
       
       
-        <link rel="next" href="../bundlers/vite.html">
+        <link rel="next" href="protocols/security/ssl-tls.html">
       
       
-      <link rel="icon" href="../assets/images/favicon/favicon.ico">
+      <link rel="icon" href="../../assets/images/favicon/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Servidores virtuales - Despliegue de Software</title>
+        <title>Port Forwarding - Despliegue de Software</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#servidores-virtuales" class="md-skip">
+        <a href="#que-es-el-port-forwarding" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../index.html" title="Despliegue de Software" class="md-header__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
+    <a href="../../index.html" title="Despliegue de Software" class="md-header__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
       
-  <img src="../assets/images/logo/uru-var2.png" alt="logo">
+  <img src="../../assets/images/logo/uru-var2.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Servidores virtuales
+              Port Forwarding
             
           </span>
         </div>
@@ -239,9 +239,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Despliegue de Software" class="md-nav__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
+    <a href="../../index.html" title="Despliegue de Software" class="md-nav__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
       
-  <img src="../assets/images/logo/uru-var2.png" alt="logo">
+  <img src="../../assets/images/logo/uru-var2.png" alt="logo">
 
     </a>
     Despliegue de Software
@@ -268,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -396,20 +396,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -425,7 +423,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Virtualización
@@ -477,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="containers/docker.html" class="md-nav__link">
+      <a href="../virtualization/containers/docker.html" class="md-nav__link">
         
   
   
@@ -508,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="virtual-machines.html" class="md-nav__link">
+      <a href="../virtualization/virtual-machines.html" class="md-nav__link">
         
   
   
@@ -528,32 +526,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Servidores virtuales
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="virtual-servers.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../virtualization/virtual-servers.html" class="md-nav__link">
         
   
   
@@ -564,188 +540,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#que-es-un-servidor-virtual" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Qué es un Servidor Virtual?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-funciona-un-vps" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Cómo Funciona un VPS?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="¿Cómo Funciona un VPS?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#proceso-basico" class="md-nav__link">
-    <span class="md-ellipsis">
-      Proceso básico:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-servidores-virtuales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tipos de Servidores Virtuales
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tipos de Servidores Virtuales">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#vps" class="md-nav__link">
-    <span class="md-ellipsis">
-      VPS (Virtual Private Server)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#servidor-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Servidor Cloud
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#servidor-dedicado-virtual" class="md-nav__link">
-    <span class="md-ellipsis">
-      Servidor Dedicado Virtual
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contenedores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contenedores (Docker, LXC)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hipervisores-utilizados-en-vps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hipervisores Utilizados en VPS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usos-comunes-del-vps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usos Comunes del VPS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ventajas-del-vps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas del VPS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comparacion-con-otros-modelos-de-hosting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparación con Otros Modelos de Hosting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#herramientas-de-gestion-y-paneles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Herramientas de Gestión y Paneles
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Herramientas de Gestión y Paneles">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#paneles-de-administracion-opcionales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Paneles de administración opcionales:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proveedores-populares-de-vps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Proveedores populares de VPS:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notas-tecnicas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notas Técnicas
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -924,18 +718,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -951,7 +747,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Redes
@@ -965,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/domain.html" class="md-nav__link">
+      <a href="domain.html" class="md-nav__link">
         
   
   
@@ -988,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/public-ip.html" class="md-nav__link">
+      <a href="public-ip.html" class="md-nav__link">
         
   
   
@@ -1008,10 +804,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../network/port-forwarding.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Port Forwarding
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="port-forwarding.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1022,6 +838,108 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-el-port-forwarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es el Port Forwarding?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-que-sirve" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Para qué sirve?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Para qué sirve?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos de uso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#donde-se-configura" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Dónde se configura?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo funciona?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Cómo funciona?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-port-forwarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Port Forwarding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seguridad
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1110,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/protocols/security/ssl-tls.html" class="md-nav__link">
+      <a href="protocols/security/ssl-tls.html" class="md-nav__link">
         
   
   
@@ -1225,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/security/firewall/ufw.html" class="md-nav__link">
+      <a href="security/firewall/ufw.html" class="md-nav__link">
         
   
   
@@ -1302,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/hosting/apache.html" class="md-nav__link">
+      <a href="hosting/apache.html" class="md-nav__link">
         
   
   
@@ -1325,7 +1243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/hosting/nginx.html" class="md-nav__link">
+      <a href="hosting/nginx.html" class="md-nav__link">
         
   
   
@@ -1348,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/hosting/virtual-host.html" class="md-nav__link">
+      <a href="hosting/virtual-host.html" class="md-nav__link">
         
   
   
@@ -1432,7 +1350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/index.html" class="md-nav__link">
+      <a href="../../manual/index.html" class="md-nav__link">
         
   
   
@@ -1455,7 +1373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/system-description.html" class="md-nav__link">
+      <a href="../../manual/system-description.html" class="md-nav__link">
         
   
   
@@ -1478,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/system-requirements.html" class="md-nav__link">
+      <a href="../../manual/system-requirements.html" class="md-nav__link">
         
   
   
@@ -1501,7 +1419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/installation.html" class="md-nav__link">
+      <a href="../../manual/installation.html" class="md-nav__link">
         
   
   
@@ -1562,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/network/domain.html" class="md-nav__link">
+      <a href="../../manual/configuration/network/domain.html" class="md-nav__link">
         
   
   
@@ -1585,7 +1503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/nginx.html" class="md-nav__link">
+      <a href="../../manual/configuration/nginx.html" class="md-nav__link">
         
   
   
@@ -1608,7 +1526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/security/ufw.html" class="md-nav__link">
+      <a href="../../manual/configuration/security/ufw.html" class="md-nav__link">
         
   
   
@@ -1631,7 +1549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/security/https.html" class="md-nav__link">
+      <a href="../../manual/configuration/security/https.html" class="md-nav__link">
         
   
   
@@ -1700,7 +1618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/common-errors.html" class="md-nav__link">
+      <a href="../../manual/common-errors.html" class="md-nav__link">
         
   
   
@@ -1748,8 +1666,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1758,28 +1674,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-un-servidor-virtual" class="md-nav__link">
+  <a href="#que-es-el-port-forwarding" class="md-nav__link">
     <span class="md-ellipsis">
-      ¿Qué es un Servidor Virtual?
+      ¿Qué es el Port Forwarding?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#como-funciona-un-vps" class="md-nav__link">
+  <a href="#para-que-sirve" class="md-nav__link">
     <span class="md-ellipsis">
-      ¿Cómo Funciona un VPS?
+      ¿Para qué sirve?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="¿Cómo Funciona un VPS?">
+    <nav class="md-nav" aria-label="¿Para qué sirve?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#proceso-basico" class="md-nav__link">
+  <a href="#ejemplos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Proceso básico:
+      Ejemplos de uso
     </span>
   </a>
   
@@ -1791,46 +1707,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-servidores-virtuales" class="md-nav__link">
+  <a href="#donde-se-configura" class="md-nav__link">
     <span class="md-ellipsis">
-      Tipos de Servidores Virtuales
+      ¿Dónde se configura?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Tipos de Servidores Virtuales">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo funciona?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Cómo funciona?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vps" class="md-nav__link">
+  <a href="#ejemplo" class="md-nav__link">
     <span class="md-ellipsis">
-      VPS (Virtual Private Server)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#servidor-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      Servidor Cloud
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#servidor-dedicado-virtual" class="md-nav__link">
-    <span class="md-ellipsis">
-      Servidor Dedicado Virtual
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contenedores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contenedores (Docker, LXC)
+      Ejemplo
     </span>
   </a>
   
@@ -1842,78 +1740,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hipervisores-utilizados-en-vps" class="md-nav__link">
+  <a href="#tipos-de-port-forwarding" class="md-nav__link">
     <span class="md-ellipsis">
-      Hipervisores Utilizados en VPS
+      Tipos de Port Forwarding
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usos-comunes-del-vps" class="md-nav__link">
+  <a href="#seguridad" class="md-nav__link">
     <span class="md-ellipsis">
-      Usos Comunes del VPS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ventajas-del-vps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas del VPS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comparacion-con-otros-modelos-de-hosting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparación con Otros Modelos de Hosting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#herramientas-de-gestion-y-paneles" class="md-nav__link">
-    <span class="md-ellipsis">
-      Herramientas de Gestión y Paneles
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Herramientas de Gestión y Paneles">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#paneles-de-administracion-opcionales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Paneles de administración opcionales:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proveedores-populares-de-vps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Proveedores populares de VPS:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notas-tecnicas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notas Técnicas
+      Seguridad
     </span>
   </a>
   
@@ -1938,194 +1776,81 @@
   
 
 
-<h1 id="servidores-virtuales">Servidores Virtuales (VPS)</h1>
-<h2 id="que-es-un-servidor-virtual">¿Qué es un Servidor Virtual?</h2>
-<div class="center">
-    <img src="../assets/images/logo/aws.png" alt="Logo de AWS" class="logo--3rd-party">
-    <i>Logo de AWS</i>
-</div>
+  <h1>Port Forwarding</h1>
 
-<p>Un <strong>servidor virtual</strong>, o <strong>VPS (Virtual Private Server)</strong>, es una instancia de servidor aislada que opera dentro de una máquina física compartida mediante tecnologías de virtualización. Aunque varios servidores virtuales pueden ejecutarse sobre el mismo hardware, <strong>cada VPS cuenta con su propio sistema operativo, recursos asignados (CPU, RAM, disco) y configuraciones</strong>, funcionando como si fuera un servidor independiente.</p>
-<div class="admonition tip">
-<p class="admonition-title">Important</p>
-<p>A diferencia de una máquina virtual genérica que se usa con fines técnicos o de laboratorio, el VPS está pensado para entornos de producción y servicios online.</p>
-</div>
-<h2 id="como-funciona-un-vps">¿Cómo Funciona un VPS?</h2>
-<div class="center">
-    <img src="../assets/images/logo/linode.png" alt="Logo de Linode" class="logo--3rd-party">
-    <i>Logo de Linode</i>
-</div>
-
-<p>Un proveedor (como DigitalOcean, AWS o Linode) utiliza un hipervisor para dividir un servidor físico en múltiples VPS. Cada VPS tiene acceso restringido a los recursos asignados, pero se comporta como un servidor completo.</p>
-<h3 id="proceso-basico">Proceso básico:</h3>
+<h2 id="que-es-el-port-forwarding">¿Qué es el Port Forwarding?</h2>
+<p>Port forwarding (reenvío de puertos) es una técnica de red utilizada para redirigir solicitudes entrantes desde una IP pública y puerto específico hacia una dirección IP interna en una red privada, y opcionalmente a otro puerto.</p>
+<p>En términos simples, permite acceder desde el exterior a servicios alojados dentro de una red privada.</p>
+<h2 id="para-que-sirve">¿Para qué sirve?</h2>
+<p>El port forwarding permite:</p>
+<ul>
+<li>Acceder remotamente a servidores web, SSH, cámaras IP, videojuegos, etc.</li>
+<li>Exponer servicios internos a internet.</li>
+<li>Habilitar administración remota.</li>
+</ul>
+<h3 id="ejemplos-de-uso">Ejemplos de uso</h3>
+<table>
+<thead>
+<tr>
+<th>Servicio</th>
+<th>IP Interna</th>
+<th>Puerto interno</th>
+<th>Puerto externo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Servidor Web</td>
+<td>192.168.1.100</td>
+<td>80</td>
+<td>80</td>
+</tr>
+<tr>
+<td>SSH a Raspberry</td>
+<td>192.168.1.101</td>
+<td>22</td>
+<td>2222</td>
+</tr>
+<tr>
+<td>Cámara IP</td>
+<td>192.168.1.50</td>
+<td>80</td>
+<td>8080</td>
+</tr>
+</tbody>
+</table>
+<h2 id="donde-se-configura">¿Dónde se configura?</h2>
+<ul>
+<li>En el router que conecta la red local a Internet.</li>
+<li>En firewalls locales (iptables, UFW).</li>
+<li>En servidores o balanceadores cloud (AWS, GCP, Azure).</li>
+</ul>
+<h2 id="como-funciona">¿Cómo funciona?</h2>
 <ol>
-<li>El hipervisor se instala sobre el hardware físico (ESXi, KVM, etc.).</li>
-<li>Se crean múltiples VPS, cada uno con su propio sistema operativo.</li>
-<li>El cliente accede a su VPS mediante SSH o consola remota.</li>
-<li>Puede instalar software, configurar servicios, o desplegar aplicaciones.</li>
-<li>Cada VPS es independiente de los demás a nivel de software.</li>
+<li>Un cliente externo realiza una solicitud a la IP pública del router en un puerto específico.</li>
+<li>El router tiene una regla de port forwarding que redirige esa solicitud a una IP interna y puerto correspondiente.</li>
+<li>El servicio local responde y el router reenvía la respuesta al cliente.</li>
 </ol>
-<h2 id="tipos-de-servidores-virtuales">Tipos de Servidores Virtuales</h2>
-<div class="center">
-    <img src="../assets/images/logo/google-cloud.png" alt="Logo de Google Cloud" class="logo--3rd-party">
-    <i>Logo de Google Cloud</i>
-</div>
-
-<h3 id="vps">VPS (Virtual Private Server)</h3>
+<h3 id="ejemplo">Ejemplo</h3>
 <ul>
-<li>Aislado lógicamente dentro de un nodo físico.</li>
-<li>Uso común en alojamiento web, API, servicios empresariales.</li>
-<li>Acceso root y configuración personalizada.</li>
+<li>IP pública del router: <code>200.45.12.100</code></li>
+<li>Port forwarding: <code>200.45.12.100:80</code> → <code>192.168.1.10:3000</code></li>
+<li>Resultado: cualquier persona accediendo a <code>http://200.45.12.100</code> será redirigida al servicio Node.js corriendo en la red local.</li>
 </ul>
-<h3 id="servidor-cloud">Servidor Cloud</h3>
+<h2 id="tipos-de-port-forwarding">Tipos de Port Forwarding</h2>
+<ol>
+<li><strong>Estático</strong>: El puerto externo redirige siempre a la misma IP y puerto interno.</li>
+<li><strong>Dinámico</strong>: Se utiliza generalmente con túneles SSH, no con routers domésticos.</li>
+<li><strong>Inverso (Reverse Port Forwarding)</strong>: Se abre un túnel desde la red privada hacia una máquina externa, útil si no se puede hacer port forwarding desde el router.</li>
+</ol>
+<h2 id="seguridad">Seguridad</h2>
+<p>El port forwarding puede ser riesgoso si se mal configura. Recomendaciones:</p>
 <ul>
-<li>Similar al VPS, pero escalable dinámicamente desde la nube.</li>
-<li>Ofrece alta disponibilidad, balanceo y facturación por hora.</li>
-</ul>
-<h3 id="servidor-dedicado-virtual">Servidor Dedicado Virtual</h3>
-<ul>
-<li>Recursos garantizados más cercanos al servidor dedicado.</li>
-<li>Mayor rendimiento, ideal para tráfico alto o aplicaciones críticas.</li>
-</ul>
-<h3 id="contenedores">Contenedores (Docker, LXC)</h3>
-<ul>
-<li>Alternativa ligera a un VPS: no es una VM, comparte el kernel del host.</li>
-<li>Ideal para microservicios, CI/CD, aplicaciones desacopladas.</li>
-</ul>
-<h2 id="hipervisores-utilizados-en-vps">Hipervisores Utilizados en VPS</h2>
-<table>
-<thead>
-<tr>
-<th>Tipo</th>
-<th>Características</th>
-<th>Ejemplos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Tipo 1</td>
-<td>Corre directamente sobre el hardware físico.</td>
-<td>VMware ESXi, Hyper-V, KVM</td>
-</tr>
-<tr>
-<td>Tipo 2</td>
-<td>Corre sobre un sistema operativo anfitrión.</td>
-<td>Poco usado en VPS públicos</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>En la mayoría de los VPS comerciales se usa KVM o Xen como hipervisor tipo 1.</p>
-</div>
-<h2 id="usos-comunes-del-vps">Usos Comunes del VPS</h2>
-<div class="center">
-    <img src="../assets/images/logo/digitalocean.png" alt="Logo de DigitalOcean" class="logo--3rd-party">
-    <i>Logo de DigitalOcean</i>
-</div>
-
-<ul>
-<li>Alojamiento de sitios web con CMS (WordPress, Joomla, etc.)</li>
-<li>Servidores de bases de datos (MySQL, PostgreSQL, MongoDB)</li>
-<li>Servidores de aplicaciones (Node.js, Django, Laravel)</li>
-<li>Implementación de API REST</li>
-<li>Automatización de tareas (bots, scrapers, jobs en cron)</li>
-<li>VPN, correo, DNS y otros servicios de red personalizados</li>
-</ul>
-<h2 id="ventajas-del-vps">Ventajas del VPS</h2>
-<table>
-<thead>
-<tr>
-<th>Ventaja</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Escalabilidad</td>
-<td>Se pueden aumentar recursos sin migrar</td>
-</tr>
-<tr>
-<td>Aislamiento</td>
-<td>Cada VPS es independiente del resto del sistema</td>
-</tr>
-<tr>
-<td>Ahorro de costos</td>
-<td>Más económico que un servidor físico dedicado</td>
-</tr>
-<tr>
-<td>Acceso root</td>
-<td>Control total del sistema operativo y configuraciones</td>
-</tr>
-<tr>
-<td>Rendimiento</td>
-<td>Recursos garantizados frente a hosting compartido</td>
-</tr>
-<tr>
-<td>Versatilidad</td>
-<td>Compatible con casi cualquier software o stack</td>
-</tr>
-</tbody>
-</table>
-<h2 id="comparacion-con-otros-modelos-de-hosting">Comparación con Otros Modelos de Hosting</h2>
-<table>
-<thead>
-<tr>
-<th>Modelo</th>
-<th>Recursos</th>
-<th>Aislamiento</th>
-<th>Personalización</th>
-<th>Costo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VPS</td>
-<td>Medio</td>
-<td>Medio-Alto</td>
-<td>Alto</td>
-<td>Medio</td>
-</tr>
-<tr>
-<td>Servidor dedicado</td>
-<td>Total</td>
-<td>Total</td>
-<td>Total</td>
-<td>Alto</td>
-</tr>
-<tr>
-<td>Hosting compartido</td>
-<td>Bajo</td>
-<td>Bajo</td>
-<td>Muy limitado</td>
-<td>Bajo</td>
-</tr>
-</tbody>
-</table>
-<h2 id="herramientas-de-gestion-y-paneles">Herramientas de Gestión y Paneles</h2>
-<h3 id="paneles-de-administracion-opcionales">Paneles de administración opcionales:</h3>
-<ul>
-<li>Webmin / Virtualmin</li>
-<li>cPanel / WHM (licencia comercial)</li>
-<li>Plesk</li>
-<li>CyberPanel</li>
-<li>ISPConfig</li>
-</ul>
-<h3 id="proveedores-populares-de-vps">Proveedores populares de VPS:</h3>
-<ul>
-<li>DigitalOcean</li>
-<li>Linode</li>
-<li>Vultr</li>
-<li>Hetzner</li>
-<li>AWS Lightsail</li>
-<li>Google Cloud VM instances</li>
-<li>Azure Virtual Machines</li>
-</ul>
-<h2 id="notas-tecnicas">Notas Técnicas</h2>
-<ul>
-<li>En un VPS no tienes acceso al hipervisor, solo al sistema operativo de tu instancia.</li>
-<li>El rendimiento puede depender de la carga general del nodo físico, aunque esté garantizado hasta cierto límite.</li>
-<li>Los proveedores ofrecen backups, snapshots, balanceo de carga y monitoreo desde su panel.</li>
+<li>Solo exponer los puertos necesarios.</li>
+<li>Usar puertos no estándar cuando sea posible.</li>
+<li>Configurar firewall (ufw, iptables) para limitar acceso.</li>
+<li>Utilizar autenticación fuerte y cifrado (TLS, SSH).</li>
+<li>Utilizar VPN cuando sea posible.</li>
 </ul>
 
 
@@ -2156,7 +1881,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="virtual-machines.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Máquinas virtuales">
+          <a href="public-ip.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: IP Pública">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2166,20 +1891,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Máquinas virtuales
+                IP Pública
               </div>
             </div>
           </a>
         
         
           
-          <a href="../bundlers/vite.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Vite">
+          <a href="protocols/security/ssl-tls.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: SSL/TLS">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                Vite
+                SSL/TLS
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2239,10 +1964,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.footer"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>

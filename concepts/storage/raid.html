@@ -13,25 +13,25 @@
       
       
       
-        <link rel="prev" href="containers/docker.html">
+        <link rel="prev" href="../../index.html">
       
       
-        <link rel="next" href="virtual-servers.html">
+        <link rel="next" href="../virtualization/containers/docker.html">
       
       
-      <link rel="icon" href="../assets/images/favicon/favicon.ico">
+      <link rel="icon" href="../../assets/images/favicon/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Máquinas virtuales - Despliegue de Software</title>
+        <title>RAID - Despliegue de Software</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#maquinas-virtuales" class="md-skip">
+        <a href="#raid" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../index.html" title="Despliegue de Software" class="md-header__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
+    <a href="../../index.html" title="Despliegue de Software" class="md-header__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
       
-  <img src="../assets/images/logo/uru-var2.png" alt="logo">
+  <img src="../../assets/images/logo/uru-var2.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Máquinas virtuales
+              RAID
             
           </span>
         </div>
@@ -239,9 +239,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="Despliegue de Software" class="md-nav__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
+    <a href="../../index.html" title="Despliegue de Software" class="md-nav__button md-logo" aria-label="Despliegue de Software" data-md-component="logo">
       
-  <img src="../assets/images/logo/uru-var2.png" alt="logo">
+  <img src="../../assets/images/logo/uru-var2.png" alt="logo">
 
     </a>
     Despliegue de Software
@@ -268,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -327,18 +327,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -354,7 +356,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Almacenamiento
@@ -365,10 +367,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../storage/raid.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    RAID
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="raid.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -379,6 +403,146 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-raid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de RAID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de RAID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raid0" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid6" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 10 (RAID 1 + RAID 0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid50" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 50 (RAID 5 + RAID 0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid60" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 60 (RAID 6 + RAID 0)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hot-swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hot Swap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controladoras-raid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controladoras RAID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controladoras RAID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Por Software
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Por Hardware
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -396,20 +560,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -425,7 +587,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Virtualización
@@ -477,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="containers/docker.html" class="md-nav__link">
+      <a href="../virtualization/containers/docker.html" class="md-nav__link">
         
   
   
@@ -505,32 +667,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Máquinas virtuales
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="virtual-machines.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../virtualization/virtual-machines.html" class="md-nav__link">
         
   
   
@@ -541,89 +681,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#definicion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Definición
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#proposito-general" class="md-nav__link">
-    <span class="md-ellipsis">
-      Propósito General
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#componentes-tecnicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Componentes Técnicos
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-hipervisores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tipos de Hipervisores
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gestion-y-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Gestión y Uso
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formatos-de-disco-virtual" class="md-nav__link">
-    <span class="md-ellipsis">
-      Formatos de Disco Virtual
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#casos-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Casos de Uso
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -636,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="virtual-servers.html" class="md-nav__link">
+      <a href="../virtualization/virtual-servers.html" class="md-nav__link">
         
   
   
@@ -1333,7 +1390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/index.html" class="md-nav__link">
+      <a href="../../manual/index.html" class="md-nav__link">
         
   
   
@@ -1356,7 +1413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/system-description.html" class="md-nav__link">
+      <a href="../../manual/system-description.html" class="md-nav__link">
         
   
   
@@ -1379,7 +1436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/system-requirements.html" class="md-nav__link">
+      <a href="../../manual/system-requirements.html" class="md-nav__link">
         
   
   
@@ -1402,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/installation.html" class="md-nav__link">
+      <a href="../../manual/installation.html" class="md-nav__link">
         
   
   
@@ -1463,7 +1520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/network/domain.html" class="md-nav__link">
+      <a href="../../manual/configuration/network/domain.html" class="md-nav__link">
         
   
   
@@ -1486,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/nginx.html" class="md-nav__link">
+      <a href="../../manual/configuration/nginx.html" class="md-nav__link">
         
   
   
@@ -1509,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/security/ufw.html" class="md-nav__link">
+      <a href="../../manual/configuration/security/ufw.html" class="md-nav__link">
         
   
   
@@ -1532,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/configuration/security/https.html" class="md-nav__link">
+      <a href="../../manual/configuration/security/https.html" class="md-nav__link">
         
   
   
@@ -1601,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/common-errors.html" class="md-nav__link">
+      <a href="../../manual/common-errors.html" class="md-nav__link">
         
   
   
@@ -1659,65 +1716,122 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#definicion" class="md-nav__link">
+  <a href="#tipos-de-raid" class="md-nav__link">
     <span class="md-ellipsis">
-      Definición
+      Tipos de RAID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de RAID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raid0" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid6" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 10 (RAID 1 + RAID 0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid50" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 50 (RAID 5 + RAID 0)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raid60" class="md-nav__link">
+    <span class="md-ellipsis">
+      RAID 60 (RAID 6 + RAID 0)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hot-swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hot Swap
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#proposito-general" class="md-nav__link">
+  <a href="#controladoras-raid" class="md-nav__link">
     <span class="md-ellipsis">
-      Propósito General
+      Controladoras RAID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controladoras RAID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Por Software
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#componentes-tecnicos" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#por-hardware" class="md-nav__link">
     <span class="md-ellipsis">
-      Componentes Técnicos
+      Por Hardware
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-hipervisores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tipos de Hipervisores
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gestion-y-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Gestión y Uso
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formatos-de-disco-virtual" class="md-nav__link">
-    <span class="md-ellipsis">
-      Formatos de Disco Virtual
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#casos-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Casos de Uso
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1740,111 +1854,128 @@
   
 
 
-<h1 id="maquinas-virtuales">Máquinas Virtuales (VM)</h1>
-<h2 id="definicion">Definición</h2>
+<h1 id="raid">RAID</h1>
+<p>RAID es un término utilizado en informática, cuyas siglas vienen del inglés <em>Redundant Array of Independent Disks</em> o <em>Matriz Redundante de Discos Independientes</em> [<a href="#xataka-raid">1</a>], es un proceso utilizado para combinar varios discos duros y que estos funcionen de manera coordinada para formar una única unidad lógica en la que almacenar los datos. El objetivo principal de RAID es mejorar el rendimiento, la disponibilidad y la seguridad de los datos almacenados.</p>
+<p>A nivel empresarial, es muy utilizado a la hora de configurar el almacenamiento de servidores NAS y aplicaciones. Ofrece mayor tolerancia a fallos y más altos niveles de rendimiento que un solo disco duro o un grupo de discos duros independientes.</p>
 <div class="center">
-    <img src="../assets/images/logo/microsoft-hyper-v.png" alt="Logo de Microsoft Hyper-V" class="logo--3rd-party">
-    <i>Logo de Microsoft Hyper-V</i>
+    <img src="../../assets/images/servers/server-var1.png" alt="Servidor configurado con RAID" class="server--image">
+    <i>Servidor configurado con RAID</i>
 </div>
 
-<p>Una <strong>máquina virtual (VM)</strong> es una emulación completa de un sistema operativo que se ejecuta dentro de un entorno virtualizado. Se comporta como un sistema informático independiente, con hardware simulado por software, sobre una computadora física real (host).</p>
-<h2 id="proposito-general">Propósito General</h2>
+<h2 id="tipos-de-raid">Tipos de RAID</h2>
+<p>Algunos de los términos importantes que conviene conocer son:</p>
+<ul>
+<li><strong>Datos de paridad</strong>: Estos se distribuyen entre todos los discos físicos en el sistema. Si un disco físico falla, es posible reconstruirlo desde la paridad y los datos de los discos físicos restantes. Los datos de paridad están presentes en RAID 5, 6, 50 y 60.</li>
+<li><strong>Modo Degradado</strong>: Ocurre cuando uno de los discos del RAID se vuelve ilegible, el disco entonces es considerado corrupto y se extrae del RAID. Los datos y la paridad del disco son almacenados en los discos restantes. Este proceso degrada en gran medida el rendimiento del RAID.</li>
+</ul>
+<p>Básicamente, tenemos dos tipos de configuraciones, como son las siguientes [<a href="#hard-zone-raid">2</a>]:</p>
+<ul>
+<li><strong>Disk mirroring</strong>: Es un tipo de configuración RAID que busca redundancia de datos ante un posible fallo en una de las unidades de almacenamiento, duplicando los datos en dos o más discos. Si uno de los discos falla, el sistema puede seguir funcionando con el otro disco sin pérdida de datos.</li>
+<li><strong>Disk stripping</strong>: Esta configuración RAID que no busca redundancia, sino conseguir mayores velocidades de transferencia de datos, repartiendo los datos entre varios discos.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los tipos de RAID más utilizados en servidores son el RAID1, RAID5, RAID 6 y RAID 10.</p>
+</div>
+<h3 id="raid0">RAID 0</h3>
 <div class="center">
-    <img src="../assets/images/logo/vmware.png" alt="Logo de WMware" class="logo--3rd-party">
-    <i>Logo de VMware</i>
+    <img src="../../assets/images/raid/raid0.png" alt="RAID 0" class="raid--image--small">
+    <i>RAID 0</i>
 </div>
 
-<p>Las VM están diseñadas para ejecutar cualquier sistema operativo y software como si fuera un equipo físico, con fines de:</p>
-<ul>
-<li>Laboratorio de pruebas</li>
-<li>Desarrollo de software</li>
-<li>Simulación de redes</li>
-<li>Aislamiento de sistemas</li>
-<li>Seguridad y sandboxing</li>
-<li>Virtualización de escritorios (VDI)</li>
-</ul>
-<h2 id="componentes-tecnicos">Componentes Técnicos</h2>
-<ul>
-<li><strong>Hipervisor (tipo 1 o 2)</strong></li>
-<li><strong>Guest OS</strong> (sistema operativo invitado)</li>
-<li><strong>Disco virtual (VMDK, VHD, QCOW2, etc.)</strong></li>
-<li><strong>CPU, RAM, y adaptadores de red virtuales</strong></li>
-<li><strong>Controladores de dispositivos virtuales</strong></li>
-</ul>
-<h2 id="tipos-de-hipervisores">Tipos de Hipervisores</h2>
+<p>Se necesitan mínimo 2 discos. Cuenta la suma de tamaños de todos los discos duros. Un RAID 0, emplea <em>striping</em> y reparte los datos en bloques entre los discos, de forma que cada bloque se almacena en un disco diferente. Por ejemplo, si tenemos 4 discos de 1 TB cada uno, tendremos 4 TB disponibles.</p>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p>Se empleará como tamaño de bloque el más pequeño de los discos, por lo que si tenemos 4 discos de 1 TB, 2 de 500 GB y 1 de 250 GB, el tamaño de bloque será de 250 GB.</p>
+</div>
+<p>El inconveniente es que <strong>no hay redundancia y tolerancia a fallos</strong>, por lo que cualquier fallo o avería en uno de los discos conlleva una pérdida total de los datos.</p>
+<p>Sin embargo, ofrece un alto rendimiento en lectura y escritura, ya que los datos se distribuyen entre los discos, permitiendo que las operaciones de lectura y escritura se realicen en paralelo [<a href="#xataka-raid">1</a>].</p>
+<h3 id="raid1">RAID 1</h3>
 <div class="center">
-    <img src="../assets/images/logo/virtualbox.png" alt="Logo de VirtualBox" class="logo--3rd-party">
-    <i>Logo de VirtualBox</i>
+    <img src="../../assets/images/raid/raid1.png" alt="RAID 1" class="raid--image--small">
+    <i>RAID 1</i>
 </div>
 
-<table>
-<thead>
-<tr>
-<th>Tipo</th>
-<th>Ejecutado sobre</th>
-<th>Ejemplos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Tipo 1</td>
-<td>Directamente en el hardware (bare metal)</td>
-<td>VMware ESXi, Microsoft Hyper-V, KVM</td>
-</tr>
-<tr>
-<td>Tipo 2</td>
-<td>Sobre un sistema operativo anfitrión</td>
-<td>VirtualBox, VMware Workstation</td>
-</tr>
-</tbody>
-</table>
-<h2 id="gestion-y-uso">Gestión y Uso</h2>
-<ul>
-<li>Se pueden crear, modificar, duplicar, exportar</li>
-<li>Soportan snapshots, clonado, rollback</li>
-<li>Pueden instalar cualquier sistema operativo compatible</li>
-<li>Se administran desde una consola local o remota</li>
-</ul>
-<h2 id="formatos-de-disco-virtual">Formatos de Disco Virtual</h2>
-<table>
-<thead>
-<tr>
-<th>Formato</th>
-<th>Usado por</th>
-<th>Características</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VMDK</td>
-<td>VMware</td>
-<td>Compatible con snapshots</td>
-</tr>
-<tr>
-<td>VHD/VHDX</td>
-<td>Hyper-V, Azure</td>
-<td>Respaldo incremental, cifrado</td>
-</tr>
-<tr>
-<td>QCOW2</td>
-<td>KVM/QEMU</td>
-<td>Compresión, snapshots, cifrado</td>
-</tr>
-<tr>
-<td>RAW</td>
-<td>Genérico (máximo rendimiento)</td>
-<td>Sin metadatos, rápido</td>
-</tr>
-</tbody>
-</table>
-<h2 id="casos-de-uso">Casos de Uso</h2>
-<ul>
-<li>Laboratorios educativos (ej. redes, hacking ético)</li>
-<li>Testing de múltiples sistemas operativos</li>
-<li>Aislamiento de entornos de desarrollo</li>
-<li>Configuración de clústeres virtualizados</li>
-<li>Simulación de infraestructura compleja</li>
-</ul>
+<p>Se necesitan mínimo 2 discos. Es conocido como <em>espejo</em> o <em>mirroring</em>. Duplica todos los datos de la primera unidad de forma sincronizada a una segunda unidad de almacenamiento. De esta forma, si el primer disco se estropea, el sistema seguirá funcionando y trabajando con el segundo disco sin problemas y sin perder datos.</p>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p>Al igual que en el RAID 0, se empleará como tamaño de bloque el más pequeño de los discos, por lo que si tenemos 4 discos de 1 TB, 2 de 500 GB y 1 de 250 GB, el tamaño de bloque será de 250 GB.</p>
+</div>
+<p>Ofrece una <strong>rápida recuperación tras un fallo de la unidad</strong>, por tanto, es una de las mejores configuraciones en cuanto a redundancia y tolerancia a fallos. Además, disponemos de un mayor rendimiento de lectura/escritura, puesto que es posible escribir y leer de los dos discos al mismo tiempo.</p>
+<h3 id="raid5">RAID 5</h3>
+<div class="center">
+    <img src="../../assets/images/raid/raid5.png" alt="RAID 5" class="raid--image--medium">
+    <i>RAID 5</i>
+</div>
+
+<p>Se necesitan como mínimo 3 discos, y se puede romper un disco sin perder los datos. Suele ser el RAID más usado en servidores, ya que aporta la velocidad y rendimiento del RAID 0 (uso eficiente de la unidad, alto rendimiento en escritura y lectura) y la seguridad del RAID 1 ante la pérdida de datos.</p>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p>El espacio disponible será de N-1, siendo N el número de discos del raid. Si utilizamos 5 discos de 1 TB tendremos: <code>5 discos – 1 = 4 discos -&gt; 4 TB disponibles.</code></p>
+</div>
+<p>Utiliza la paridad para recuperar los datos. Se dividen los datos en bloques en los diferentes discos, de forma que si hay un fallo en uno de ellos, esa parte de los datos se subsana con los datos almacenados en el resto de los discos, permitiendo al usuario continuar (aunque funciona más lento) con su trabajo.</p>
+<h3 id="raid6">RAID 6</h3>
+<div class="center">
+    <img src="../../assets/images/raid/raid6.png" alt="RAID 6" class="raid--image--big">
+    <i>RAID 6</i>
+</div>
+
+<p>Se necesitan como mínimo 4 discos. Puede tolerar dos fallos de discos duros (N-2).</p>
+<p>Es similar al RAID 5 e incluye un disco de reserva que entra en funcionamiento una vez que uno de los discos se estropea (en este caso hasta que sustituimos el disco averiado, a todos los efectos tenemos un RAID 5). Proporciona, por tanto, una elevada redundancia de datos y rendimiento de lectura.</p>
+<h3 id="raid10">RAID 10 (RAID 1 + RAID 0)</h3>
+<div class="center">
+    <img src="../../assets/images/raid/raid10.png" alt="RAID 10" class="raid--image--medium">
+    <i>RAID 10</i>
+</div>
+
+<p>RAID 10, también conocido como <strong>RAID 1 + 0</strong>, es una configuración avanzada que combina espejo y distribución de datos para ofrecer alta seguridad y rendimiento simultáneamente. Funciona agrupando discos duros en pares espejo (RAID 1), donde cada disco tiene una copia idéntica del otro, y luego distribuyendo esos pares en paralelo (RAID 0) para acelerar las operaciones de lectura y escritura. Esto permite que el sistema siga funcionando incluso si falla un disco por cada par, lo cual brinda excelente tolerancia a fallos y tiempos de recuperación rápidos. Aunque solo se aprovecha la mitad del espacio total, debido al espejo, la velocidad es comparable a configuraciones enfocadas exclusivamente en rendimiento.</p>
+<h3 id="raid50">RAID 50 (RAID 5 + RAID 0)</h3>
+<div class="center">
+    <img src="../../assets/images/raid/raid50.png" alt="RAID 50" class="raid--image--big">
+    <i>RAID 50</i>
+</div>
+
+<p>Se necesitan como mínimo 6 discos, con la posibilidad de que se puedan estropear hasta 3 discos sin perder datos. Se hace un RAID 5 y sobre ellos un RAID 0. Con el RAID 50 conseguiremos un volumen muy robusto, un mayor rendimiento de lectura en comparación con el RAID 5 estándar, y un rendimiento de escritura de medio a alto. Presenta las mismas desventajas que el RAID 5 (impacto medio ante los fallos de disco y tiempos de reconstrucción más largos al ser necesario volver a calcular la paridad), y un precio más elevado.</p>
+<p>Tiene como tolerancia a fallos de 1 disco por cada grupo de discos RAID 5, lo que significa que si se falla un disco en un grupo, el sistema puede seguir funcionando sin pérdida de datos. Asimismo, el rendimiento de lectura es alto, ya que los datos se distribuyen entre múltiples discos, permitiendo que las operaciones de lectura se realicen en paralelo.</p>
+<h3 id="raid60">RAID 60 (RAID 6 + RAID 0)</h3>
+<div class="center">
+    <img src="../../assets/images/raid/raid60.png" alt="RAID 60" class="raid--image--big">
+    <i>RAID 60</i>
+</div>
+
+<p>Se necesitan como mínimo 8 discos, con la posibilidad de que se puedan estropear hasta 4 discos sin perder datos, 2 por cada grupo de discos RAID 6. Es una configuración avanzada que combina la redundancia del RAID 6 con la velocidad del RAID 0, ofreciendo una alta tolerancia a fallos y un rendimiento optimizado. Se hace un RAID 6 y sobre ellos un RAID 0. Obtenemos un alto rendimiento sobre todo en tareas de lectura. Las desventajas son las mismas a las del RAID6 (rendimiento más bajo en escritura debido a los dos cálculos de paridad, y mayor gasto en hardware).</p>
+<h2 id="hot-swap">Hot Swap</h2>
+<p>El Hot Swap es una técnica permite sustituir el disco averiado por uno nuevo, sin necesidad de desconectar o apagar el servidor, para luego poder reconstruir la información.</p>
+<div class="center">
+    <img src="../../assets/images/raid/hot-swap.jpg" alt="Hot Swap" class="raid--image--small">
+    <i>Hot Swap</i>
+</div>
+
+<p>Podemos dejarlo configurado de 2 formas:</p>
+<ol>
+<li>Tenemos el disco duro de reserva cargado en el RAID, aunque sin utilizar, de manera que si tenemos un fallo de disco duro automáticamente empieza a reconstruir los datos en el disco que teníamos preparado (RAID 6).</li>
+<li>No tenemos el disco insertado en el servidor, pero tenemos la capacidad de sustitución en caliente. Esta es una opción algo más arriesgada, que implica tener lo más cerca posible un disco de reserva y reemplazarlo lo antes posible antes de que falle una segunda unidad.</li>
+</ol>
+<h2 id="controladoras-raid">Controladoras RAID</h2>
+<p>Una controladora RAID es una tarjeta de hardware o una aplicación de software que se utiliza con el objetivo de gestionar varios discos duros en un mismo servidor.</p>
+<h3 id="por-software">Por Software</h3>
+<p>Los discos se conectan a la placa o a una controladora, y es el procesador y el sistema operativo quienes hacen las operaciones necesarias para controlar el RAID y los discos. Fácilmente ampliable con la cantidad de discos que se necesiten, realmente la única limitación es la que ofrezca la placa base. También es más fácil de configurar. Para aquellos RAID que necesiten más recursos, el rendimiento general del sistema puede verse afectado. Además, en el caso de que se degrade el RAID, es más complicado volver a recuperarlo y se puede perder información.</p>
+<h3 id="por-hardware">Por Hardware</h3>
+<div class="center">
+    <img src="../../assets/images/raid/x4ttx-dell-perc-h730p-raid-controller.png" alt="Controladora RAID X4TTX Dell PERC H730P" class="raid--image--big">
+    <i>Controladora RAID X4TTX Dell PERC H730P</i>
+</div>
+
+<p>A diferencia del RAID por software (que usa los recursos del procesador y la memoria del sistema operativo para gestionar la matriz), la controladora RAID por hardware tiene su propio procesador (CPU), su propia memoria caché (RAM) y su propio firmware. Esto le permite realizar todas las operaciones de RAID (como la lectura/escritura de datos, el cálculo de paridad, la reconstrucción de la matriz en caso de fallo de un disco, etc.) de forma independiente del sistema operativo principal y del procesador del servidor.</p>
+<h1 id="referencias">Referencias Bibliográficas</h1>
+<ol>
+<li>
+<p>Fernández, Y. (5 de junio de 2020). <em>RAID de discos duros: qué son y sus principales tipos</em>. Xataka. <a id="xataka-raid" href="https://www.xataka.com/basics/raid-discos-duros-que-son-cuales-son-sus-principales-tipos">https://www.xataka.com/basics/raid-discos-duros-que-son-cuales-son-sus-principales-tipos</a></p>
+</li>
+<li>
+<p>García, J. (2 de julio de 2025). <em>Qué es un sistema RAID de discos duros y qué tipos hay</em>. HardZone. <a id="hard-zone-raid" href=https://hardzone.es/tutoriales/montaje/raid-discos-duros/>https://hardzone.es/tutoriales/montaje/raid-discos-duros/</a></p>
+</li>
+</ol>
 
 
 
@@ -1874,7 +2005,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="containers/docker.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Docker">
+          <a href="../../index.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Inicio">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1884,20 +2015,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Docker
+                Inicio
               </div>
             </div>
           </a>
         
         
           
-          <a href="virtual-servers.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Servidores virtuales">
+          <a href="../virtualization/containers/docker.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Docker">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                Servidores virtuales
+                Docker
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1957,10 +2088,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.footer"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>
