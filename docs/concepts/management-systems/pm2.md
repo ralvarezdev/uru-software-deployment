@@ -1,13 +1,12 @@
+# PM2 - Process Manager para Node.js {#pm2-process-manager-nodejs}
 
-# PM2 - Process Manager para Node.js
-
-## ¿Qué es PM2?
+## ¿Qué es PM2? {#que-es-pm2}
 
 **PM2** es un administrador de procesos para aplicaciones Node.js (y otros lenguajes), diseñado para ejecutar, monitorear y mantener procesos activos en segundo plano. Se usa principalmente en entornos de producción para asegurar que las aplicaciones funcionen de manera estable y continua, incluso tras fallos o reinicios del sistema.
 
 ---
 
-## ¿Para qué sirve PM2?
+## ¿Para qué sirve PM2? {#para-que-sirve-pm2}
 
 | Funcionalidad              | Descripción                                                                 |
 |----------------------------|-----------------------------------------------------------------------------|
@@ -21,7 +20,7 @@
 
 ---
 
-## Instalación
+## Instalación {#instalacion}
 
 ```bash
 npm install -g pm2
@@ -31,7 +30,7 @@ npm install -g pm2
 
 ---
 
-## Comandos Básicos
+## Comandos Básicos {#comandos-basicos}
 
 ```bash
 pm2 start app.js         # Ejecutar la app
@@ -45,7 +44,7 @@ pm2 monit                # Monitoreo interactivo en consola
 
 ---
 
-## Modo Clúster
+## Modo Clúster {#modo-cluster}
 
 ```bash
 pm2 start app.js -i max
@@ -56,11 +55,11 @@ pm2 start app.js -i max
 
 ---
 
-## Ecosystem File
+## Ecosystem File {#ecosystem-file}
 
 Permite definir configuración de múltiples procesos en un solo archivo.
 
-### ecosystem.config.js
+### ecosystem.config.js {#ecosystem-config-js}
 
 ```js
 module.exports = {
@@ -81,7 +80,7 @@ module.exports = {
 };
 ```
 
-### Ejecutar con ecosystem
+### Ejecutar con ecosystem {#ejecutar-con-ecosystem}
 
 ```bash
 pm2 start ecosystem.config.js --env production
@@ -89,15 +88,15 @@ pm2 start ecosystem.config.js --env production
 
 ---
 
-## Autostart tras reinicio del servidor
+## Autostart tras reinicio del servidor {#autostart-tras-reinicio-servidor}
 
-### Guardar estado actual
+### Guardar estado actual {#guardar-estado-actual}
 
 ```bash
 pm2 save
 ```
 
-### Configurar inicio automático
+### Configurar inicio automático {#configurar-inicio-automatico}
 
 ```bash
 pm2 startup
@@ -107,7 +106,7 @@ pm2 startup
 
 ---
 
-## Logs
+## Logs {#logs}
 
 ```bash
 pm2 logs               # Ver todos los logs en tiempo real
@@ -118,7 +117,7 @@ pm2 logs app           # Ver logs de una app específica
 
 ---
 
-## PM2 con otros lenguajes
+## PM2 con otros lenguajes {#pm2-con-otros-lenguajes}
 
 También se puede ejecutar scripts en otros lenguajes usando el parámetro `--interpreter`.
 
@@ -129,7 +128,7 @@ pm2 start script.sh
 
 ---
 
-## Integración con Servidores Virtuales (VPS)
+## Integración con Servidores Virtuales (VPS) {#integracion-con-vps}
 
 1. Desplegar la app en el VPS
 2. Instalar PM2 globalmente
@@ -139,7 +138,7 @@ pm2 start script.sh
 
 ---
 
-## Comparación con Otros Process Managers
+## Comparación con Otros Process Managers {#comparacion-con-otros-process-managers}
 
 | Herramienta | Soporte Node.js | Clustering | Logs | Autostart | Observabilidad |
 |-------------|------------------|------------|------|-----------|----------------|
@@ -150,6 +149,6 @@ pm2 start script.sh
 
 ---
 
-## Recursos
+## Recursos {#recursos}
 
 - Sitio oficial: [https://pm2.keymetrics.io](https://pm2.keymetrics.io)

@@ -1,14 +1,18 @@
-<div class="center">
-    <img src="../../../assets/images/logo/docker.png" alt="Logo de Docker" 
-class="logo--3rd-party">
-</div>
+
+# Docker {:#docker}
 Docker es una plataforma de código abierto que permite **desarrollar, empaquetar, distribuir y ejecutar aplicaciones en contenedores**. Un contenedor es una unidad ligera, autónoma y portátil que incluye todo lo necesario para ejecutar una aplicación: código, dependencias, librerías, configuraciones, etc.
 
 Docker se basa en características del núcleo de Linux (como cgroups y namespaces) para permitir que múltiples contenedores se ejecuten en un mismo sistema operativo de manera aislada.
 
+<div class="center">
+    <img src="../../../assets/images/logo/docker.png" alt="Logo de Docker" 
+class="logo--3rd-party">
+</div>
+
+
 ---
 
-## ¿Para qué sirve Docker?
+## ¿Para qué sirve Docker? {:#para-que-sirve-docker}
 
 Docker facilita la creación y despliegue de aplicaciones porque:
 
@@ -20,7 +24,7 @@ Docker facilita la creación y despliegue de aplicaciones porque:
 
 ---
 
-## Casos de uso comunes
+## Casos de uso comunes {:#casos-de-uso-docker}
 
 - **Microservicios**: cada servicio corre en su contenedor.
 - **Entornos de desarrollo reproducibles**.
@@ -31,9 +35,9 @@ Docker facilita la creación y despliegue de aplicaciones porque:
 
 ---
 
-##  Componentes Clave
+##  Componentes Clave {:#componentes-clave}
 
-### 1. Docker Engine
+### 1. Docker Engine {:#docker-engine}
 
 El motor de Docker es el núcleo de Docker. Incluye:
 
@@ -41,11 +45,11 @@ El motor de Docker es el núcleo de Docker. Incluye:
 - **CLI (docker)**: cliente de línea de comandos.
 - **API REST**: permite controlar Docker desde otras herramientas.
 
-### 2. Imágenes
+### 2. Imágenes {:#imagenes-docker}
 
 Las imágenes Docker son plantillas inmutables que contienen el sistema de archivos y la configuración de una aplicación. Se crean a partir de un `Dockerfile`.
 
-### 3. Contenedores
+### 3. Contenedores {:#contenedores-docker}
 
 Un contenedor es una instancia en ejecución de una imagen. Se puede detener, iniciar, reiniciar, destruir, etc.
 
@@ -57,11 +61,11 @@ docker stop <id>
 
 ---
 
-## Dockerfile
+## Dockerfile {:#dockerfile}
 
 Un `Dockerfile` es un archivo de texto que contiene instrucciones para construir una imagen Docker personalizada.
 
-### Ejemplo de Dockerfile
+### Ejemplo de Dockerfile {:#ejemplos-dockerfile}
 
 ```dockerfile
 # Imagen base
@@ -86,7 +90,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-### Instrucciones comunes
+### Instrucciones comunes {:#instrucciones-comunes}
 
 | Instrucción | Descripción |
 |------------|-------------|
@@ -99,11 +103,11 @@ CMD ["npm", "start"]
 
 ---
 
-##  Docker Compose
+##  Docker Compose {:#docker-compose}
 
 Docker Compose permite definir y ejecutar aplicaciones **multicontenedor** con un solo archivo YAML (`docker-compose.yml`). Es ideal para orquestar varios servicios como API, frontend, base de datos, etc.
 
-### Ejemplo de archivo `docker-compose.yml`
+### Ejemplo de archivo `docker-compose.yml {:#ejemplo-docker-compose}`
 
 ```yaml
 version: '3.9'
@@ -131,7 +135,7 @@ volumes:
   pgdata:
 ```
 
-### Comandos comunes
+### Comandos comunes {:#comandos-comunes}
 
 ```bash
 docker-compose up         # Levanta todos los servicios
@@ -143,7 +147,7 @@ docker-compose ps         # Lista servicios activos
 
 ---
 
-## Buenas prácticas
+## Buenas prácticas {:#buenas-practicas}
 
 - Usa `.dockerignore` como `.gitignore` para evitar copiar archivos innecesarios.
 - Minimiza el número de capas (`RUN` y `COPY`).
@@ -153,7 +157,7 @@ docker-compose ps         # Lista servicios activos
 
 ---
 
-##  Recursos adicionales
+##  Recursos adicionales {:#recursos-adicionales}
 
 - Sitio oficial: https://www.docker.com
 - Docker Hub (imágenes): https://hub.docker.com
@@ -161,6 +165,6 @@ docker-compose ps         # Lista servicios activos
 
 ---
 
-##  Conclusión
+##  Conclusión {:#conclusiones}
 
 Docker es una herramienta esencial en el desarrollo moderno. Su capacidad para contener y aislar aplicaciones facilita el desarrollo, testing, y despliegue en cualquier entorno, desde laptops hasta clústeres en la nube.

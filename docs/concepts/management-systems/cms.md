@@ -1,10 +1,10 @@
-# Sistemas de Gestión de Contenidos (CMS)
+# Sistemas de Gestión de Contenidos (CMS) {#sistemas-de-gestion-de-contenidos-cms}
 
-## Definición
+## Definición {#definicion}
 
 Un **CMS (Content Management System)** es una plataforma de software que permite a los usuarios crear, editar, organizar y publicar contenido en sitios web sin necesidad de programar manualmente. Facilita la separación entre el contenido, la estructura del sitio y su presentación visual.
 
-## Funcionalidades Comunes
+## Funcionalidades Comunes {#funcionalidades-comunes}
 
 - Edición de páginas y artículos
 - Administración de archivos multimedia
@@ -16,9 +16,9 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 - Internacionalización (idiomas)
 - Integración con herramientas externas (CRM, e-commerce, formularios)
 
-## Clasificación por Tipo
+## Clasificación por Tipo {#clasificacion-por-tipo}
 
-### Tradicionales (Backend + Frontend acoplado)
+### Tradicionales (Backend + Frontend acoplado) {#tradicionales-backend-frontend-acoplado}
 
 - WordPress
 - Joomla
@@ -27,7 +27,7 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 - Magento
 - PrestaShop
 
-### Headless CMS (Frontend desacoplado)
+### Headless CMS (Frontend desacoplado) {#headless-cms-frontend-desacoplado}
 
 - Strapi
 - Sanity
@@ -35,14 +35,14 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 - Directus
 - Netlify CMS
 
-### SaaS (CMS como servicio)
+### SaaS (CMS como servicio) {#saas-cms-como-servicio}
 
 - Wix
 - Webflow
 - Squarespace
 - Shopify
 
-## CMS por Lenguaje
+## CMS por Lenguaje {#cms-por-lenguaje}
 
 | Lenguaje   | CMS destacados                                 |
 |------------|------------------------------------------------|
@@ -53,7 +53,7 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 | Java       | Magnolia, OpenCMS                              |
 | Ruby       | RefineryCMS                                    |
 
-## Componentes Técnicos
+## Componentes Técnicos {#componentes-tecnicos}
 
 - **Backend**: Administra contenido, usuarios, configuraciones
 - **Frontend**: Genera la interfaz pública
@@ -65,7 +65,7 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 - **API**: Permiten acceso programático al contenido (REST/GraphQL)
 - **Seguridad**: Control de roles, autenticación, actualización
 
-## Casos de Uso Comunes
+## Casos de Uso Comunes {#casos-de-uso-comunes}
 
 - Blogs y medios digitales
 - Tiendas en línea
@@ -75,7 +75,7 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 - Landing pages y catálogos de productos
 - Aplicaciones SPA con backend headless
 
-## Comparativa Técnica
+## Comparativa Técnica {#comparativa-tecnica}
 
 | CMS        | Tipo        | Lenguaje | Base de Datos      | Frontend integrado | API disponible |
 |------------|-------------|----------|--------------------|--------------------|----------------|
@@ -88,7 +88,7 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 | Contentful | Headless    | SaaS     | Interna            | No                 | GraphQL        |
 | Wagtail    | Tradicional | Python   | PostgreSQL         | Sí                 | REST API       |
 
-## Ventajas de Usar un CMS
+## Ventajas de Usar un CMS {#ventajas-de-usar-un-cms}
 
 | Ventaja                  | Descripción                                                    |
 |--------------------------|----------------------------------------------------------------|
@@ -100,7 +100,7 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 | Seguridad mejorada       | Actualizaciones frecuentes y plugins de seguridad disponibles  |
 | Control de versiones     | Algunos CMS permiten revisar y restaurar contenido             |
 
-## Herramientas Relacionadas
+## Herramientas Relacionadas {#herramientas-relacionadas}
 
 - **cPanel / Plesk**: Paneles de hosting para instalar CMS fácilmente
 - **Docker / Docker Compose**: Para desplegar CMS en contenedores

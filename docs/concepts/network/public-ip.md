@@ -1,18 +1,18 @@
-# ¿Qué es una IP Pública?
+# ¿Qué es una IP Pública? {:#ip-publica}
 
 Una IP pública es una dirección única asignada a un dispositivo o red para permitir el acceso desde cualquier punto de Internet.
 
-## Características
+## Características {:#caracteristicas}
 
 - Asignada por un proveedor de servicios (ISP o nube).
 - Visible desde Internet.
 - Necesaria para recibir tráfico externo.
 
-### Ejemplos:
+### Ejemplos: {:#ejemplos-ip-publica}
 - IPv4: `190.123.45.67`
 - IPv6: `2800:200:e010::1`
-
-## ¿Para qué sirve?
+ 
+## ¿Para qué sirve? {:#para-que-sirve}
 
 - Identificar y acceder a servidores o redes desde Internet.
 - Recibir solicitudes externas en servicios como HTTP, SSH, VPN, etc.
@@ -20,17 +20,17 @@ Una IP pública es una dirección única asignada a un dispositivo o red para pe
 
 ---
 
-# Relación entre IP Pública, Port Forwarding y Dominios
+# Relación entre IP Pública, Port Forwarding y Dominios {:#ip-publica-port-forwarding-dominios}
 
 Supongamos que tienes un servidor web en tu red local.
 
-## Escenario
+## Escenario {:#escenarios-ip-publica}
 
 - Tu proveedor te asigna una IP pública: `190.123.45.67`.
 - Tu aplicación web corre en `192.168.1.10:3000` (IP privada).
 - Configuras port forwarding: rediriges el puerto 80 del router hacia `192.168.1.10:3000`.
 
-## Acceso mediante dominio
+## Acceso mediante dominio {:#acceso-ip-publica-dominio}
 
 - Registras `miapp.com`.
 - Configuras en el DNS que `miapp.com` apunte a `190.123.45.67`.
@@ -41,7 +41,7 @@ Supongamos que tienes un servidor web en tu red local.
   4. Redirige al servidor interno
   5. El servidor responde al usuario
 
-## Diagrama
+## Diagrama {:#diagrama-ip-publica}
 
 <div class="center">
     <img src="../../assets/images/diagrams/public-ip.png" alt="Diagrama de flujo" class="logo--3rd-party">
@@ -49,7 +49,7 @@ Supongamos que tienes un servidor web en tu red local.
 
 ---
 
-# Conclusión
+# Conclusión {:#conclusion-ip-publica}
 
 Las direcciones IP públicas son fundamentales para que cualquier dispositivo o red pueda ser accesible desde Internet, funcionando como un punto de entrada visible para el mundo exterior. Sin embargo, en la mayoría de los entornos, especialmente en redes domésticas o empresariales, los servicios internos no están directamente expuestos. Aquí es donde entra en juego el port forwarding, que permite redirigir el tráfico entrante desde esa IP pública hacia servicios específicos dentro de la red local, manteniendo un nivel de aislamiento y control.
 

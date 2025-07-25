@@ -1,10 +1,10 @@
-## ¿Qué es SSL/TLS?
+## ¿Qué es SSL/TLS? {#que-es-ssl-tls}
 
 **SSL** (Secure Sockets Layer) y **TLS** (Transport Layer Security) son protocolos criptográficos diseñados para **proteger la comunicación entre dos sistemas a través de una red**, generalmente Internet. TLS es el sucesor de SSL y, aunque muchas veces se utilizan como sinónimos, actualmente el protocolo estándar es TLS (en versiones modernas como TLS 1.2 o TLS 1.3), ya que SSL ha quedado obsoleto por razones de seguridad.
 
 Estos protocolos aseguran que los datos enviados entre un cliente (como un navegador web) y un servidor no puedan ser leídos, modificados o interceptados por terceros.
 
-## ¿Para qué sirve SSL/TLS?
+## ¿Para qué sirve SSL/TLS? {#para-que-sirve-ssl-tls}
 
 SSL/TLS cumple principalmente con tres objetivos:
 
@@ -14,7 +14,7 @@ SSL/TLS cumple principalmente con tres objetivos:
 
 En esencia, SSL/TLS **proporciona una conexión segura sobre protocolos como HTTP, SMTP, FTP, etc.** El ejemplo más común es **HTTPS**, que es HTTP sobre TLS.
 
-## Casos de uso comunes
+## Casos de uso comunes {#casos-de-uso-comunes}
 
 - **Navegación web segura (HTTPS)**: Protección de credenciales, formularios, cookies y datos personales.
 - **Correos electrónicos (SMTPS, IMAPS, POP3S)**: Cifrado del contenido del correo y autenticación del servidor de correo.
@@ -23,7 +23,7 @@ En esencia, SSL/TLS **proporciona una conexión segura sobre protocolos como HTT
 - **Autenticación de clientes y servidores mediante certificados digitales**: En sistemas corporativos o financieros.
 - **Protocolo LDAP seguro (LDAPS)**: Usado en entornos de directorios para autenticación segura.
 
-## Funcionamiento general
+## Funcionamiento general {#funcionamiento-general}
 
 1. **Inicio de la conexión**: Cliente y servidor inician un "handshake" TLS.
 2. **Intercambio de certificados**: El servidor presenta su certificado digital.
@@ -31,7 +31,7 @@ En esencia, SSL/TLS **proporciona una conexión segura sobre protocolos como HTT
 4. **Negociación de claves**: Se establece una clave compartida para cifrar la sesión.
 5. **Transmisión cifrada**: A partir de ahí, toda la comunicación es segura y cifrada.
 
-## Conclusión
+## Conclusión {#conclusion}
 
 SSL/TLS es la base de la seguridad en Internet. A través del cifrado, la autenticación y la garantía de integridad, permite establecer canales seguros de comunicación entre clientes y servidores, lo que es fundamental para proteger información sensible como contraseñas, datos bancarios, archivos privados y más. Aunque el término SSL sigue usándose por costumbre, es TLS el protocolo que actualmente mantiene la seguridad de la web moderna, siendo indispensable para cualquier sitio o aplicación que maneje información de usuarios o realice transacciones en línea.
 

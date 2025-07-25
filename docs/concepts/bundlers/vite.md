@@ -1,6 +1,6 @@
-#  Vite: Documentación Detallada
+#  Vite: Documentación Detallada {#vite-documentacion-detallada}
 
-##  ¿Qué es Vite?
+##  ¿Qué es Vite? {#que-es-vite}
 
 **Vite** (pronunciado /vit/, que significa "rápido" en francés) es una herramienta de construcción y servidor de desarrollo *frontend* creada por **Evan You**, el autor de Vue.js. Vite está diseñada para proporcionar una experiencia de desarrollo moderna, más rápida y eficiente en comparación con herramientas tradicionales como Webpack.
 
@@ -14,25 +14,25 @@ Vite consta de dos partes principales:
 
 </div>
 
-##  ¿Para qué sirve Vite?
+##  ¿Para qué sirve Vite? {#para-que-sirve-vite}
 
 - Desarrollar aplicaciones frontend modernas (con frameworks como **React**, **Vue**, **Svelte**, **Lit**, etc.).
 - Compilar proyectos escritos en **TypeScript**, **JSX**, **TSX**, **SCSS**, **PostCSS**, etc.
 - Proveer un flujo de desarrollo con recarga rápida (HMR).
 - Realizar construcciones de producción altamente optimizadas.
 
-##  ¿Cómo funciona Vite?
+##  ¿Cómo funciona Vite? {#como-funciona-vite}
 
-### En desarrollo:
+### En desarrollo: {#en-desarrollo}
 - Utiliza **ES Modules nativos del navegador** para cargar archivos de forma directa.
 - Usa **esbuild**, una herramienta escrita en Go, para transpilar TypeScript/JSX hasta 10-100x más rápido que Babel.
 - Solo transpila/transforma el código cuando es solicitado por el navegador, lo que acelera el arranque.
 
-### En producción:
+### En producción: {#en-produccion}
 - Usa **Rollup** para construir un bundle optimizado.
 - Aplica **code-splitting**, **tree shaking**, **lazy loading**, y más.
 
-##  Características principales
+##  Características principales {#caracteristicas-principales}
 
 - **Arranque instantáneo** del servidor de desarrollo.
 -  **Hot Module Replacement** (HMR) rápido.
@@ -40,7 +40,7 @@ Vite consta de dos partes principales:
 -  **Soporte para TypeScript, JSX, CSS, JSON, y más** sin configuración adicional.
 -  **Plugins compatibles con Rollup** y sistema de plugins propio.
 -  Compatible con pruebas usando Vitest, Playwright o Cypress.
-##  Instalación
+##  Instalación {#instalacion}
 
 ```bash
 npm create vite@latest
@@ -52,7 +52,7 @@ pnpm create vite
 
 Luego sigue el prompt para seleccionar un framework (React, Vue, Svelte, etc.).
 
-## Estructura típica de un proyecto Vite
+## Estructura típica de un proyecto Vite {#estructura-tipica-proyecto-vite}
 
 ```
 my-app/
@@ -66,28 +66,28 @@ my-app/
 ├─ package.json
 └─ tsconfig.json
 ```
-## Casos de uso
+## Casos de uso {#casos-de-uso}
 
-### 1. Aplicaciones SPA modernas
+### 1. Aplicaciones SPA modernas {#aplicaciones-spa-modernas}
 
 Ideal para proyectos con React, Vue, Svelte, Preact, Lit, etc., que buscan velocidad y simplicidad.
 
-### 2. Proyectos con múltiples entradas
+### 2. Proyectos con múltiples entradas {#proyectos-multiples-entradas}
 
 Vite permite múltiples páginas y entradas usando configuraciones en `vite.config.js`.
 
-### 3. Component libraries
+### 3. Component libraries {#component-libraries}
 
 Es excelente para construir librerías de componentes (e.g., usando VitePress o Storybook con Vite).
 
-### 4. Desarrollo de prototipos rápidos
+### 4. Desarrollo de prototipos rápidos {#desarrollo-prototipos-rapidos}
 
 Gracias a su inicio instantáneo y configuración mínima, Vite es ideal para prototipado.
 
-### 5. Migraciones desde Webpack
+### 5. Migraciones desde Webpack {#migraciones-desde-webpack}
 
 Muchas aplicaciones están migrando de Webpack a Vite por la diferencia de rendimiento, especialmente en proyectos grandes.
-##  Configuración básica (`vite.config.js`)
+##  Configuración básica (`vite.config.js`) {#configuracion-basica-vite-config-js}
 
 ```js
 import { defineConfig } from 'vite'
@@ -104,23 +104,23 @@ export default defineConfig({
   },
 })
 ```
-##  Recursos útiles
+##  Recursos útiles {#recursos-utiles}
 
 - Sitio oficial: [https://vitejs.dev](https://vitejs.dev)
 - GitHub: [https://github.com/vitejs/vite](https://github.com/vitejs/vite)
 - Plantillas oficiales: [Vite templates](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 - Comparación con Webpack: [https://vitejs.dev/guide/why.html](https://vitejs.dev/guide/why.html)
-## Ventajas
+## Ventajas {#ventajas}
 
 - Velocidad extrema en desarrollo.
 - Configuración mínima.
 - Excelente soporte para TypeScript y JSX.
 - Comunidad en crecimiento y ecosistema robusto.
-##  Desventajas
+##  Desventajas {#desventajas}
 
 - Todavía es relativamente joven comparado con Webpack.
 - Menos plugins disponibles para casos complejos (aunque está creciendo rápidamente).
 - Puede requerir ajustes al migrar proyectos grandes con configuraciones Webpack personalizadas.
-##  Conclusión
+##  Conclusión {#conclusion}
 
 Vite es una herramienta moderna que resuelve problemas comunes del desarrollo frontend tradicional, especialmente en términos de velocidad. Su arquitectura basada en ESModules y esbuild ofrece un rendimiento sin igual durante el desarrollo. Para nuevos proyectos o migraciones que buscan eficiencia, Vite es una opción sobresaliente.

@@ -1,39 +1,39 @@
-# Apache
+# Apache {#apache}
 
-## ¿Qué es?
+## ¿Qué es? {#que-es}
 
 Apache HTTP Server (comúnmente llamado Apache) es un servidor web de código abierto que permite publicar, gestionar y servir contenido a través del protocolo HTTP (HyperText Transfer Protocol) y su versión segura HTTPS (HTTP sobre SSL/TLS).
 
 Es un software multiplataforma que funciona como intermediario entre el servidor donde se alojan los archivos (páginas web, imágenes, scripts, etc.) y los clientes (navegadores como Chrome, Firefox, etc.), procesando sus solicitudes y entregando las respuestas correspondientes.
 
-## Características principales
+## Características principales {#caracteristicas-principales}
 
-<h4>Protocolos Soportados</h4>
+<h4>Protocolos Soportados</h4> {#protocolos-soportados}
 
 Apache es compatible principalmente con HTTP/1.1 y HTTP/2, protocolos estándar para la transferencia web. También admite extensiones como WebDAV (para edición remota de archivos) y FastCGI (para mejorar el rendimiento con aplicaciones dinámicas). Aunque no está diseñado para protocolos como FTP o SMTP, puede combinarse con otros servicios para cubrir esas necesidades. La configuración de protocolos se realiza mediante directivas en sus archivos de configuración.
 
-<h4>Configuración Flexible</h4>
+<h4>Configuración Flexible</h4> {#configuracion-flexible}
 
 Apache se configura mediante archivos como `httpd.conf` (configuración principal) o `.htaccess` (reglas por directorio). Estos archivos permiten definir desde puertos de escucha hasta reglas complejas de redirección. Las directivas como `Directory` (permisos de acceso) o `RewriteRule` (URLs amigables) ofrecen granularidad. La posibilidad de usar archivos `.htaccess` permite ajustes sin reiniciar el servidor, ideal para entornos compartidos donde los usuarios no tienen acceso raíz.
 
-<h4>Entorno de Ejecución</h4>
+<h4>Entorno de Ejecución</h4> {#entorno-de-ejecucion}
 
 Para contenido dinámico, Apache se integra con lenguajes como PHP (vía `mod_php`), Python (con `mod_wsgi`) o Perl (`mod_perl`). Estos módulos permiten ejecutar scripts directamente en el servidor, generando HTML personalizado antes de enviarlo al cliente. Además, puede conectarse a bases de datos (MySQL, PostgreSQL) para sitios con almacenamiento persistente. Esta capacidad lo hace apto para CMS como WordPress o frameworks como Laravel.
 
-<h4>Proxy y Balanceador de Carga</h4>
+<h4>Proxy y Balanceador de Carga</h4> {#proxy-balanceador-carga}
 
 Como proxy inverso, Apache redirige solicitudes a servidores internos (ej: una app Node.js en otro puerto), ocultando la infraestructura real. Para alta disponibilidad, módulos como `mod_proxy_balancer` distribuyen el tráfico entre múltiples servidores (load balancing), mejorando la escalabilidad. Aunque no es tan eficiente como Nginx o HAProxy para esta tarea, su facilidad de configuración lo hace viable para entornos pequeños o medianos.
 
-<h4>Seguridad Básica</h4>
+<h4>Seguridad Básica</h4> {#seguridad-basica}
 
 Apache incluye herramientas para proteger sitios web: autenticación básica/digest (`mod_auth`), restricciones por IP (`Require ip`), y cifrado SSL/TLS (vía `mod_ssl`). Configuraciones como `LimitRequestBody` (para evitar ataques DDoS) o `Header set X-Content-Type-Options` (para mitigar MIME sniffing) añaden capas de seguridad. Sin embargo, muchas protecciones avanzadas (como WAFs) requieren módulos adicionales o software externo.
 
-<h4>Virtual Host</h4>
+<h4>Virtual Host</h4> {#virtual-host}
 
 Apache permite alojar múltiples sitios web en un mismo servidor físico mediante Virtual Hosts. Cada virtual host tiene su propia configuración independiente, como dominio, directorio raíz (`DocumentRoot`), reglas de acceso y SSL, simulando servidores separados.
 
 
-## Instalación
+## Instalación {#instalacion}
 
 Para instalar Apache2, se emplea el siguiente comando:
 
@@ -43,14 +43,14 @@ sudo apt install apache2
 
 Apache2 se configura mediante directivas en archivos de configuración de texto plano en formato `/etc/apache2/`. Estas directivas se distribuyen entre los siguientes archivos y directorios:
 
-<h3> Archivos </h3>
+<h3> Archivos </h3> {#archivos}
 
 - **apache2.conf**: El archivo de configuración principal de Apache2. Contiene configuraciones globales para Apache2.
 - **envvars**: Archivo donde se establecen las variables de entorno de Apache2.
 - **magic**: Instrucciones para determinar el tipo MIME según los primeros bytes de un archivo.
 - **ports.conf**: Contiene las directivas que determinan en qué puertos TCP está escuchando Apache2.
 
-<h3> Directorios </h3>
+<h3> Directorios </h3> {#directorios}
 
 - **conf-available**: Este directorio contiene los archivos de configuración disponibles. Todos los archivos que estaban previamente en `/etc/apache2/conf.d` deben trasladarse a `/etc/apache2/conf-available`.
 - **conf-enabled**: Contiene enlaces simbólicos a los archivos en `/etc/apache2/conf-available`. Cuando se crea un enlace simbólico en un archivo de configuración, este se habilitará la próxima vez que se reinicie Apache2.
@@ -59,7 +59,7 @@ Apache2 se configura mediante directivas en archivos de configuración de texto 
 - **sites-available**: Este directorio contiene los archivos de configuración de los hosts virtuales de Apache2. Estos hosts permiten configurar Apache2 para varios sitios con configuraciones independientes.
 - **sites-enabled**: Al igual que mods-enabled, sites-enabled contiene enlaces simbólicos al directorio `/etc/apache2/sites-available`. De igual forma, cuando se crea un enlace simbólico en un archivo de configuración, el sitio configurado por él se activará al reiniciar Apache2.
 
-<h3> Directivas </h3>
+<h3> Directivas </h3> {#directivas}
 
 Para hacer las configuraciones se emplean las Directivas, estas son instrucciones al servidor Apache para controlar su funcionamiento. Una directiva consiste en un nombre seguido de uno o más argumentos. Se escriben en los archivos de configuración como `httpd.conf`, `apache2.conf`, o dentro de bloques como `<VirtualHost>`, `<Directory>`, o incluso en archivos `.htaccess`.
 
@@ -84,7 +84,7 @@ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-availab
 ```
 ---
 
-<h3> Módulos </h3>
+<h3> Módulos </h3> {#modulos}
 
 Los módulos de Apache2 son componentes que extienden las funcionalidades del servidor web Apache. Gracias a su arquitectura modular, Apache permite activar solo los módulos necesarios para cada proyecto, lo que mejora el rendimiento, la seguridad y la flexibilidad del servidor.
 
@@ -106,7 +106,7 @@ La gestión de estos módulos se realiza mediante comandos como `a2enmod` (para 
 
 ---
 
-## Servidor Web
+## Servidor Web {#servidor-web}
 
 Apache funciona como un intermediario entre los usuarios y los archivos almacenados en un servidor. Cuando un navegador solicita una página web, Apache procesa esa petición (HTTP request), busca el recurso solicitado (HTML, imágenes, CSS, etc.) en el sistema de archivos y lo envía como respuesta (HTTP response).
 
@@ -117,15 +117,15 @@ Apache2 puede servir tanto sitios web estáticos (HTML, CSS, JS) como sitios din
 
 ---
 
-<h3> Servir un solo sitio web </h3>
+<h3> Servir un solo sitio web </h3> {#servir-un-solo-sitio-web}
 
-<h4> Requisitos previos </h4>
+<h4> Requisitos previos </h4> {#requisitos-previos}
 
 - Tener instalado Apache2 en el servidor Ubuntu con `sudo apt install apache2`.
 - Tener instalado git (para clonar repositorios de ser necesario).
 - Tener acceso con permisos de superusuario (sudo).
 - Tener listos los archivos estáticos (HTML, CSS, JS, imágenes, etc.).
-<h4>Paso 1: Crear el directorio donde se almacenarán los archivos estáticos</h4>
+<h4>Paso 1: Crear el directorio donde se almacenarán los archivos estáticos</h4> {#paso-1-directorio-archivos-estaticos}
 
 En este directorio se puede clonar el repositorio que contenga los archivos con `git clone <link-repositorio>`.
 
@@ -133,7 +133,7 @@ En este directorio se puede clonar el repositorio que contenga los archivos con 
 sudo mkdir -p /var/www/mynewsite.com
 ```
 
-<h4>Paso 2: Crear un archivo de configuración para el virtual host</h4>
+<h4>Paso 2: Crear un archivo de configuración para el virtual host</h4> {#paso-2-archivo-configuracion-virtual-host}
 
 Siguiendo la sugerencia que propone la documentación se realiza una copia del archivo que ya trae por defecto Apache y se emplea como plantilla:
 
@@ -141,7 +141,7 @@ Siguiendo la sugerencia que propone la documentación se realiza una copia del a
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/mynewsite.conf
 ```
 
-<h4>Paso 3: Configurar apache para servir el directorio del sitio</h4>
+<h4>Paso 3: Configurar apache para servir el directorio del sitio</h4> {#paso-3-configurar-apache-directorio-sitio}
 
 El bloque `<VirtualHost *:80>` indica que Apache atenderá solicitudes HTTP (puerto 80) en cualquier IP disponible del servidor. Dentro de este bloque se definen todas las configuraciones específicas para un sitio web.
 
@@ -162,14 +162,14 @@ El bloque `<VirtualHost *:80>` indica que Apache atenderá solicitudes HTTP (pue
 </VirtualHost>
 ```
 
-<h4>Paso 4: Habilitar el sitio y reiniciar apache</h4>
+<h4>Paso 4: Habilitar el sitio y reiniciar apache</h4> {#paso-4-habilitar-sitio-reiniciar-apache}
 
 ```bash
 sudo a2ensite mynewsite
 sudo systemctl restart apache2.service
 ```
 
-<h3> Servir más de un sitio web </h3>
+<h3> Servir más de un sitio web </h3> {#servir-mas-de-un-sitio-web}
 
 Apache utiliza los Virtual Hosts para manejar múltiples sitios web en un mismo servidor. Cada `<VirtualHost>` debe tener un `ServerName` único (o combinado con `ServerAlias`) para evitar conflictos. Si dos VirtualHosts comparten el mismo `ServerName` y puerto, Apache usará el primero que encuentre en la configuración, ignorando el segundo. Es fundamental que cada sitio web tenga su propia configuración con dominios o subdominios distintos para que Apache pueda enrutar las peticiones correctamente.
 
@@ -185,7 +185,7 @@ Para la configuración se repite el mismo proceso para servir 1 sitio web, es de
 
 ---
 
-## Proxy inverso
+## Proxy inverso {#proxy-inverso}
 
 Un proxy inverso es un servidor que recibe solicitudes de clientes y las redirige a uno o más servidores backend, ocultando la infraestructura real. A diferencia de un proxy tradicional (que protege a los clientes), un proxy inverso protege y gestiona los servidores backend.
 
@@ -197,7 +197,7 @@ Un proxy inverso es un servidor que recibe solicitudes de clientes y las redirig
 - Seguridad: Ocultar servidores internos y filtrar ataques (DDoS, inyecciones).
 - Enrutamiento basado en rutas: Redirigir `/app1` a un backend y `/app2` a otro.
 
-<h3>Requisitos previos</h3>
+<h3>Requisitos previos</h3> {#requisitos-previos-proxy}
 
 - Servidor con Apache instalado (versión 2.4 o superior recomendada)
 - Módulos `mod_proxy` y `mod_proxy_http` habilitados
@@ -205,9 +205,9 @@ Un proxy inverso es un servidor que recibe solicitudes de clientes y las redirig
 
 ---
 
-<h3> Módulos Requeridos y su Función</h3>
+<h3> Módulos Requeridos y su Función</h3> {#modulos-requeridos-funcion}
 
-<h4> Módulos Principales</h4>
+<h4> Módulos Principales</h4> {#modulos-principales}
 
 | Módulo                  | Descripción                        | Uso Típico                              |
 |-------------------------|------------------------------------|-----------------------------------------|
@@ -227,9 +227,9 @@ sudo systemctl restart apache2
 
 ---
 
-<h2> Directivas Clave y su Configuración </h2>
+<h2> Directivas Clave y su Configuración </h2> {#directivas-clave-configuracion}
 
-<h3> Directivas Fundamentales </h3>
+<h3> Directivas Fundamentales </h3> {#directivas-fundamentales}
 
 | Directiva            | Parámetros                | Descripción                                 | Ejemplo                                      |
 |----------------------|--------------------------|---------------------------------------------|----------------------------------------------|
@@ -239,7 +239,7 @@ sudo systemctl restart apache2
 | `ProxyRequests`      | `On\|Off`                | **No usar en proxy inverso** (solo para proxy forward) | `ProxyRequests Off`                |
 | `ProxyVia`           | `On\|Off\|Full`          | Controla el header `Via` en solicitudes     | `ProxyVia On`                                |
 
-<h3> Directivas Avanzadas </h3>
+<h3> Directivas Avanzadas </h3> {#directivas-avanzadas}
 
 | Directiva             | Uso                                                        |
 |-----------------------|-----------------------------------------------------------|
@@ -250,11 +250,11 @@ sudo systemctl restart apache2
 
 ---
 
-<h2> Configuración Básica de Proxy Inverso en Apache </h2>
+<h2> Configuración Básica de Proxy Inverso en Apache </h2> {#configuracion-basica-proxy-inverso}
 
 Edita el archivo de configuración (generalmente en `/etc/apache2/sites-available/000-default.conf` o similar):
 
-<h3> Ejemplo Completo (Archivo de VirtualHost) </h3>
+<h3> Ejemplo Completo (Archivo de VirtualHost) </h3> {#ejemplo-completo-virtualhost}
 
 ```apache
 <VirtualHost *:80>
@@ -274,7 +274,7 @@ Edita el archivo de configuración (generalmente en `/etc/apache2/sites-availabl
 </VirtualHost>
 ```
 
-<h4> Activación del Proxy </h4>
+<h4> Activación del Proxy </h4> {#activacion-proxy}
 
 ```apache
 ProxyPreserveHost On
@@ -283,7 +283,7 @@ ProxyPreserveHost On
   - Sin esto, el backend recibiría `Host: localhost:3000` en lugar de `Host: mi-app.com`.
   - Esencial para aplicaciones que usan host-based routing.
 
-<h4> Redirección al Backend </h4>
+<h4> Redirección al Backend </h4> {#redireccion-backend}
 
 ```apache
 ProxyPass "/" "http://localhost:3000/"
@@ -300,7 +300,7 @@ ProxyPassReverse "/" "http://localhost:3000/"
 
 ---
 
-## Balanceador de carga
+## Balanceador de carga {#balanceador-carga}
 
 Un balanceador de carga distribuye peticiones entre múltiples servidores backend para:
 
@@ -308,7 +308,7 @@ Un balanceador de carga distribuye peticiones entre múltiples servidores backen
 - **Mejorar rendimiento**: Distribuye el tráfico equitativamente.
 - **Escalar horizontalmente**: Añadir más servidores bajo demanda.
 
-<h3> Módulos Requeridos </h3>
+<h3> Módulos Requeridos </h3> {#modulos-requeridos-balanceo}
 
 Para activarlos se emplea: 
 
@@ -324,9 +324,9 @@ sudo systemctl restart apache2
 
 ---
 
-<h3> Configuración Básica </h3>
+<h3> Configuración Básica </h3> {#configuracion-basica-balanceo}
 
-<h4>Ejemplo: Balanceo Round-Robin (por peticiones)</h4>
+<h4>Ejemplo: Balanceo Round-Robin (por peticiones)</h4> {#ejemplo-balanceo-round-robin}
 
 ```apache
 <VirtualHost *:80>
@@ -346,7 +346,7 @@ sudo systemctl restart apache2
 </VirtualHost>
 ```
 
-<h4>Parámetros Clave</h4>
+<h4>Parámetros Clave</h4> {#parametros-clave}
 
 | Directiva         | Descripción                                 |
 |-------------------|---------------------------------------------|
@@ -356,10 +356,10 @@ sudo systemctl restart apache2
 
 ---
 
-<h3> Algoritmos de Balanceo </h3>
+<h3> Algoritmos de Balanceo </h3> {#algoritmos-balanceo}
 
 Apache soporta varios métodos:
-<h4>A. Round-Robin (`byrequests`)</h4>
+<h4>A. Round-Robin (`byrequests`)</h4> {#round-robin-byrequests}
 
 ```apache
 ProxySet lbmethod=byrequests
@@ -367,7 +367,7 @@ ProxySet lbmethod=byrequests
 - **Cómo funciona**: Distribuye peticiones secuencialmente (1→2→3→1→2...).
 - **Ideal para**: Cargas homogéneas (servidores con igual capacidad).
 
-<h4>B. Por Tráfico (`bytraffic`)</h4>
+<h4>B. Por Tráfico (`bytraffic`)</h4> {#por-trafico-bytraffic}
 
 ```apache
 ProxySet lbmethod=bytraffic
@@ -375,7 +375,7 @@ ProxySet lbmethod=bytraffic
 - **Cómo funciona**: Distribuye basado en el ancho de banda usado por cada backend.
 - **Ideal para**: Servidores con anchos de banda desiguales.
 
-<h4>C. Por Ocupación (`bybusyness`)</h4>
+<h4>C. Por Ocupación (`bybusyness`)</h4> {#por-ocupacion-bybusyness}
 
 ```apache
 ProxySet lbmethod=bybusyness
@@ -385,7 +385,7 @@ ProxySet lbmethod=bybusyness
 
 ---
 
-<h4>B. Ponderación de Servidores</h4>
+<h4>B. Ponderación de Servidores</h4> {#ponderacion-servidores}
 
 ```apache
 BalancerMember http://backend1:8080 loadfactor=3
@@ -394,7 +394,7 @@ BalancerMember http://backend2:8080 loadfactor=1
 - **Efecto**: `backend1` recibirá 3 veces más tráfico que `backend2`.
 - **Uso típico**: Servidores con capacidades diferentes.
 
-<h4>C. Timeouts y Reintentos</h4>
+<h4>C. Timeouts y Reintentos</h4> {#timeouts-reintentos}
 
 ```apache
 ProxySet timeout=30 retry=60
@@ -407,9 +407,9 @@ ProxySet timeout=30 retry=60
 
 ---
 
-<h3> Monitoreo del Balanceador </h3>
+<h3> Monitoreo del Balanceador </h3> {#monitoreo-balanceador}
 
-<h4> Interfaz de Estado (Requiere `mod_status`)</h4>
+<h4> Interfaz de Estado (Requiere `mod_status`)</h4> {#interfaz-estado-mod-status}
 
 ```apache
 <Location "/balancer-manager">

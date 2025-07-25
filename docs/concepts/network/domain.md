@@ -1,4 +1,4 @@
-## ¿Qué es un dominio?
+## ¿Qué es un dominio? {:#definiciones-dominio}
 
 
 
@@ -10,7 +10,7 @@ Un **dominio** es el nombre único y legible por humanos que se utiliza para ide
 
 
 
-## Estructura de un dominio
+## Estructura de un dominio {:#estructura-dominio}
 
 Ejemplo: `api.misitio.com`
 
@@ -22,7 +22,7 @@ Ejemplo: `api.misitio.com`
     <img src="../../assets/images/diagrams/domain.png" alt="Logo de Dominio" class="logo--3rd-party">
 </div>
 
-## ¿Por qué es importante un dominio?
+## ¿Por qué es importante un dominio? {:#por-que-es-importante}
 
 ### 1. Accesibilidad
 Permite a los usuarios acceder fácilmente a tu sistema sin memorizar direcciones IP.
@@ -31,7 +31,7 @@ Permite a los usuarios acceder fácilmente a tu sistema sin memorizar direccione
 ### 2. Seguridad (HTTPS)
 Para habilitar certificados SSL y cifrar la conexión (HTTPS), necesitas un dominio.
 
-## Como se puede conseguir un dominio?
+## Como se puede conseguir un dominio? {:#como-conseguir-dominio}
 Se pueden conseguir en sitios como:
 
 - [Namecheap](https://www.namecheap.com/)
@@ -43,7 +43,7 @@ Se pueden conseguir en sitios como:
 
 ---
 
-## Acceso al panel DNS del registrador
+## Acceso al panel DNS del registrador {:#acceso-a-panel}
 
 Debes poder acceder al panel donde se administran los **registros DNS** del dominio. Este panel puede llamarse:
 
@@ -55,7 +55,7 @@ Desde allí podrás crear o editar registros tipo A, CNAME, TXT, etc.
 
 ---
 
-## Limpiar registros predeterminados (si existen)
+## Limpiar registros predeterminados (si existen) {:#limpiar-registros}
 
 Muchos dominios nuevos vienen con configuraciones por defecto que **debes revisar o eliminar** para evitar conflictos.
 
