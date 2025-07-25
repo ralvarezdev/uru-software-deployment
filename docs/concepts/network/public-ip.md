@@ -16,9 +16,7 @@ Una IP pública es una dirección única asignada a un dispositivo o red para pe
 
 - Identificar y acceder a servidores o redes desde Internet.
 - Recibir solicitudes externas en servicios como HTTP, SSH, VPN, etc.
-- Asociar nombres de dominio a direcciones IP para facilitar el acceso.
-
----
+- Asociar nombres de dominio a direcciones IP para facilitar el acceso. 
 
 # Relación entre IP Pública, Port Forwarding y Dominios {:#ip-publica-port-forwarding-dominios}
 
@@ -44,10 +42,10 @@ Supongamos que tienes un servidor web en tu red local.
 ## Diagrama {:#diagrama-ip-publica}
 
 <div class="center">
-    <img src="../../assets/images/diagrams/public-ip.png" alt="Diagrama de flujo" class="logo--3rd-party">
-</div>
-
----
+    <img src="../../assets/images/diagrams/public-ip.png" alt="Diagrama de flujo de acceso a un servicio interno mediante IP pública y port forwarding" 
+		 class="logo--3rd-party">
+	<i>Diagrama de flujo de acceso a un servicio interno mediante IP pública y port forwarding</i>
+</div> 
 
 # Conclusión {:#conclusion-ip-publica}
 

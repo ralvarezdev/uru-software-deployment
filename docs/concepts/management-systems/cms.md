@@ -2,6 +2,11 @@
 
 ## Definición {#definicion}
 
+<div class="center">
+    <img src="../../assets/images/logo/wordpress.png" alt="Logo de Wordpress" class="logo--3rd-party">
+	<i>Logo de Wordpress</i>
+</div>
+
 Un **CMS (Content Management System)** es una plataforma de software que permite a los usuarios crear, editar, organizar y publicar contenido en sitios web sin necesidad de programar manualmente. Facilita la separación entre el contenido, la estructura del sitio y su presentación visual.
 
 ## Funcionalidades Comunes {#funcionalidades-comunes}
@@ -29,6 +34,11 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 
 ### Headless CMS (Frontend desacoplado) {#headless-cms-frontend-desacoplado}
 
+<div class="center">
+    <img src="../../assets/images/logo/netlify.png" alt="Logo de Netlify" class="logo--3rd-party">
+	<i>Logo de Netlify</i>
+</div>
+
 - Strapi
 - Sanity
 - Contentful
@@ -36,6 +46,11 @@ Un **CMS (Content Management System)** es una plataforma de software que permite
 - Netlify CMS
 
 ### SaaS (CMS como servicio) {#saas-cms-como-servicio}
+
+<div class="center">
+    <img src="../../assets/images/logo/shopify.png" alt="Logo de Shopify" class="logo--3rd-party">
+	<i>Logo de Shopify</i>
+</div>
 
 - Wix
 - Webflow

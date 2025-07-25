@@ -1,4 +1,4 @@
-## ¿Qué es un dominio? {:#definiciones-dominio}
+## ¿Qué es un dominio?
 
 
 

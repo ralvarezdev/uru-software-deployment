@@ -4,7 +4,7 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
-  background-image: url('/assets/laughing-cartoon.png'); /* Fondo completo */
+  background-image: url('/assets/images/laughing-cartoon.png'); /* Fondo completo */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

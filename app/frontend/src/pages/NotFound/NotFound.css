@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('/your-background-image.jpg'); /* puedes poner tu fondo tipo cómic */
+  /* background-image: url('/your-background-image.jpg'); /* puedes poner tu fondo tipo cómic */
   background-size: cover;
   background-position: center;
 }
