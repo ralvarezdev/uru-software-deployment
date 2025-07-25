@@ -1,7 +1,9 @@
 version: '3.8'
 services:
   auth_db:
-    image: postgres:16
+    build:
+      context: ./auth_db
+      dockerfile: Dockerfile
     environment:
       - POSTGRES_USER=${POSTGRES_AUTH_USER}
       - POSTGRES_PASSWORD=${POSTGRES_AUTH_PASSWORD}
@@ -10,9 +12,12 @@ services:
       - "5433:5432"
     volumes:
       - ./init/auth_db:/docker-entrypoint-initdb.d/
+    restart: always
 
   joke_db:
-    image: postgres:16
+    build:
+      context: ./joke_db
+      dockerfile: Dockerfile
     environment:
       - POSTGRES_USER=${POSTGRES_JOKE_USER}
       - POSTGRES_PASSWORD=${POSTGRES_JOKE_PASSWORD}
@@ -21,3 +26,12 @@ services:
       - "5434:5432"
     volumes:
       - ./init/joke_db:/docker-entrypoint-initdb.d/
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "52318:80"
+    restart: always
