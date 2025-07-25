@@ -41,32 +41,46 @@ theme:
         name: Switch to light mode
 nav:
   - Inicio: index.md
-  - Almacenamiento:
-    - RAID: storage/raid.md
-  - Virtualización:
-    - Contenedores:
-      - Docker: virtualization/containers/docker.md
-    - Máquinas virtuales: virtualization/virtual-machines.md
-    - Servidores virtuales: virtualization/virtual-servers.md
-  - Empaquetadores:
-    - Vite: bundlers/vite.md
-  - Sistemas de Gestión:
-    - PM2: management-systems/pm2.md
-    - CMS: management-systems/cms.md
-  - Redes:
-    - Dominio: network/domain.md
-    - IP Pública: network/public-ip.md
-    - Port Forwarding: network/port-forwarding.md
-    - Protocolos:
-      - Seguridad:
-        - SSL/TLS: network/protocols/security/ssl-tls.md
-    - Seguridad:
-      - Firewall:
-        - UFW: network/security/firewall/ufw.md
-    - Hosting:
-      - Apache: network/hosting/apache.md
-      - Nginx: network/hosting/nginx.md
-      - Virtual Host: network/hosting/virtual-host.md
+  - Conceptos Básicos:
+      - Almacenamiento:
+          - RAID: storage/raid.md
+      - Virtualización:
+          - Contenedores:
+              - Docker: virtualization/containers/docker.md
+          - Máquinas virtuales: virtualization/virtual-machines.md
+          - Servidores virtuales: virtualization/virtual-servers.md
+      - Empaquetadores:
+          - Vite: bundlers/vite.md
+      - Sistemas de Gestión:
+          - PM2: management-systems/pm2.md
+          - CMS: management-systems/cms.md
+      - Redes:
+          - Dominio: network/domain.md
+          - IP Pública: network/public-ip.md
+          - Port Forwarding: network/port-forwarding.md
+          - Protocolos:
+              - Seguridad:
+                  - SSL/TLS: network/protocols/security/ssl-tls.md
+          - Seguridad:
+              - Firewall:
+                  - UFW: network/security/firewall/ufw.md
+          - Hosting:
+              - Apache: network/hosting/apache.md
+              - Nginx: network/hosting/nginx.md
+              - Virtual Host: network/hosting/virtual-host.md
+
+  - Manual de Sistema:
+      - Introducción: manual/index.md
+      - Descripción del Sistema: manual/system-description.md
+      - Requisitos del Sistema: manual/system-requirements.md
+      - Instalación: manual/installation.md 
+      - Configuración del entorno:
+          - Configuración de red: manual/configuration/network/domain.md
+          - Configuración del Nginx: manual/configuration/nginx.md
+          - Configuración del UFW: manual/configuration/security/ufw.md
+          - Configuración del HTTPS: manual/configuration/security/https.md
+      - Solución de Problemas:
+          - Errores Comunes: manual/common-errors.md
 extra_css:
   - stylesheets/extra.css
 extra:
