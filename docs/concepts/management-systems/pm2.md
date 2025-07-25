@@ -1,25 +1,25 @@
-
 # PM2 - Process Manager para Node.js
 
 ## ¿Qué es PM2?
 
-**PM2** es un administrador de procesos para aplicaciones Node.js (y otros lenguajes), diseñado para ejecutar, monitorear y mantener procesos activos en segundo plano. Se usa principalmente en entornos de producción para asegurar que las aplicaciones funcionen de manera estable y continua, incluso tras fallos o reinicios del sistema.
+<div class="center">
+    <img src="../../assets/images/logo/pm2.png" alt="Logo de PM2" class="logo--3rd-party">
+	<i>Logo de PM2</i>
+</div>
 
----
+**PM2** es un administrador de procesos para aplicaciones Node.js (y otros lenguajes), diseñado para ejecutar, monitorear y mantener procesos activos en segundo plano. Se usa principalmente en entornos de producción para asegurar que las aplicaciones funcionen de manera estable y continua, incluso tras fallos o reinicios del sistema.
 
 ## ¿Para qué sirve PM2?
 
-| Funcionalidad              | Descripción                                                                 |
-|----------------------------|-----------------------------------------------------------------------------|
-| Ejecución en segundo plano | Permite ejecutar apps Node.js sin dejar la terminal abierta.               |
-| Reinicio automático        | Reinicia apps en caso de errores o fallos.                                 |
-| Clustering                 | Ejecuta múltiples instancias (multi-core).                                 |
-| Monitoreo                  | Muestra estado, CPU y RAM por proceso.                                     |
-| Logging                    | Guarda logs de salida estándar y errores.                                  |
-| Autostart                  | Inicia apps automáticamente al reiniciar el servidor.                      |
-| Ecosystem File             | Define múltiples apps y entornos en un archivo centralizado.               |
-
----
+| Funcionalidad              | Descripción                                                  |
+|----------------------------|--------------------------------------------------------------|
+| Ejecución en segundo plano | Permite ejecutar apps Node.js sin dejar la terminal abierta. |
+| Reinicio automático        | Reinicia apps en caso de errores o fallos.                   |
+| Clustering                 | Ejecuta múltiples instancias (multi-core).                   |
+| Monitoreo                  | Muestra estado, CPU y RAM por proceso.                       |
+| Logging                    | Guarda logs de salida estándar y errores.                    |
+| Autostart                  | Inicia apps automáticamente al reiniciar el servidor.        |
+| Ecosystem File             | Define múltiples apps y entornos en un archivo centralizado. |
 
 ## Instalación
 
@@ -28,8 +28,6 @@ npm install -g pm2
 ```
 
 > Requiere tener Node.js instalado previamente.
-
----
 
 ## Comandos Básicos
 
@@ -43,8 +41,6 @@ pm2 logs                 # Ver logs en tiempo real
 pm2 monit                # Monitoreo interactivo en consola
 ```
 
----
-
 ## Modo Clúster
 
 ```bash
@@ -53,8 +49,6 @@ pm2 start app.js -i max
 
 - Ejecuta la app en modo clúster, usando todos los núcleos disponibles.
 - Mejora el rendimiento en servidores multi-core.
-
----
 
 ## Ecosystem File
 
@@ -87,8 +81,6 @@ module.exports = {
 pm2 start ecosystem.config.js --env production
 ```
 
----
-
 ## Autostart tras reinicio del servidor
 
 ### Guardar estado actual
@@ -105,8 +97,6 @@ pm2 startup
 
 > Este comando devuelve una línea que se debe ejecutar para registrar PM2 como servicio del sistema.
 
----
-
 ## Logs
 
 ```bash
@@ -115,8 +105,6 @@ pm2 logs app           # Ver logs de una app específica
 ```
 
 > Los logs se almacenan por defecto en `~/.pm2/logs`.
-
----
 
 ## PM2 con otros lenguajes
 
@@ -127,8 +115,6 @@ pm2 start script.py --interpreter python3
 pm2 start script.sh
 ```
 
----
-
 ## Integración con Servidores Virtuales (VPS)
 
 1. Desplegar la app en el VPS
@@ -137,18 +123,14 @@ pm2 start script.sh
 4. Guardar configuración con `pm2 save`
 5. Configurar `pm2 startup` para que inicie automáticamente
 
----
-
 ## Comparación con Otros Process Managers
 
-| Herramienta | Soporte Node.js | Clustering | Logs | Autostart | Observabilidad |
-|-------------|------------------|------------|------|-----------|----------------|
-| PM2         | Sí               | Sí         | Sí   | Sí        | Sí             |
-| forever     | Sí               | No         | Básico| Parcial   | No             |
-| systemd     | Genérico         | No         | Medio| Sí        | Limitado       |
-| nodemon     | Sí (dev)         | No         | No   | No        | No             |
-
----
+| Herramienta | Soporte Node.js | Clustering | Logs   | Autostart | Observabilidad |
+|-------------|-----------------|------------|--------|-----------|----------------|
+| PM2         | Sí              | Sí         | Sí     | Sí        | Sí             |
+| forever     | Sí              | No         | Básico | Parcial   | No             |
+| systemd     | Genérico        | No         | Medio  | Sí        | Limitado       |
+| nodemon     | Sí (dev)        | No         | No     | No        | No             |
 
 ## Recursos
 

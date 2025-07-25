@@ -115,8 +115,6 @@ Apache2 puede servir tanto sitios web estáticos (HTML, CSS, JS) como sitios din
 - Para sitios dinámicos desarrollados en PHP o Python, Apache puede ejecutar el código directamente mediante módulos como `mod_php` o `mod_wsgi`.
 - En cambio, para aplicaciones desarrolladas en Node.js, Apache no puede ejecutarlas directamente. En estos casos, se utiliza Apache como proxy inverso, redirigiendo las peticiones HTTP al servidor Node.js que corre por separado (por ejemplo, en el puerto 3000).
 
----
-
 <h3> Servir un solo sitio web </h3>
 
 <h4> Requisitos previos </h4>

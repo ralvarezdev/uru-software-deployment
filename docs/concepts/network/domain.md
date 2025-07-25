@@ -1,6 +1,6 @@
+# Dominio 
+
 ## ¿Qué es un dominio?
-
-
 
 Un **dominio** es el nombre único y legible por humanos que se utiliza para identificar un sitio o servicio en internet. Funciona como una dirección fácil de recordar que se traduce internamente a una dirección IP del servidor que aloja tu aplicación.
 

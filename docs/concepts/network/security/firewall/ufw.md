@@ -95,8 +95,6 @@ sudo ufw logging on                 # Habilita logs (ubicación: /var/log/ufw.lo
 sudo ufw app list                   # Muestra perfiles predefinidos
 ```
 
----  
-
 ## **Configuración para Servidores Web**  
 
 ### **Apache**  
@@ -124,5 +122,3 @@ sudo ufw allow 'Nginx HTTP'      # Solo HTTP (puerto 80)
 sudo ufw allow 'Nginx HTTPS'     # Solo HTTPS (puerto 443)
 sudo ufw allow 'Nginx Full'      # HTTP y HTTPS (80 y 443)
 ```
-
----  
