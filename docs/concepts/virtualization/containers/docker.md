@@ -1,7 +1,7 @@
 ## Docker {:#docker}
 
 <div class="center">
-    <img src="../assets/images/logo/docker.png" alt="Logo de Docker" 
+    <img src="../../../assets/images/logo/docker.png" alt="Logo de Docker" 
 class="logo--3rd-party">
     <i>Logo de Docker</i>
 </div>

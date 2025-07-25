@@ -44,7 +44,7 @@ Supongamos que tienes un servidor web en tu red local.
 ## Diagrama
 
 <div class="center">
-    <img src="../../assets/images/logo/diagram-public-ip.png" alt="Diagrama de flujo" class="logo--3rd-party">
+    <img src="../../assets/images/diagrams/public-ip.png" alt="Diagrama de flujo" class="logo--3rd-party">
 </div>
 
 ---
