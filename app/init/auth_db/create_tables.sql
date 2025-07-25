@@ -1,4 +1,3 @@
--- AUTH DB --
 CREATE TABLE IF NOT EXISTS users (
     id BIGSERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
@@ -109,45 +108,3 @@ CREATE TABLE IF NOT EXISTS user_access_tokens (
 CREATE UNIQUE INDEX user_access_tokens_unique_parent_token_id
 ON user_access_tokens (parent_token_id)
 WHERE parent_token_id IS NOT NULL;
-
--- JOKE DB --
-
-CREATE TABLE IF NOT EXISTS jokes (
-    id BIGSERIAL PRIMARY KEY,
-    user_id BIGINT,
-    content TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    deleted_at TIMESTAMP,
-
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
-
-CREATE TABLE IF NOT EXISTS joke_votes (
-    id BIGSERIAL PRIMARY KEY,
-    joke_id BIGINT NOT NULL,
-    user_id BIGINT NOT NULL,
-    vote SMALLINT NOT NULL CHECK (vote IN (-1, 1)),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    deleted_at TIMESTAMP,
-
-    FOREIGN KEY (joke_id) REFERENCES jokes(id) ON DELETE CASCADE,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
-
-CREATE UNIQUE INDEX IF NOT EXISTS joke_votes_unique_joke_user
-ON joke_votes (joke_id, user_id);
-
-CREATE TABLE IF NOT EXISTS joke_comments (
-    id BIGSERIAL PRIMARY KEY,
-    joke_id BIGINT NOT NULL,
-    user_id BIGINT NOT NULL,
-    content TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    deleted_at TIMESTAMP,
-
-    FOREIGN KEY (joke_id) REFERENCES jokes(id) ON DELETE CASCADE,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
-

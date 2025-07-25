@@ -1,4 +1,11 @@
+import os
+
 import pandas as pd
+
+CSV_FILE = 'chistes_con_metadatos_curado.csv'
+TARGET_TABLE = 'jokes'
+ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+OUTPUT_SQL_FILE = os.path.join(ROOT_DIR, 'init', 'joke_db', 'jokes_inserts.sql')
 
 def extract_texto_column(csv_file_path):
     """
@@ -68,25 +75,21 @@ def generate_sql_inserts(extracted_texts, table_name="jokes", user_id=None):
     return insert_statements
 
 if __name__ == "__main__":
-    csv_file = 'chistes_con_metadatos_curado.csv'
-    target_table = 'jokes'
-
     # 1. Extract text from the 'texto' column
-    extracted_text_list = extract_texto_column(csv_file)
+    extracted_text_list = extract_texto_column(CSV_FILE)
 
     if extracted_text_list:
         print("Successfully extracted text from 'texto' column.")
 
         # 2. Generate SQL INSERT statements
-        sql_inserts = generate_sql_inserts(extracted_text_list, table_name=target_table)
+        sql_inserts = generate_sql_inserts(extracted_text_list, table_name=TARGET_TABLE)
 
         # 3. Save SQL statements to a file
         print("Generated SQL INSERT Statements.")
-        output_sql_file = 'jokes_inserts.sql'
         try:
-            with open(output_sql_file, 'w', encoding='utf-8') as f:
+            with open(OUTPUT_SQL_FILE, 'w', encoding='utf-8') as f:
                 for sql in sql_inserts:
                     f.write(sql + '\n')
-            print(f"SQL INSERT statements saved to '{output_sql_file}'.")
+            print(f"SQL INSERT statements saved to '{OUTPUT_SQL_FILE}'.")
         except IOError as e:
             print(f"Error saving SQL to file: {e}")
