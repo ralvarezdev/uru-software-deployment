@@ -1195,7 +1195,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#balanceador-de-carga" class="md-nav__link">
+  <a href="#balanceador-carga" class="md-nav__link">
     <span class="md-ellipsis">
       Balanceador de carga
     </span>
@@ -1697,7 +1697,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#balanceador-de-carga" class="md-nav__link">
+  <a href="#balanceador-carga" class="md-nav__link">
     <span class="md-ellipsis">
       Balanceador de carga
     </span>
@@ -1730,22 +1730,22 @@
 <p>Es un software multiplataforma que funciona como intermediario entre el servidor donde se alojan los archivos (páginas web, imágenes, scripts, etc.) y los clientes (navegadores como Chrome, Firefox, etc.), procesando sus solicitudes y entregando las respuestas correspondientes.</p>
 <h2 id="caracteristicas-principales">Características principales</h2>
 <h4>Protocolos Soportados</h4>
-
+<p>{#protocolos-soportados}</p>
 <p>Apache es compatible principalmente con HTTP/1.1 y HTTP/2, protocolos estándar para la transferencia web. También admite extensiones como WebDAV (para edición remota de archivos) y FastCGI (para mejorar el rendimiento con aplicaciones dinámicas). Aunque no está diseñado para protocolos como FTP o SMTP, puede combinarse con otros servicios para cubrir esas necesidades. La configuración de protocolos se realiza mediante directivas en sus archivos de configuración.</p>
 <h4>Configuración Flexible</h4>
-
+<p>{#configuracion-flexible}</p>
 <p>Apache se configura mediante archivos como <code>httpd.conf</code> (configuración principal) o <code>.htaccess</code> (reglas por directorio). Estos archivos permiten definir desde puertos de escucha hasta reglas complejas de redirección. Las directivas como <code>Directory</code> (permisos de acceso) o <code>RewriteRule</code> (URLs amigables) ofrecen granularidad. La posibilidad de usar archivos <code>.htaccess</code> permite ajustes sin reiniciar el servidor, ideal para entornos compartidos donde los usuarios no tienen acceso raíz.</p>
 <h4>Entorno de Ejecución</h4>
-
+<p>{#entorno-de-ejecucion}</p>
 <p>Para contenido dinámico, Apache se integra con lenguajes como PHP (vía <code>mod_php</code>), Python (con <code>mod_wsgi</code>) o Perl (<code>mod_perl</code>). Estos módulos permiten ejecutar scripts directamente en el servidor, generando HTML personalizado antes de enviarlo al cliente. Además, puede conectarse a bases de datos (MySQL, PostgreSQL) para sitios con almacenamiento persistente. Esta capacidad lo hace apto para CMS como WordPress o frameworks como Laravel.</p>
 <h4>Proxy y Balanceador de Carga</h4>
-
+<p>{#proxy-balanceador-carga}</p>
 <p>Como proxy inverso, Apache redirige solicitudes a servidores internos (ej: una app Node.js en otro puerto), ocultando la infraestructura real. Para alta disponibilidad, módulos como <code>mod_proxy_balancer</code> distribuyen el tráfico entre múltiples servidores (load balancing), mejorando la escalabilidad. Aunque no es tan eficiente como Nginx o HAProxy para esta tarea, su facilidad de configuración lo hace viable para entornos pequeños o medianos.</p>
 <h4>Seguridad Básica</h4>
-
+<p>{#seguridad-basica}</p>
 <p>Apache incluye herramientas para proteger sitios web: autenticación básica/digest (<code>mod_auth</code>), restricciones por IP (<code>Require ip</code>), y cifrado SSL/TLS (vía <code>mod_ssl</code>). Configuraciones como <code>LimitRequestBody</code> (para evitar ataques DDoS) o <code>Header set X-Content-Type-Options</code> (para mitigar MIME sniffing) añaden capas de seguridad. Sin embargo, muchas protecciones avanzadas (como WAFs) requieren módulos adicionales o software externo.</p>
 <h4>Virtual Host</h4>
-
+<p>{#virtual-host}</p>
 <p>Apache permite alojar múltiples sitios web en un mismo servidor físico mediante Virtual Hosts. Cada virtual host tiene su propia configuración independiente, como dominio, directorio raíz (<code>DocumentRoot</code>), reglas de acceso y SSL, simulando servidores separados.</p>
 <h2 id="instalacion">Instalación</h2>
 <p>Para instalar Apache2, se emplea el siguiente comando:</p>
@@ -1753,7 +1753,7 @@
 </code></pre></div>
 <p>Apache2 se configura mediante directivas en archivos de configuración de texto plano en formato <code>/etc/apache2/</code>. Estas directivas se distribuyen entre los siguientes archivos y directorios:</p>
 <h3> Archivos </h3>
-
+<p>{#archivos}</p>
 <ul>
 <li><strong>apache2.conf</strong>: El archivo de configuración principal de Apache2. Contiene configuraciones globales para Apache2.</li>
 <li><strong>envvars</strong>: Archivo donde se establecen las variables de entorno de Apache2.</li>
@@ -1761,7 +1761,7 @@
 <li><strong>ports.conf</strong>: Contiene las directivas que determinan en qué puertos TCP está escuchando Apache2.</li>
 </ul>
 <h3> Directorios </h3>
-
+<p>{#directorios}</p>
 <ul>
 <li><strong>conf-available</strong>: Este directorio contiene los archivos de configuración disponibles. Todos los archivos que estaban previamente en <code>/etc/apache2/conf.d</code> deben trasladarse a <code>/etc/apache2/conf-available</code>.</li>
 <li><strong>conf-enabled</strong>: Contiene enlaces simbólicos a los archivos en <code>/etc/apache2/conf-available</code>. Cuando se crea un enlace simbólico en un archivo de configuración, este se habilitará la próxima vez que se reinicie Apache2.</li>
@@ -1771,7 +1771,7 @@
 <li><strong>sites-enabled</strong>: Al igual que mods-enabled, sites-enabled contiene enlaces simbólicos al directorio <code>/etc/apache2/sites-available</code>. De igual forma, cuando se crea un enlace simbólico en un archivo de configuración, el sitio configurado por él se activará al reiniciar Apache2.</li>
 </ul>
 <h3> Directivas </h3>
-
+<p>{#directivas}</p>
 <p>Para hacer las configuraciones se emplean las Directivas, estas son instrucciones al servidor Apache para controlar su funcionamiento. Una directiva consiste en un nombre seguido de uno o más argumentos. Se escriben en los archivos de configuración como <code>httpd.conf</code>, <code>apache2.conf</code>, o dentro de bloques como <code>&lt;VirtualHost&gt;</code>, <code>&lt;Directory&gt;</code>, o incluso en archivos <code>.htaccess</code>.</p>
 <p><strong>Ejemplo de directivas:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="nb">ServerAdmin</span><span class="w"> </span>webmaster@miweb.com
@@ -1787,7 +1787,7 @@
 </code></pre></div></p>
 <hr />
 <h3> Módulos </h3>
-
+<p>{#modulos}</p>
 <p>Los módulos de Apache2 son componentes que extienden las funcionalidades del servidor web Apache. Gracias a su arquitectura modular, Apache permite activar solo los módulos necesarios para cada proyecto, lo que mejora el rendimiento, la seguridad y la flexibilidad del servidor.</p>
 <p>Estos módulos pueden estar integrados de forma estática en el binario de Apache o cargarse dinámicamente como objetos compartidos (DSO) durante la ejecución. Cada módulo añade capacidades específicas al servidor. Por ejemplo, algunos permiten ejecutar lenguajes como PHP (<code>mod_php</code>), habilitar HTTPS (<code>mod_ssl</code>), comprimir contenido (<code>mod_deflate</code>), o reescribir URLs (<code>mod_rewrite</code>). Otros se encargan de tareas como autenticación (<code>mod_auth_basic</code>, <code>mod_auth_digest</code>), caché (<code>mod_cache</code>), control de acceso (<code>mod_access_compat</code>), o incluso convertir Apache en un proxy inverso (<code>mod_proxy</code>).</p>
 <p>Entre los módulos más importantes y comúnmente utilizados están:</p>
@@ -1812,9 +1812,9 @@
 <li>En cambio, para aplicaciones desarrolladas en Node.js, Apache no puede ejecutarlas directamente. En estos casos, se utiliza Apache como proxy inverso, redirigiendo las peticiones HTTP al servidor Node.js que corre por separado (por ejemplo, en el puerto 3000).</li>
 </ul>
 <h3> Servir un solo sitio web </h3>
-
+<p>{#servir-un-solo-sitio-web}</p>
 <h4> Requisitos previos </h4>
-
+<p>{#requisitos-previos}</p>
 <ul>
 <li>Tener instalado Apache2 en el servidor Ubuntu con <code>sudo apt install apache2</code>.</li>
 <li>Tener instalado git (para clonar repositorios de ser necesario).</li>
@@ -1822,17 +1822,17 @@
 <li>Tener listos los archivos estáticos (HTML, CSS, JS, imágenes, etc.).</li>
 </ul>
 <h4>Paso 1: Crear el directorio donde se almacenarán los archivos estáticos</h4>
-
+<p>{#paso-1-directorio-archivos-estaticos}</p>
 <p>En este directorio se puede clonar el repositorio que contenga los archivos con <code>git clone &lt;link-repositorio&gt;</code>.</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/www/mynewsite.com
 </code></pre></div>
 <h4>Paso 2: Crear un archivo de configuración para el virtual host</h4>
-
+<p>{#paso-2-archivo-configuracion-virtual-host}</p>
 <p>Siguiendo la sugerencia que propone la documentación se realiza una copia del archivo que ya trae por defecto Apache y se emplea como plantilla:</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>cp<span class="w"> </span>/etc/apache2/sites-available/000-default.conf<span class="w"> </span>/etc/apache2/sites-available/mynewsite.conf
 </code></pre></div>
 <h4>Paso 3: Configurar apache para servir el directorio del sitio</h4>
-
+<p>{#paso-3-configurar-apache-directorio-sitio}</p>
 <p>El bloque <code>&lt;VirtualHost *:80&gt;</code> indica que Apache atenderá solicitudes HTTP (puerto 80) en cualquier IP disponible del servidor. Dentro de este bloque se definen todas las configuraciones específicas para un sitio web.</p>
 <ul>
 <li><code>ServerAdmin</code> establece el correo del administrador del sitio. Este correo puede aparecer en páginas de error para que los usuarios lo contacten en caso de problemas.</li>
@@ -1851,12 +1851,12 @@
 <span class="nt">&lt;/VirtualHost&gt;</span>
 </code></pre></div>
 <h4>Paso 4: Habilitar el sitio y reiniciar apache</h4>
-
+<p>{#paso-4-habilitar-sitio-reiniciar-apache}</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>a2ensite<span class="w"> </span>mynewsite
 sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2.service
 </code></pre></div>
 <h3> Servir más de un sitio web </h3>
-
+<p>{#servir-mas-de-un-sitio-web}</p>
 <p>Apache utiliza los Virtual Hosts para manejar múltiples sitios web en un mismo servidor. Cada <code>&lt;VirtualHost&gt;</code> debe tener un <code>ServerName</code> único (o combinado con <code>ServerAlias</code>) para evitar conflictos. Si dos VirtualHosts comparten el mismo <code>ServerName</code> y puerto, Apache usará el primero que encuentre en la configuración, ignorando el segundo. Es fundamental que cada sitio web tenga su propia configuración con dominios o subdominios distintos para que Apache pueda enrutar las peticiones correctamente.</p>
 <p>Además, los VirtualHosts pueden diferenciarse por puertos (como <code>*:80</code> para HTTP y <code>*:443</code> para HTTPS) o direcciones IP (si el servidor tiene varias). Esto permite, por ejemplo, tener un mismo dominio respondiendo de forma distinta según el protocolo (HTTP vs. HTTPS) o la IP de acceso. Sin embargo, la forma más común es usar el mismo puerto (generalmente el 80 o 443) y distinguir los sitios mediante el nombre de dominio en la cabecera Host de la petición HTTP.</p>
 <p>Cuando Apache recibe una solicitud, sigue este orden para decidir qué VirtualHost usar:</p>
@@ -1878,7 +1878,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 <li>Enrutamiento basado en rutas: Redirigir <code>/app1</code> a un backend y <code>/app2</code> a otro.</li>
 </ul>
 <h3>Requisitos previos</h3>
-
+<p>{#requisitos-previos-proxy}</p>
 <ul>
 <li>Servidor con Apache instalado (versión 2.4 o superior recomendada)</li>
 <li>Módulos <code>mod_proxy</code> y <code>mod_proxy_http</code> habilitados</li>
@@ -1886,9 +1886,9 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 </ul>
 <hr />
 <h3> Módulos Requeridos y su Función</h3>
-
+<p>{#modulos-requeridos-funcion}</p>
 <h4> Módulos Principales</h4>
-
+<p>{#modulos-principales}</p>
 <table>
 <thead>
 <tr>
@@ -1936,9 +1936,9 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 </code></pre></div>
 <hr />
 <h2> Directivas Clave y su Configuración </h2>
-
+<p>{#directivas-clave-configuracion}</p>
 <h3> Directivas Fundamentales </h3>
-
+<p>{#directivas-fundamentales}</p>
 <table>
 <thead>
 <tr>
@@ -1982,7 +1982,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 </tbody>
 </table>
 <h3> Directivas Avanzadas </h3>
-
+<p>{#directivas-avanzadas}</p>
 <table>
 <thead>
 <tr>
@@ -2011,10 +2011,10 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 </table>
 <hr />
 <h2> Configuración Básica de Proxy Inverso en Apache </h2>
-
+<p>{#configuracion-basica-proxy-inverso}</p>
 <p>Edita el archivo de configuración (generalmente en <code>/etc/apache2/sites-available/000-default.conf</code> o similar):</p>
 <h3> Ejemplo Completo (Archivo de VirtualHost) </h3>
-
+<p>{#ejemplo-completo-virtualhost}</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="s">*:80</span><span class="nt">&gt;</span>
 <span class="w">    </span><span class="c"># Dominio que recibirá las peticiones</span>
 <span class="w">    </span><span class="nb">ServerName</span><span class="w"> </span>mi-app.com
@@ -2032,14 +2032,14 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 <span class="nt">&lt;/VirtualHost&gt;</span>
 </code></pre></div>
 <h4> Activación del Proxy </h4>
-
+<p>{#activacion-proxy}</p>
 <p><div class="highlight"><pre><span></span><code><span class="nb">ProxyPreserveHost</span><span class="w"> </span><span class="k">On</span>
 </code></pre></div><br />
 - <strong>Función clave</strong>: Mantiene el header <code>Host</code> original de la solicitud del cliente al enviarla al backend.<br />
   - Sin esto, el backend recibiría <code>Host: localhost:3000</code> en lugar de <code>Host: mi-app.com</code>.<br />
   - Esencial para aplicaciones que usan host-based routing.</p>
 <h4> Redirección al Backend </h4>
-
+<p>{#redireccion-backend}</p>
 <div class="highlight"><pre><span></span><code><span class="nb">ProxyPass</span><span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="s2">&quot;http://localhost:3000/&quot;</span>
 <span class="nb">ProxyPassReverse</span><span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="w"> </span><span class="s2">&quot;http://localhost:3000/&quot;</span>
 </code></pre></div>
@@ -2064,7 +2064,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 <p><strong>Ejemplo práctico</strong>:<br />
 - Si el backend devuelve <code>Location: http://localhost:3000/login</code>, el proxy lo reescribirá como <code>Location: http://mi-app.com/login</code>.</p>
 <hr />
-<h2 id="balanceador-de-carga">Balanceador de carga</h2>
+<h2 id="balanceador-carga">Balanceador de carga</h2>
 <p>Un balanceador de carga distribuye peticiones entre múltiples servidores backend para:</p>
 <ul>
 <li><strong>Aumentar disponibilidad</strong>: Si un servidor falla, otros siguen atendiendo.</li>
@@ -2072,7 +2072,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 <li><strong>Escalar horizontalmente</strong>: Añadir más servidores bajo demanda.</li>
 </ul>
 <h3> Módulos Requeridos </h3>
-
+<p>{#modulos-requeridos-balanceo}</p>
 <p>Para activarlos se emplea: </p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>a2enmod<span class="w"> </span>proxy<span class="w"> </span>proxy_http<span class="w"> </span>proxy_balancer<span class="w"> </span>lbmethod_byrequests
 sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2
@@ -2097,9 +2097,9 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 </table>
 <hr />
 <h3> Configuración Básica </h3>
-
+<p>{#configuracion-basica-balanceo}</p>
 <h4>Ejemplo: Balanceo Round-Robin (por peticiones)</h4>
-
+<p>{#ejemplo-balanceo-round-robin}</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;VirtualHost</span><span class="w"> </span><span class="s">*:80</span><span class="nt">&gt;</span>
 <span class="w">    </span><span class="nb">ServerName</span><span class="w"> </span>mi-app.com
 
@@ -2117,7 +2117,7 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 <span class="nt">&lt;/VirtualHost&gt;</span>
 </code></pre></div>
 <h4>Parámetros Clave</h4>
-
+<p>{#parametros-clave}</p>
 <table>
 <thead>
 <tr>
@@ -2142,36 +2142,36 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 </table>
 <hr />
 <h3> Algoritmos de Balanceo </h3>
-
+<p>{#algoritmos-balanceo}</p>
 <p>Apache soporta varios métodos:</p>
 <h4>A. Round-Robin (`byrequests`)</h4>
-
+<p>{#round-robin-byrequests}</p>
 <p><div class="highlight"><pre><span></span><code><span class="nb">ProxySet</span><span class="w"> </span>lbmethod=byrequests
 </code></pre></div><br />
 - <strong>Cómo funciona</strong>: Distribuye peticiones secuencialmente (1→2→3→1→2...).<br />
 - <strong>Ideal para</strong>: Cargas homogéneas (servidores con igual capacidad).</p>
 <h4>B. Por Tráfico (`bytraffic`)</h4>
-
+<p>{#por-trafico-bytraffic}</p>
 <p><div class="highlight"><pre><span></span><code><span class="nb">ProxySet</span><span class="w"> </span>lbmethod=bytraffic
 </code></pre></div><br />
 - <strong>Cómo funciona</strong>: Distribuye basado en el ancho de banda usado por cada backend.<br />
 - <strong>Ideal para</strong>: Servidores con anchos de banda desiguales.</p>
 <h4>C. Por Ocupación (`bybusyness`)</h4>
-
+<p>{#por-ocupacion-bybusyness}</p>
 <p><div class="highlight"><pre><span></span><code><span class="nb">ProxySet</span><span class="w"> </span>lbmethod=bybusyness
 </code></pre></div><br />
 - <strong>Cómo funciona</strong>: Prioriza servidores con menos conexiones activas.<br />
 - <strong>Ideal para</strong>: Evitar sobrecarga en servidores lentos.</p>
 <hr />
 <h4>B. Ponderación de Servidores</h4>
-
+<p>{#ponderacion-servidores}</p>
 <p><div class="highlight"><pre><span></span><code><span class="nb">BalancerMember</span><span class="w"> </span>http://backend1:8080<span class="w"> </span>loadfactor=3
 <span class="nb">BalancerMember</span><span class="w"> </span>http://backend2:8080<span class="w"> </span>loadfactor=1
 </code></pre></div><br />
 - <strong>Efecto</strong>: <code>backend1</code> recibirá 3 veces más tráfico que <code>backend2</code>.<br />
 - <strong>Uso típico</strong>: Servidores con capacidades diferentes.</p>
 <h4>C. Timeouts y Reintentos</h4>
-
+<p>{#timeouts-reintentos}</p>
 <div class="highlight"><pre><span></span><code><span class="nb">ProxySet</span><span class="w"> </span>timeout=30<span class="w"> </span>retry=60
 </code></pre></div>
 <table>
@@ -2194,9 +2194,9 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class=
 </table>
 <hr />
 <h3> Monitoreo del Balanceador </h3>
-
+<p>{#monitoreo-balanceador}</p>
 <h4> Interfaz de Estado (Requiere `mod_status`)</h4>
-
+<p>{#interfaz-estado-mod-status}</p>
 <p><div class="highlight"><pre><span></span><code><span class="nt">&lt;Location</span><span class="w"> </span><span class="s">&quot;/balancer-manager&quot;</span><span class="nt">&gt;</span>
 <span class="w">    </span><span class="nb">SetHandler</span><span class="w"> </span>balancer-manager
 <span class="w">    </span><span class="nb">Require</span><span class="w"> </span>host<span class="w"> </span>ejemplo.com<span class="w">  </span>#<span class="w"> </span>Restringir<span class="w"> </span>acceso

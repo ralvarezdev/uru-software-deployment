@@ -1356,6 +1356,75 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Instalación de herramientas necesarias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualización del sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-docker-y-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Docker y Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Nginx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-ufw-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de UFW (Firewall)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-del-cliente-ddns-no-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación del cliente DDNS No-IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-cloudflared-cliente-de-tuneles-de-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Cloudflared (cliente de túneles de Cloudflare)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1621,6 +1690,75 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Instalación de herramientas necesarias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualización del sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-docker-y-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Docker y Docker Compose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Nginx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-ufw-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de UFW (Firewall)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-del-cliente-ddns-no-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación del cliente DDNS No-IP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-cloudflared-cliente-de-tuneles-de-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Cloudflared (cliente de túneles de Cloudflare)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1647,39 +1785,60 @@
 <h2 id="preparacion-del-entorno">Preparación del Entorno</h2>
 <p>Antes de iniciar el despliegue del sistema, es necesario preparar el entorno en el servidor o máquina local que actuará como host. A continuación, se detallan los pasos para instalar las herramientas necesarias y configurar las variables de entorno requeridas para el funcionamiento de JokeAppWeb.</p>
 <h2 id="instalacion-de-herramientas-necesarias">Instalación de herramientas necesarias</h2>
+<p>Para preparar el entorno de ejecución del sistema JokeAppWeb, es necesario instalar una serie de herramientas que permitirán la orquestación de servicios, gestión de contenedores, configuración del firewall, y exposición del sistema a través de la red. A continuación, se detallan los pasos necesarios.</p>
 <p>Se debe contar con privilegios de superusuario para instalar estas herramientas.</p>
-<!-- ### Git
-
-Git se utiliza para clonar el repositorio del proyecto:
-
+<h4 id="actualizacion-del-sistema">Actualización del sistema</h4>
+<p>Se recomienda comenzar actualizando el sistema para contar con las últimas versiones de los paquetes disponibles:</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>-y
+sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
 </code></pre></div>
-
-### Docker
-
-Docker permite la ejecución de contenedores de forma aislada:
-
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker.io<span class="w"> </span>-y
-sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>docker
-sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>docker
+<h4 id="instalacion-de-git">Instalación de Git</h4>
+<p>Git fue el sistema de control de versiones utilizado para gestionar el código fuente de la aplicación. Para instalarlo, se ejecutó:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git
 </code></pre></div>
-
-### Docker Compose
-
-Docker Compose permite orquestar múltiples contenedores:
-
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker-compose<span class="w"> </span>-y
+<h4 id="instalacion-de-docker-y-docker-compose">Instalación de Docker y Docker Compose</h4>
+<p>Docker es el motor de contenedores que se emplea para ejecutar tanto el backend como la base de datos y otras dependencias de la aplicación. Se instala usando el script oficial:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sSL<span class="w"> </span>https://get.docker.com<span class="w"> </span><span class="p">|</span><span class="w"> </span>sh
 </code></pre></div>
-
-### Servidor Web Nginx
-
-Se usará Nginx como proxy inverso para redirigir el tráfico hacia los contenedores:
-
-```bash
-sudo apt install nginx -y
-sudo systemctl enable nginx
-``` -->
+<p>Luego, se agrega el usuario actual al grupo docker para evitar usar sudo en cada comando:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span>
+</code></pre></div>
+<blockquote>
+<p>Importante: se debe cerrar y volver a iniciar sesión para que este cambio tenga efecto.</p>
+</blockquote>
+<p>Habilitar el servicio de Docker al arranque del sistema:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>docker
+</code></pre></div>
+<p>Verificar que Docker esté correctamente instalado:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>hello-world
+</code></pre></div>
+<p>Instalar el complemento oficial de Docker Compose (para versiones modernas):</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker-compose-plugin
+</code></pre></div>
+<h4 id="instalacion-de-nginx">Instalación de Nginx</h4>
+<p>Aunque el despliegue externo se realiza mediante túneles de Cloudflare, se instala Nginx como servidor web auxiliar y para futuras configuraciones de proxy inverso:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nginx
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>nginx
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>nginx
+</code></pre></div>
+<h4 id="instalacion-de-ufw-firewall">Instalación de UFW (Firewall)</h4>
+<p>El firewall UFW se emplea para permitir únicamente las conexiones necesarias hacia el servidor:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw
+</code></pre></div>
+<h4 id="instalacion-del-cliente-ddns-no-ip">Instalación del cliente DDNS No-IP</h4>
+<p>Para mantener el dominio enlazado a una IP pública dinámica, se instala el cliente No-IP:</p>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>--content-disposition<span class="w"> </span>https://www.noip.com/download/linux/latest
+tar<span class="w"> </span>xf<span class="w"> </span>noip-duc_3.3.0.tar.gz
+<span class="nb">cd</span><span class="w"> </span>noip-duc_3.3.0/binaries
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>./noip-duc_3.3.0_arm64.deb<span class="w">  </span>
+</code></pre></div>
+<h4 id="instalacion-de-cloudflared-cliente-de-tuneles-de-cloudflare">Instalación de Cloudflared (cliente de túneles de Cloudflare)</h4>
+<p>Para exponer de forma segura la aplicación frontend sin abrir puertos en el router ni configurar certificados SSL manualmente, se emplea Cloudflare Tunnel. El cliente cloudflared se instala de la siguiente manera:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-L<span class="w"> </span>https://pkg.cloudflare.com/cloudflare-main.gpg<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/usr/share/keyrings/cloudflare-archive-keyring.gpg<span class="w"> </span>&gt;/dev/null
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [signed-by=/usr/share/keyrings/cloudflare-archive-keyring.gpg] https://pkg.cloudflare.com/cloudflared </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> main&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/cloudflared.list
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>cloudflared<span class="w"> </span>-y
+</code></pre></div>
 
 
 

@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#que-es-una-ip-publica" class="md-skip">
+        <a href="#ip-publica" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -844,7 +844,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplos" class="md-nav__link">
+  <a href="#ejemplos-ip-publica" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplos:
     </span>
@@ -1639,7 +1639,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplos" class="md-nav__link">
+  <a href="#ejemplos-ip-publica" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplos:
     </span>
@@ -1680,7 +1680,7 @@
   
 
 
-<h1 id="que-es-una-ip-publica">¿Qué es una IP Pública?</h1>
+<h1 id="ip-publica">¿Qué es una IP Pública?</h1>
 <p>Una IP pública es una dirección única asignada a un dispositivo o red para permitir el acceso desde cualquier punto de Internet.</p>
 <h2 id="caracteristicas">Características</h2>
 <ul>
@@ -1688,7 +1688,7 @@
 <li>Visible desde Internet.</li>
 <li>Necesaria para recibir tráfico externo.</li>
 </ul>
-<h3 id="ejemplos">Ejemplos:</h3>
+<h3 id="ejemplos-ip-publica">Ejemplos:</h3>
 <ul>
 <li>IPv4: <code>190.123.45.67</code></li>
 <li>IPv6: <code>2800:200:e010::1</code></li>
@@ -1699,15 +1699,15 @@
 <li>Recibir solicitudes externas en servicios como HTTP, SSH, VPN, etc.</li>
 <li>Asociar nombres de dominio a direcciones IP para facilitar el acceso. </li>
 </ul>
-<h1 id="relacion-entre-ip-publica-port-forwarding-y-dominios">Relación entre IP Pública, Port Forwarding y Dominios</h1>
+<h1 id="ip-publica-port-forwarding-dominios">Relación entre IP Pública, Port Forwarding y Dominios</h1>
 <p>Supongamos que tienes un servidor web en tu red local.</p>
-<h2 id="escenario">Escenario</h2>
+<h2 id="escenarios-ip-publica">Escenario</h2>
 <ul>
 <li>Tu proveedor te asigna una IP pública: <code>190.123.45.67</code>.</li>
 <li>Tu aplicación web corre en <code>192.168.1.10:3000</code> (IP privada).</li>
 <li>Configuras port forwarding: rediriges el puerto 80 del router hacia <code>192.168.1.10:3000</code>.</li>
 </ul>
-<h2 id="acceso-mediante-dominio">Acceso mediante dominio</h2>
+<h2 id="acceso-ip-publica-dominio">Acceso mediante dominio</h2>
 <ul>
 <li>Registras <code>miapp.com</code>.</li>
 <li>Configuras en el DNS que <code>miapp.com</code> apunte a <code>190.123.45.67</code>.</li>
@@ -1718,14 +1718,14 @@
 <li>Redirige al servidor interno</li>
 <li>El servidor responde al usuario</li>
 </ul>
-<h2 id="diagrama">Diagrama</h2>
+<h2 id="diagrama-ip-publica">Diagrama</h2>
 <div class="center">
     <img src="../../assets/images/diagrams/public-ip.png" alt="Diagrama de flujo de acceso a un servicio interno mediante IP pública y port forwarding" 
          class="logo--3rd-party">
     <i>Diagrama de flujo de acceso a un servicio interno mediante IP pública y port forwarding</i>
 </div>
 
-<h1 id="conclusion">Conclusión</h1>
+<h1 id="conclusion-ip-publica">Conclusión</h1>
 <p>Las direcciones IP públicas son fundamentales para que cualquier dispositivo o red pueda ser accesible desde Internet, funcionando como un punto de entrada visible para el mundo exterior. Sin embargo, en la mayoría de los entornos, especialmente en redes domésticas o empresariales, los servicios internos no están directamente expuestos. Aquí es donde entra en juego el port forwarding, que permite redirigir el tráfico entrante desde esa IP pública hacia servicios específicos dentro de la red local, manteniendo un nivel de aislamiento y control.</p>
 <p>También, los nombres de dominio desempeñan un papel esencial al ofrecer una forma mucho más amigable de acceder a estos servicios, ya que en lugar de recordar direcciones IP numéricas, los usuarios simplemente pueden escribir un nombre como miapp.com, que será traducido automáticamente a la IP pública correspondiente mediante el sistema DNS.</p>
 <p>Unidos, estos elementos como la IP pública, el port forwarding y los dominios forman una arquitectura básica pero poderosa para publicar aplicaciones y servicios locales en Internet. Esta combinación es ampliamente utilizada en soluciones de hosting doméstico, entornos de desarrollo remoto, aplicaciones autoalojadas, dispositivos IoT y más, proporcionando una forma estructurada, accesible y controlada de hacer visibles los recursos internos al mundo exterior.</p>

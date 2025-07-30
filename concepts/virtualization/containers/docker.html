@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#para-que-sirve-docker" class="md-skip">
+        <a href="#docker" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -485,6 +485,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -517,6 +519,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -534,7 +538,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#casos-de-uso-comunes" class="md-nav__link">
+  <a href="#casos-de-uso-docker" class="md-nav__link">
     <span class="md-ellipsis">
       Casos de uso comunes
     </span>
@@ -553,7 +557,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-docker-engine" class="md-nav__link">
+  <a href="#docker-engine" class="md-nav__link">
     <span class="md-ellipsis">
       1. Docker Engine
     </span>
@@ -562,7 +566,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-imagenes" class="md-nav__link">
+  <a href="#imagenes-docker" class="md-nav__link">
     <span class="md-ellipsis">
       2. Imágenes
     </span>
@@ -571,7 +575,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-contenedores" class="md-nav__link">
+  <a href="#contenedores-docker" class="md-nav__link">
     <span class="md-ellipsis">
       3. Contenedores
     </span>
@@ -595,7 +599,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplo-de-dockerfile" class="md-nav__link">
+  <a href="#ejemplos-dockerfile" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo de Dockerfile
     </span>
@@ -628,9 +632,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplo-de-archivo-docker-composeyml" class="md-nav__link">
+  <a href="#ejemplo-de-archivo-docker-composeyml-ejemplo-docker-compose" class="md-nav__link">
     <span class="md-ellipsis">
-      Ejemplo de archivo docker-compose.yml
+      Ejemplo de archivo docker-compose.yml {:#ejemplo-docker-compose}
     </span>
   </a>
   
@@ -669,7 +673,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#conclusiones" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusión
     </span>
@@ -1737,6 +1741,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1754,7 +1760,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#casos-de-uso-comunes" class="md-nav__link">
+  <a href="#casos-de-uso-docker" class="md-nav__link">
     <span class="md-ellipsis">
       Casos de uso comunes
     </span>
@@ -1773,7 +1779,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-docker-engine" class="md-nav__link">
+  <a href="#docker-engine" class="md-nav__link">
     <span class="md-ellipsis">
       1. Docker Engine
     </span>
@@ -1782,7 +1788,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-imagenes" class="md-nav__link">
+  <a href="#imagenes-docker" class="md-nav__link">
     <span class="md-ellipsis">
       2. Imágenes
     </span>
@@ -1791,7 +1797,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-contenedores" class="md-nav__link">
+  <a href="#contenedores-docker" class="md-nav__link">
     <span class="md-ellipsis">
       3. Contenedores
     </span>
@@ -1815,7 +1821,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplo-de-dockerfile" class="md-nav__link">
+  <a href="#ejemplos-dockerfile" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo de Dockerfile
     </span>
@@ -1848,9 +1854,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplo-de-archivo-docker-composeyml" class="md-nav__link">
+  <a href="#ejemplo-de-archivo-docker-composeyml-ejemplo-docker-compose" class="md-nav__link">
     <span class="md-ellipsis">
-      Ejemplo de archivo docker-compose.yml
+      Ejemplo de archivo docker-compose.yml {:#ejemplo-docker-compose}
     </span>
   </a>
   
@@ -1889,7 +1895,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#conclusiones" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusión
     </span>
@@ -1916,14 +1922,14 @@
   
 
 
-  <h1>Docker</h1>
-
+<h1 id="docker">Docker</h1>
+<p>Docker es una plataforma de código abierto que permite <strong>desarrollar, empaquetar, distribuir y ejecutar aplicaciones en contenedores</strong>. Un contenedor es una unidad ligera, autónoma y portátil que incluye todo lo necesario para ejecutar una aplicación: código, dependencias, librerías, configuraciones, etc.</p>
+<p>Docker se basa en características del núcleo de Linux (como cgroups y namespaces) para permitir que múltiples contenedores se ejecuten en un mismo sistema operativo de manera aislada.</p>
 <div class="center">
     <img src="../../../assets/images/logo/docker.png" alt="Logo de Docker" 
 class="logo--3rd-party">
 </div>
-<p>Docker es una plataforma de código abierto que permite <strong>desarrollar, empaquetar, distribuir y ejecutar aplicaciones en contenedores</strong>. Un contenedor es una unidad ligera, autónoma y portátil que incluye todo lo necesario para ejecutar una aplicación: código, dependencias, librerías, configuraciones, etc.</p>
-<p>Docker se basa en características del núcleo de Linux (como cgroups y namespaces) para permitir que múltiples contenedores se ejecuten en un mismo sistema operativo de manera aislada.</p>
+
 <hr />
 <h2 id="para-que-sirve-docker">¿Para qué sirve Docker?</h2>
 <p>Docker facilita la creación y despliegue de aplicaciones porque:</p>
@@ -1935,7 +1941,7 @@ class="logo--3rd-party">
 <li>Acelera la integración y entrega continua (CI/CD).</li>
 </ul>
 <hr />
-<h2 id="casos-de-uso-comunes">Casos de uso comunes</h2>
+<h2 id="casos-de-uso-docker">Casos de uso comunes</h2>
 <ul>
 <li><strong>Microservicios</strong>: cada servicio corre en su contenedor.</li>
 <li><strong>Entornos de desarrollo reproducibles</strong>.</li>
@@ -1946,16 +1952,16 @@ class="logo--3rd-party">
 </ul>
 <hr />
 <h2 id="componentes-clave">Componentes Clave</h2>
-<h3 id="1-docker-engine">1. Docker Engine</h3>
+<h3 id="docker-engine">1. Docker Engine</h3>
 <p>El motor de Docker es el núcleo de Docker. Incluye:</p>
 <ul>
 <li><strong>Servidor (dockerd)</strong>: daemon que gestiona contenedores.</li>
 <li><strong>CLI (docker)</strong>: cliente de línea de comandos.</li>
 <li><strong>API REST</strong>: permite controlar Docker desde otras herramientas.</li>
 </ul>
-<h3 id="2-imagenes">2. Imágenes</h3>
+<h3 id="imagenes-docker">2. Imágenes</h3>
 <p>Las imágenes Docker son plantillas inmutables que contienen el sistema de archivos y la configuración de una aplicación. Se crean a partir de un <code>Dockerfile</code>.</p>
-<h3 id="3-contenedores">3. Contenedores</h3>
+<h3 id="contenedores-docker">3. Contenedores</h3>
 <p>Un contenedor es una instancia en ejecución de una imagen. Se puede detener, iniciar, reiniciar, destruir, etc.</p>
 <div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>nginx
 docker<span class="w"> </span>ps
@@ -1964,7 +1970,7 @@ docker<span class="w"> </span>stop<span class="w"> </span>&lt;id&gt;
 <hr />
 <h2 id="dockerfile">Dockerfile</h2>
 <p>Un <code>Dockerfile</code> es un archivo de texto que contiene instrucciones para construir una imagen Docker personalizada.</p>
-<h3 id="ejemplo-de-dockerfile">Ejemplo de Dockerfile</h3>
+<h3 id="ejemplos-dockerfile">Ejemplo de Dockerfile</h3>
 <div class="highlight"><pre><span></span><code><span class="c"># Imagen base</span>
 <span class="k">FROM</span><span class="w"> </span><span class="s">node:18</span>
 
@@ -2024,7 +2030,7 @@ docker<span class="w"> </span>stop<span class="w"> </span>&lt;id&gt;
 <hr />
 <h2 id="docker-compose">Docker Compose</h2>
 <p>Docker Compose permite definir y ejecutar aplicaciones <strong>multicontenedor</strong> con un solo archivo YAML (<code>docker-compose.yml</code>). Es ideal para orquestar varios servicios como API, frontend, base de datos, etc.</p>
-<h3 id="ejemplo-de-archivo-docker-composeyml">Ejemplo de archivo <code>docker-compose.yml</code></h3>
+<h3 id="ejemplo-de-archivo-docker-composeyml-ejemplo-docker-compose">Ejemplo de archivo <code>docker-compose.yml {:#ejemplo-docker-compose}</code></h3>
 <div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.9&#39;</span>
 
 <span class="nt">services</span><span class="p">:</span>
@@ -2073,7 +2079,7 @@ docker-compose<span class="w"> </span>ps<span class="w">         </span><span cl
 <li>Documentación oficial: https://docs.docker.com</li>
 </ul>
 <hr />
-<h2 id="conclusion">Conclusión</h2>
+<h2 id="conclusiones">Conclusión</h2>
 <p>Docker es una herramienta esencial en el desarrollo moderno. Su capacidad para contener y aislar aplicaciones facilita el desarrollo, testing, y despliegue en cualquier entorno, desde laptops hasta clústeres en la nube.</p>
 
 

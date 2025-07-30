@@ -774,7 +774,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ecosystemconfigjs" class="md-nav__link">
+  <a href="#ecosystem-config-js" class="md-nav__link">
     <span class="md-ellipsis">
       ecosystem.config.js
     </span>
@@ -797,7 +797,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#autostart-tras-reinicio-del-servidor" class="md-nav__link">
+  <a href="#autostart-tras-reinicio-servidor" class="md-nav__link">
     <span class="md-ellipsis">
       Autostart tras reinicio del servidor
     </span>
@@ -848,7 +848,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#integracion-con-servidores-virtuales-vps" class="md-nav__link">
+  <a href="#integracion-con-vps" class="md-nav__link">
     <span class="md-ellipsis">
       Integración con Servidores Virtuales (VPS)
     </span>
@@ -1807,7 +1807,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ecosystemconfigjs" class="md-nav__link">
+  <a href="#ecosystem-config-js" class="md-nav__link">
     <span class="md-ellipsis">
       ecosystem.config.js
     </span>
@@ -1830,7 +1830,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#autostart-tras-reinicio-del-servidor" class="md-nav__link">
+  <a href="#autostart-tras-reinicio-servidor" class="md-nav__link">
     <span class="md-ellipsis">
       Autostart tras reinicio del servidor
     </span>
@@ -1881,7 +1881,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#integracion-con-servidores-virtuales-vps" class="md-nav__link">
+  <a href="#integracion-con-vps" class="md-nav__link">
     <span class="md-ellipsis">
       Integración con Servidores Virtuales (VPS)
     </span>
@@ -1928,11 +1928,6 @@
 
 <h1 id="pm2-process-manager-para-nodejs">PM2 - Process Manager para Node.js</h1>
 <h2 id="que-es-pm2">¿Qué es PM2?</h2>
-<div class="center">
-    <img src="../../assets/images/logo/pm2.png" alt="Logo de PM2" class="logo--3rd-party">
-    <i>Logo de PM2</i>
-</div>
-
 <p><strong>PM2</strong> es un administrador de procesos para aplicaciones Node.js (y otros lenguajes), diseñado para ejecutar, monitorear y mantener procesos activos en segundo plano. Se usa principalmente en entornos de producción para asegurar que las aplicaciones funcionen de manera estable y continua, incluso tras fallos o reinicios del sistema.</p>
 <h2 id="para-que-sirve-pm2">¿Para qué sirve PM2?</h2>
 <table>
@@ -1997,7 +1992,7 @@ pm2<span class="w"> </span>monit<span class="w">                </span><span cla
 </ul>
 <h2 id="ecosystem-file">Ecosystem File</h2>
 <p>Permite definir configuración de múltiples procesos en un solo archivo.</p>
-<h3 id="ecosystemconfigjs">ecosystem.config.js</h3>
+<h3 id="ecosystem-config-js">ecosystem.config.js</h3>
 <div class="highlight"><pre><span></span><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">apps</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
@@ -2018,7 +2013,7 @@ pm2<span class="w"> </span>monit<span class="w">                </span><span cla
 <h3 id="ejecutar-con-ecosystem">Ejecutar con ecosystem</h3>
 <div class="highlight"><pre><span></span><code>pm2<span class="w"> </span>start<span class="w"> </span>ecosystem.config.js<span class="w"> </span>--env<span class="w"> </span>production
 </code></pre></div>
-<h2 id="autostart-tras-reinicio-del-servidor">Autostart tras reinicio del servidor</h2>
+<h2 id="autostart-tras-reinicio-servidor">Autostart tras reinicio del servidor</h2>
 <h3 id="guardar-estado-actual">Guardar estado actual</h3>
 <div class="highlight"><pre><span></span><code>pm2<span class="w"> </span>save
 </code></pre></div>
@@ -2040,7 +2035,7 @@ pm2<span class="w"> </span>logs<span class="w"> </span>app<span class="w">      
 <div class="highlight"><pre><span></span><code>pm2<span class="w"> </span>start<span class="w"> </span>script.py<span class="w"> </span>--interpreter<span class="w"> </span>python3
 pm2<span class="w"> </span>start<span class="w"> </span>script.sh
 </code></pre></div>
-<h2 id="integracion-con-servidores-virtuales-vps">Integración con Servidores Virtuales (VPS)</h2>
+<h2 id="integracion-con-vps">Integración con Servidores Virtuales (VPS)</h2>
 <ol>
 <li>Desplegar la app en el VPS</li>
 <li>Instalar PM2 globalmente</li>

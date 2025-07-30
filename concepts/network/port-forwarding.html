@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#que-es-el-port-forwarding" class="md-skip">
+        <a href="#port-forwarding" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -853,7 +853,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-el-port-forwarding" class="md-nav__link">
+  <a href="#port-forwarding" class="md-nav__link">
     <span class="md-ellipsis">
       ¿Qué es el Port Forwarding?
     </span>
@@ -862,7 +862,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#para-que-sirve" class="md-nav__link">
+  <a href="#para-que-sirve-pf" class="md-nav__link">
     <span class="md-ellipsis">
       ¿Para qué sirve?
     </span>
@@ -872,7 +872,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplos-de-uso" class="md-nav__link">
+  <a href="#ejemplos-uso" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplos de uso
     </span>
@@ -905,7 +905,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplo" class="md-nav__link">
+  <a href="#ejemplo-pf" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo
     </span>
@@ -919,7 +919,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-port-forwarding" class="md-nav__link">
+  <a href="#tipos-pf" class="md-nav__link">
     <span class="md-ellipsis">
       Tipos de Port Forwarding
     </span>
@@ -928,7 +928,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#seguridad" class="md-nav__link">
+  <a href="#seguridad-pf" class="md-nav__link">
     <span class="md-ellipsis">
       Seguridad
     </span>
@@ -1674,7 +1674,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-el-port-forwarding" class="md-nav__link">
+  <a href="#port-forwarding" class="md-nav__link">
     <span class="md-ellipsis">
       ¿Qué es el Port Forwarding?
     </span>
@@ -1683,7 +1683,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#para-que-sirve" class="md-nav__link">
+  <a href="#para-que-sirve-pf" class="md-nav__link">
     <span class="md-ellipsis">
       ¿Para qué sirve?
     </span>
@@ -1693,7 +1693,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplos-de-uso" class="md-nav__link">
+  <a href="#ejemplos-uso" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplos de uso
     </span>
@@ -1726,7 +1726,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplo" class="md-nav__link">
+  <a href="#ejemplo-pf" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo
     </span>
@@ -1740,7 +1740,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-port-forwarding" class="md-nav__link">
+  <a href="#tipos-pf" class="md-nav__link">
     <span class="md-ellipsis">
       Tipos de Port Forwarding
     </span>
@@ -1749,7 +1749,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#seguridad" class="md-nav__link">
+  <a href="#seguridad-pf" class="md-nav__link">
     <span class="md-ellipsis">
       Seguridad
     </span>
@@ -1778,17 +1778,17 @@
 
   <h1>Port Forwarding</h1>
 
-<h2 id="que-es-el-port-forwarding">¿Qué es el Port Forwarding?</h2>
+<h2 id="port-forwarding">¿Qué es el Port Forwarding?</h2>
 <p>Port forwarding (reenvío de puertos) es una técnica de red utilizada para redirigir solicitudes entrantes desde una IP pública y puerto específico hacia una dirección IP interna en una red privada, y opcionalmente a otro puerto.</p>
 <p>En términos simples, permite acceder desde el exterior a servicios alojados dentro de una red privada.</p>
-<h2 id="para-que-sirve">¿Para qué sirve?</h2>
+<h2 id="para-que-sirve-pf">¿Para qué sirve?</h2>
 <p>El port forwarding permite:</p>
 <ul>
 <li>Acceder remotamente a servidores web, SSH, cámaras IP, videojuegos, etc.</li>
 <li>Exponer servicios internos a internet.</li>
 <li>Habilitar administración remota.</li>
 </ul>
-<h3 id="ejemplos-de-uso">Ejemplos de uso</h3>
+<h3 id="ejemplos-uso">Ejemplos de uso</h3>
 <table>
 <thead>
 <tr>
@@ -1831,26 +1831,27 @@
 <li>El router tiene una regla de port forwarding que redirige esa solicitud a una IP interna y puerto correspondiente.</li>
 <li>El servicio local responde y el router reenvía la respuesta al cliente.</li>
 </ol>
-<h3 id="ejemplo">Ejemplo</h3>
+<h3 id="ejemplo-pf">Ejemplo</h3>
 <ul>
 <li>IP pública del router: <code>200.45.12.100</code></li>
 <li>Port forwarding: <code>200.45.12.100:80</code> → <code>192.168.1.10:3000</code></li>
 <li>Resultado: cualquier persona accediendo a <code>http://200.45.12.100</code> será redirigida al servicio Node.js corriendo en la red local.</li>
 </ul>
-<h2 id="tipos-de-port-forwarding">Tipos de Port Forwarding</h2>
+<h2 id="tipos-pf">Tipos de Port Forwarding</h2>
 <ol>
 <li><strong>Estático</strong>: El puerto externo redirige siempre a la misma IP y puerto interno.</li>
 <li><strong>Dinámico</strong>: Se utiliza generalmente con túneles SSH, no con routers domésticos.</li>
 <li><strong>Inverso (Reverse Port Forwarding)</strong>: Se abre un túnel desde la red privada hacia una máquina externa, útil si no se puede hacer port forwarding desde el router.</li>
 </ol>
-<h2 id="seguridad">Seguridad</h2>
+<h2 id="seguridad-pf">Seguridad</h2>
 <p>El port forwarding puede ser riesgoso si se mal configura. Recomendaciones:</p>
 <ul>
 <li>Solo exponer los puertos necesarios.</li>
 <li>Usar puertos no estándar cuando sea posible.</li>
 <li>Configurar firewall (ufw, iptables) para limitar acceso.</li>
 <li>Utilizar autenticación fuerte y cifrado (TLS, SSH).</li>
-<li>Utilizar VPN cuando sea posible.</li>
+<li>Utilizar VPN cuando sea posible.<br />
+s</li>
 </ul>
 
 
